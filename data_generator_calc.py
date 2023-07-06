@@ -50,21 +50,6 @@ if __name__ == "__main__":
     model.config.eos_token_id = end_tokens[0]
     # Data
     dataset = load_dataset("c4", "en", split="train", streaming=True)
-
-    '''
-    View the filter
-    '''
-    # count = 0
-    # for data in dataset:
-    #     count += 1
-    #     output = apply_heuristics(data, gpt_tokenizer)
-    #     if output:
-    #         print("\n\n\nHeuristics satisfied in the following text:")
-    #         apply_heuristics(data, gpt_tokenizer, print_heuristics=True)
-    #     # print(count)
-
-
-
     filtered_dataset = dataset.filter(lambda example: apply_heuristics(example, gpt_tokenizer, print_heuristics=False))
     iter_data = iter(filtered_dataset)
     # Vars
