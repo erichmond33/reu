@@ -42,8 +42,8 @@ class CalculatorPostprocessing(APICallPostprocessing):
         minimum_percentage: float = 0.0,
         # api_text: str = "Calculator(",
         api_text: str = "",
-        k_values: int = 5,
-        m_generations: int = 5
+        k_values: int = 20,
+        m_generations: int = 10
     ):
         self.calculator = Calculator
         super().__init__(start_tokens, end_tokens, minimum_percentage, api_text, k_values, m_generations)
@@ -88,7 +88,7 @@ class CalculatorPostprocessing(APICallPostprocessing):
                         outputs[j]["Calculator"] = str(calculator_api_output)
 
                         # CHeck if it is None or a non-number
-                        if calculator_api_output is None or not isinstance(calculator_api_output, (int, float)):
+                        if calculator_api_output is None:
                             raise Exception("Function call returned None or non-number")
                     except Exception as e:
                         continue
@@ -140,6 +140,7 @@ class CalculatorPostprocessing(APICallPostprocessing):
                             nums_to_keep[candidate],
                             base_loss,
                             outputs[j],
+                            input_tokens.cuda()
                         ]
                     )
         return generated_texts, max_token_len, max_token_len_base

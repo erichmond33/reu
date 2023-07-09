@@ -1,0 +1,92 @@
+[
+  {
+    "file_index": 0,
+    "text": "How many backlinks per day for new site?\nDiscussion in 'Black Hat SEO' started by Omoplata, Dec 3, 2010.\n1) for a newly created site, what's the max # backlinks per day I should do to be safe?\n2) how long do I have to let my site age before I can start making more blinks?\nI did about 6000 forum profiles every 24 hours for 10 days for one of my sites which had a brand new domain.\nThere is three backlinks for every of these forum profile so thats 18 000 backlinks every 24 hours and nothing happened in terms of being penalized or sandboxed. This is now maybe 3 months ago and the site is ranking on first page for a lot of my targeted keywords.\nbuild more you can in starting but do manual submission and not spammy type means manual + relevant to the post.. then after 1 month you can make a big blast..\nWow, dude, you built 18k backlinks a day on a brand new site? How quickly did you rank up? What kind of competition/searches did those keywords have?",
+    "calculator_outputs": [
+      [
+        0.011475086212158203,
+        108,
+        "divide(3, 5)",
+        "0.6"
+      ],
+      [
+        0.13411808013916016,
+        104,
+        "add(3, 3)",
+        "6"
+      ],
+      [
+        0.10076904296875,
+        138,
+        "divide(18, 30)",
+        "0.6"
+      ],
+      [
+        0.3082857131958008,
+        106,
+        "multiply(30, 2)",
+        "60"
+      ],
+      [
+        0.08679819107055664,
+        111,
+        "divide(1, 30)",
+        "0.03333333333333333"
+      ],
+      [
+        0.01635885238647461,
+        151,
+        "subtract(3, 4)",
+        "-1"
+      ],
+      [
+        0.17270994186401367,
+        123,
+        "add",
+        "<function add at 0x7f06d98ea680>"
+      ],
+      [
+        0.13990449905395508,
+        139,
+        "divide(18, 12)",
+        "1.5"
+      ],
+      [
+        0.035694122314453125,
+        159,
+        "add(1, 2.0)",
+        "3.0"
+      ],
+      [
+        0.1257476806640625,
+        120,
+        "divide(18, (30 - 18) * 3)",
+        "0.5"
+      ],
+      [
+        0.00923776626586914,
+        148,
+        "subtract(18, 24)",
+        "-6"
+      ],
+      [
+        0.19884920120239258,
+        105,
+        "add(6, 5)",
+        "11"
+      ],
+      [
+        0.1882762908935547,
+        119,
+        "multiply(18, 3000)",
+        "54000"
+      ],
+      [
+        0.14481449127197266,
+        117,
+        "divide(18, 6)",
+        "3.0"
+      ]
+    ]
+  }
+]

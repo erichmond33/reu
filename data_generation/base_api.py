@@ -1,5 +1,5 @@
 import json
-from typing import List, Tuple
+from typing import List, Tuple, Union
 import torch
 from transformers import (
     PreTrainedTokenizerBase,
@@ -7,12 +7,16 @@ from transformers import (
     PreTrainedModel,
     TextGenerationPipeline,
 )
+from einops import rearrange, reduce
+
 from torch import nn
 
 MAX_BATCH_SIZE = 1  # My 3090 is weak 😔
 N = 64  # SEQ Len
 M = 16  # Min Loss Span To Consider
 
+def log(t, eps = 1e-20):
+    return t.clamp(min = eps).log()
 
 class APICallPostprocessing:
     def __init__(
@@ -194,6 +198,108 @@ class APICallPostprocessing:
         """
         raise NotImplementedError("Fill this in with your API code please!")
 
+    def get_logits(
+        self,
+        model,
+        generated_texts,
+        max_token_len,
+        max_token_len_base,
+    ):
+        # shape the batches...
+        for j in range(len(generated_texts)):
+            # Adding zeros to ensure each example of test_outputs & base_outputs has a length of max_token_len
+            # (So we can cat all of them together)
+            generated_texts[j].append(
+                max_token_len - generated_texts[j][0].shape[1]
+            )
+            if generated_texts[j][-1] != 0:
+                generated_texts[j][0] = torch.cat(
+                    (
+                        generated_texts[j][0],
+                        torch.zeros(
+                            (1, generated_texts[j][-1]),
+                            dtype=generated_texts[j][0].dtype,
+                            device=generated_texts[j][0].device,
+                        ),
+                    ),
+                    dim=1,
+                )
+            generated_texts[j].append(
+                max_token_len_base - generated_texts[j][1].shape[1]
+            )
+            if generated_texts[j][-1] != 0:
+                generated_texts[j][1] = torch.cat(
+                    (
+                        generated_texts[j][1],
+                        torch.zeros(
+                            (1, generated_texts[j][-1]),
+                            dtype=generated_texts[j][1].dtype,
+                            device=generated_texts[j][1].device,
+                        ),
+                    ),
+                    dim=1,
+                )
+            
+        # Putting the the generated_texts into a single tensor and running a forward pass
+        test_outputs = model(
+            torch.cat(
+                list(generated_text[0] for generated_text in generated_texts),
+                dim=0,
+            )
+        ).logits
+        base_outputs = model(
+            torch.cat(
+                list(generated_text[1] for generated_text in generated_texts),
+                dim=0,
+            )
+        ).logits
+
+        return generated_texts, test_outputs, base_outputs
+
+
+    def filter_api( 
+        self,
+        model,
+        outputs: List,
+        max_token_len,
+        max_token_len_base,
+    ):
+        def _compute_weight(t: int) -> Union[int, float]:
+            """Compute the weight in the loss function."""
+            return max(0, 1-0.2*t)
+        
+        for generated_texts in outputs:
+            # These are the weights described by the weighting function in appendix A
+            weights = torch.tensor([[1/3, .8/3, .6/3, .4/3, .2/3]],dtype=torch.float32).to(device=0)
+
+            for j in range(len(generated_texts)):
+                # Generate the weights tensor
+                # (len(generated_texts), 0:-num_to_keeps)
+                # 0:-num_to_keeps -> [1/3, .8/3, .6/3, .4/3, .2/3, 0, 0, ..., 0]
+                
+
+                num_to_keep = generated_texts[j][2]
+                # Padding the weight matrix
+                zeros_padding = torch.zeros(
+                                    (1, num_to_keep - weights.shape[0]),
+                                    dtype=generated_texts[j][1].dtype,
+                                    device=generated_texts[j][1].device,
+                                )
+                weights_and_zeros_padding = torch.cat((weights, zeros_padding), dim=1)
+                # Duplicating the weight matrix for each generation at position i
+                weights_and_zeros_padding = weights_and_zeros_padding.repeat(len(generated_texts), 1)
+
+                
+
+
+
+                # Generate the losses
+
+                # Multiply the two
+
+        
+        
+
     def generate_continuations(
         self,
         input_tokens: torch.Tensor,
@@ -258,141 +364,221 @@ class APICallPostprocessing:
                 if len(generated_texts) == 0:
                     outputs[i] = None
                     continue
-                # shape the batches...
-                for j in range(len(generated_texts)):
-                    # Adding zeros to ensure each example of test_outputs & base_outputs has a length of max_token_len
-                    generated_texts[j].append(
-                        max_token_len - generated_texts[j][0].shape[1]
-                    )
-                    if generated_texts[j][-1] != 0:
-                        generated_texts[j][0] = torch.cat(
-                            (
-                                generated_texts[j][0],
-                                torch.zeros(
-                                    (1, generated_texts[j][-1]),
-                                    dtype=generated_texts[j][0].dtype,
-                                    device=generated_texts[j][0].device,
-                                ),
-                            ),
-                            dim=1,
-                        )
-                    generated_texts[j].append(
-                        max_token_len_base - generated_texts[j][1].shape[1]
-                    )
-                    if generated_texts[j][-1] != 0:
-                        generated_texts[j][1] = torch.cat(
-                            (
-                                generated_texts[j][1],
-                                torch.zeros(
-                                    (1, generated_texts[j][-1]),
-                                    dtype=generated_texts[j][1].dtype,
-                                    device=generated_texts[j][1].device,
-                                ),
-                            ),
-                            dim=1,
-                        )
-                # Putting the test_outputs into a single tensor
-                test_outputs = model(
-                    torch.cat(
-                        list(generated_text[0] for generated_text in generated_texts),
-                        dim=0,
-                    )
-                ).logits
-                # Putting the base_outputs into a single tensor
-                base_outputs = model(
-                    torch.cat(
-                        list(generated_text[1] for generated_text in generated_texts),
-                        dim=0,
-                    )
-                ).logits
-                # Varibles to be compared against
+
+                # These are the weights described by the weighting function in appendix A
+                weights = torch.tensor([[1/3, .8/3, .6/3, .4/3, .2/3]],dtype=torch.float32).to(device=0)
+                # A varible to track the best loss in generated_texts
                 best_loss = -99.0
-                best_output = outputs[i][0]
                 for j in range(len(generated_texts)):
+                    tokens, tokens_with_api_response, tokens_without_api_response = generated_texts[j][-1] ,generated_texts[j][0], generated_texts[j][1]
+                    
+                    model.eval()
+                    logits, logits_with_api_response, logits_without_api_response = map(model, (tokens, tokens_with_api_response, tokens_without_api_response))
+
+                    def get_pred_prob(token_ids, logits):
+                        logits = logits.logits[:, :-1]             # logits of each token...    (omit last logit)
+                        token_ids = token_ids[:, 1:]        # predicts the next token id (omit first token id)
+
+                        token_ids = rearrange(token_ids, 'b n -> b n 1')
+                        probs = logits.softmax(dim = -1)
+                        correct_token_id_pred_prob = probs.gather(-1, token_ids)
+                        return rearrange(correct_token_id_pred_prob, 'b n 1 -> b n')
+                    
+                    probs                       = get_pred_prob(tokens, logits)
+                    probs_without_api_response  = get_pred_prob(tokens_without_api_response, logits_without_api_response)
+                    probs_with_api_response     = get_pred_prob(tokens_with_api_response, logits_with_api_response)
+
                     num_to_keep = generated_texts[j][2]
-                    if generated_texts[j][-2] != 0:
-                        test = test_outputs[j][: -generated_texts[j][-2]]
-                        test_loss = criterion(
-                            # test[-num_to_keep : -(num_to_keep - M)].view(
-                            test[-num_to_keep : ].view(
-                                -1, generated_texts[j][-3]["base_outputs"].size(-1)
-                            ),
-                            # labels[:, -num_to_keep : -(num_to_keep - M)]
-                            labels[:, -num_to_keep : ]
-                            .cuda()
-                            .view(-1),
-                        )
-                        # convert test & label to words
-                        decoded = []
-                        for token in labels:
-                            decoded.append(tokenizer.decode(token))
-                        print(decoded)
+                    # Padding the weight matrix
+                    zeros_padding = torch.zeros(
+                                        (1, num_to_keep - weights.shape[1]),
+                                        dtype=generated_texts[j][1].dtype,
+                                        device=generated_texts[j][1].device,
+                                    )
+                    weights_and_zeros_padding = torch.cat((weights, zeros_padding), dim=1)
 
-                        test = test.softmax(dim = -1)
-                        predicted_token_ids = torch.argmax(test, dim=-1)
-                        predicted_tokens = tokenizer.batch_decode(predicted_token_ids)
-                        # Add all the predicted tokens to a single string
-                        predicted_string = ""
-                        for token in predicted_tokens:
-                            predicted_string += token
-                        print(predicted_string)
-
-                    else:
-                        # decoded = tokenizer.decode(test_outputs[j][-num_to_keep : -(num_to_keep - M)])
-                        # shape (16, 50257) & (16)
-                        test_loss = criterion(
-                            # test_outputs[j][-num_to_keep : -(num_to_keep - M)].view(
-                            test_outputs[j][-num_to_keep : ].view(
-                                -1, generated_texts[j][-3]["base_outputs"].size(-1)
-                            ),
-                            # labels[:, -num_to_keep : -(num_to_keep - M)]
-                            labels[:, -num_to_keep : ]
-                            .cuda()
-                            .view(-1),
-                        )
-                    if generated_texts[j][-1] != 0:
-                        base = base_outputs[j][: -generated_texts[j][-1]]
-                        base_loss = criterion(
-                            # base[-num_to_keep : -(num_to_keep - M)].view(
-                            base[-num_to_keep : ].view(
-                                -1, generated_texts[j][-3]["base_outputs"].size(-1)
-                            ),
-                            # labels[:, -num_to_keep : -(num_to_keep - M)]
-                            labels[:, -num_to_keep : ]
-                            .cuda()
-                            .view(-1),
-                        )
-                    else:
-                        base_loss = criterion(
-                            # base_outputs[j][-num_to_keep : -(num_to_keep - M)].view(
-                            base_outputs[j][-num_to_keep : ].view(
-                                -1, generated_texts[j][-3]["base_outputs"].size(-1)
-                            ),
-                            # labels[:, -num_to_keep : -(num_to_keep - M)]
-                            labels[:, -num_to_keep : ]
-                            .cuda()
-                            .view(-1),
-                        )
-                    generated_texts[j][-3]["generated_text"] = generated_texts[j][-3][
-                        "generated_text"
-                    ].replace(start_str, "")
+                    def loss_fn(weight, probs, reverse_api_end_index):
+                        probs = probs[:, -reverse_api_end_index : ]
+                        return (weight * -log(probs)).sum(dim = -1)
+                    
+                    loss = loss_fn(weights_and_zeros_padding, probs, num_to_keep)
+                    loss_without_api_response = loss_fn(weights_and_zeros_padding, probs_without_api_response, num_to_keep)
+                    loss_with_api_response = loss_fn(weights_and_zeros_padding, probs_with_api_response, num_to_keep)
                     # Comparing each generation to find the best_loss
+
+                    temp = loss_without_api_response - loss_with_api_response
                     if (
-                        min(base_loss.item(), generated_texts[j][-3]["base_loss"])
-                        - test_loss
+                        min(loss_without_api_response, loss)
+                        - loss_with_api_response
                         > best_loss
                     ):
-                        best_output = generated_texts[j][-3]
-                        best_loss = generated_texts[j][-3]["base_loss"] - test_loss
+                        best_output = generated_texts[j][-2]
+                        best_loss = loss_without_api_response - loss_with_api_response
+
                 if len(generated_texts) > 0:
                     outputs[i] = best_output
                     outputs[i]["Score"] = float(best_loss.item())
-                    outputs[i]["base_api_loss"] = float(base_loss.item())
+                    outputs[i]["base_api_loss"] = float(666)
                     del outputs[i]["base_outputs"]
                 else:
                     outputs[i] = None
-        # print(json.dumps(outputs, indent=2))
         return outputs
+
+                # generated_texts, test_outputs, base_outputs = self.get_logits(
+                #     model,
+                #     generated_texts,
+                #     max_token_len,
+                #     max_token_len_base
+                # )
+
+                    # print("hoo ya")
+            
+            # self.filter_api(
+            #     model,
+            #     outputs,
+            #     max_token_len,
+            #     max_token_len_base
+            # )
+
+
+
+
+
+        #         # shape the batches...
+        #         for j in range(len(generated_texts)):
+        #             # Adding zeros to ensure each example of test_outputs & base_outputs has a length of max_token_len
+        #             generated_texts[j].append(
+        #                 max_token_len - generated_texts[j][0].shape[1]
+        #             )
+        #             if generated_texts[j][-1] != 0:
+        #                 generated_texts[j][0] = torch.cat(
+        #                     (
+        #                         generated_texts[j][0],
+        #                         torch.zeros(
+        #                             (1, generated_texts[j][-1]),
+        #                             dtype=generated_texts[j][0].dtype,
+        #                             device=generated_texts[j][0].device,
+        #                         ),
+        #                     ),
+        #                     dim=1,
+        #                 )
+        #             generated_texts[j].append(
+        #                 max_token_len_base - generated_texts[j][1].shape[1]
+        #             )
+        #             if generated_texts[j][-1] != 0:
+        #                 generated_texts[j][1] = torch.cat(
+        #                     (
+        #                         generated_texts[j][1],
+        #                         torch.zeros(
+        #                             (1, generated_texts[j][-1]),
+        #                             dtype=generated_texts[j][1].dtype,
+        #                             device=generated_texts[j][1].device,
+        #                         ),
+        #                     ),
+        #                     dim=1,
+        #                 )
+        #         # Putting the test_outputs into a single tensor
+        #         test_outputs = model(
+        #             torch.cat(
+        #                 list(generated_text[0] for generated_text in generated_texts),
+        #                 dim=0,
+        #             )
+        #         ).logits
+        #         # Putting the base_outputs into a single tensor
+        #         base_outputs = model(
+        #             torch.cat(
+        #                 list(generated_text[1] for generated_text in generated_texts),
+        #                 dim=0,
+        #             )
+        #         ).logits
+        #         # Varibles to be compared against
+        #         best_loss = -99.0
+        #         best_output = outputs[i][0]
+        #         for j in range(len(generated_texts)):
+        #             num_to_keep = generated_texts[j][2]
+        #             if generated_texts[j][-2] != 0:
+        #                 test = test_outputs[j][: -generated_texts[j][-2]]
+        #                 test_loss = criterion(
+        #                     # test[-num_to_keep : -(num_to_keep - M)].view(
+        #                     test[-num_to_keep : ].view(
+        #                         -1, generated_texts[j][-3]["base_outputs"].size(-1)
+        #                     ),
+        #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
+        #                     labels[:, -num_to_keep : ]
+        #                     .cuda()
+        #                     .view(-1),
+        #                 )
+        #                 # convert test & label to words
+        #                 decoded = []
+        #                 for token in labels:
+        #                     decoded.append(tokenizer.decode(token))
+        #                 print(decoded)
+
+        #                 test = test.softmax(dim = -1)
+        #                 predicted_token_ids = torch.argmax(test, dim=-1)
+        #                 predicted_tokens = tokenizer.batch_decode(predicted_token_ids)
+        #                 # Add all the predicted tokens to a single string
+        #                 predicted_string = ""
+        #                 for token in predicted_tokens:
+        #                     predicted_string += token
+        #                 print(predicted_string)
+
+        #             else:
+        #                 # decoded = tokenizer.decode(test_outputs[j][-num_to_keep : -(num_to_keep - M)])
+        #                 # shape (16, 50257) & (16)
+        #                 test_loss = criterion(
+        #                     # test_outputs[j][-num_to_keep : -(num_to_keep - M)].view(
+        #                     test_outputs[j][-num_to_keep : ].view(
+        #                         -1, generated_texts[j][-3]["base_outputs"].size(-1)
+        #                     ),
+        #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
+        #                     labels[:, -num_to_keep : ]
+        #                     .cuda()
+        #                     .view(-1),
+        #                 )
+        #             if generated_texts[j][-1] != 0:
+        #                 base = base_outputs[j][: -generated_texts[j][-1]]
+        #                 base_loss = criterion(
+        #                     # base[-num_to_keep : -(num_to_keep - M)].view(
+        #                     base[-num_to_keep : ].view(
+        #                         -1, generated_texts[j][-3]["base_outputs"].size(-1)
+        #                     ),
+        #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
+        #                     labels[:, -num_to_keep : ]
+        #                     .cuda()
+        #                     .view(-1),
+        #                 )
+        #             else:
+        #                 base_loss = criterion(
+        #                     # base_outputs[j][-num_to_keep : -(num_to_keep - M)].view(
+        #                     base_outputs[j][-num_to_keep : ].view(
+        #                         -1, generated_texts[j][-3]["base_outputs"].size(-1)
+        #                     ),
+        #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
+        #                     labels[:, -num_to_keep : ]
+        #                     .cuda()
+        #                     .view(-1),
+        #                 )
+        #             generated_texts[j][-3]["generated_text"] = generated_texts[j][-3][
+        #                 "generated_text"
+        #             ].replace(start_str, "")
+        #             # Comparing each generation to find the best_loss
+        #             if (
+        #                 min(base_loss.item(), generated_texts[j][-3]["base_loss"])
+        #                 - test_loss
+        #                 > best_loss
+        #             ):
+        #                 best_output = generated_texts[j][-3]
+        #                 best_loss = generated_texts[j][-3]["base_loss"] - test_loss
+        #         if len(generated_texts) > 0:
+        #             outputs[i] = best_output
+        #             outputs[i]["Score"] = float(best_loss.item())
+        #             outputs[i]["base_api_loss"] = float(base_loss.item())
+        #             del outputs[i]["base_outputs"]
+        #         else:
+        #             outputs[i] = None
+        # print(json.dumps(outputs, indent=2))
+        # return outputs
 
     def parse_article(
         self, data: dict, model: PreTrainedModel, tokenizer: PreTrainedTokenizerBase

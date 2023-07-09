@@ -69,7 +69,7 @@ if __name__ == "__main__":
             for item in output_dataset:
                 num_examples -= len(item['calculator_outputs'])
     # Loop until enough data is found
-    while found_examples < num_examples:
+    while found_examples < num_examples + 1:
         data = next(iter_data)
         # Increment file_counter to pick up where you left off
         if file_counter < start_count:
