@@ -25,7 +25,7 @@ if __name__ == "__main__":
     parser.add_argument("--num_devices", type=int, default=1)
     args = parser.parse_args()
     # Tokenizer
-    gpt_tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
+    gpt_tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
     # Some kind of retrieval prompt?
     prompt_tokens = gpt_tokenizer(retrieval_prompt, return_tensors="pt")["input_ids"]
     # The start & end tokens for our API calls
@@ -41,9 +41,9 @@ if __name__ == "__main__":
     calculator_api_handler = CalculatorPostprocessing(start_tokens, end_tokens)
     # Model
     model = AutoModelForCausalLM.from_pretrained(
-        "EleutherAI/gpt-neo-1.3B",
-        # revision="float16",
-        torch_dtype=torch.float32,
+        "EleutherAI/gpt-j-6B",
+        revision="float16",
+        torch_dtype=torch.float16,
         low_cpu_mem_usage=True,
     ).cuda()
     # Configure generation to end when <api_end> is generated (end_tokens[1] almost never gets called)

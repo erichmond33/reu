@@ -10,6 +10,7 @@ from data_generation.base_api import APICallPostprocessing
 import dateutil.parser as dparser
 import random
 import re
+import signal
 
 
 # TODO: Per API?
@@ -32,6 +33,10 @@ def divide(num1, num2):
 
 def multiply(num1, num2):
     return num1 * num2
+
+def infinite_loop():
+    while True:
+        pass
 
 
 class CalculatorPostprocessing(APICallPostprocessing):
@@ -82,14 +87,33 @@ class CalculatorPostprocessing(APICallPostprocessing):
                 if "add" in outputs[j]["Calculator_text"] or "subtract" in outputs[j]["Calculator_text"] or "multiply" in outputs[j]["Calculator_text"] or "divide" in outputs[j]["Calculator_text"]:
                     if "input" in outputs[j]["Calculator_text"]:
                         continue
+
+                    def evaluate_with_timeout(expression, timeout):
+                        def timeout_handler(signum, frame):
+                            raise TimeoutError("Evaluation timed out")
+
+                        # Set up the timeout signal handler
+                        signal.signal(signal.SIGALRM, timeout_handler)
+                        signal.alarm(timeout)  # Set the timeout value
+
+                        try:
+                            result = eval(expression)
+                            return result
+                        finally:
+                            signal.alarm(0)  # Disable the timeout
+
                     # Call the functions with the generated string
                     try:
-                        calculator_api_output = eval(outputs[j]["Calculator_text"])
+                        # Sometimes it will generate code that hangs out the data generation, so we run it with a timeout time of 20 seconds
+                        calculator_api_output = evaluate_with_timeout(outputs[j]["Calculator_text"], 20)
                         outputs[j]["Calculator"] = str(calculator_api_output)
 
-                        # CHeck if it is None or a non-number
+                        # CHeck if it is None
                         if calculator_api_output is None:
-                            raise Exception("Function call returned None or non-number")
+                            raise Exception("Function call returned None")
+                        # Check if it is a non-number
+                        elif not isinstance(calculator_api_output, (int, float)):
+                            raise Exception("Function call returned non-number")
                     except Exception as e:
                         continue
 

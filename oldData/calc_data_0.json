@@ -1,0 +1,5150 @@
+[
+  {
+    "file_index": 0,
+    "text": "How many backlinks per day for new site?\nDiscussion in 'Black Hat SEO' started by Omoplata, Dec 3, 2010.\n1) for a newly created site, what's the max # backlinks per day I should do to be safe?\n2) how long do I have to let my site age before I can start making more blinks?\nI did about 6000 forum profiles every 24 hours for 10 days for one of my sites which had a brand new domain.\nThere is three backlinks for every of these forum profile so thats 18 000 backlinks every 24 hours and nothing happened in terms of being penalized or sandboxed. This is now maybe 3 months ago and the site is ranking on first page for a lot of my targeted keywords.\nbuild more you can in starting but do manual submission and not spammy type means manual + relevant to the post.. then after 1 month you can make a big blast..\nWow, dude, you built 18k backlinks a day on a brand new site? How quickly did you rank up? What kind of competition/searches did those keywords have?",
+    "calculator_outputs": [
+      [
+        0.011475086212158203,
+        108,
+        "divide(3, 5)",
+        "0.6"
+      ],
+      [
+        0.13411808013916016,
+        104,
+        "add(3, 3)",
+        "6"
+      ],
+      [
+        0.10076904296875,
+        138,
+        "divide(18, 30)",
+        "0.6"
+      ],
+      [
+        0.3082857131958008,
+        106,
+        "multiply(30, 2)",
+        "60"
+      ],
+      [
+        0.08679819107055664,
+        111,
+        "divide(1, 30)",
+        "0.03333333333333333"
+      ],
+      [
+        0.01635885238647461,
+        151,
+        "subtract(3, 4)",
+        "-1"
+      ],
+      [
+        0.17270994186401367,
+        123,
+        "add",
+        "<function add at 0x7f06d98ea680>"
+      ],
+      [
+        0.13990449905395508,
+        139,
+        "divide(18, 12)",
+        "1.5"
+      ],
+      [
+        0.035694122314453125,
+        159,
+        "add(1, 2.0)",
+        "3.0"
+      ],
+      [
+        0.1257476806640625,
+        120,
+        "divide(18, (30 - 18) * 3)",
+        "0.5"
+      ],
+      [
+        0.00923776626586914,
+        148,
+        "subtract(18, 24)",
+        "-6"
+      ],
+      [
+        0.19884920120239258,
+        105,
+        "add(6, 5)",
+        "11"
+      ],
+      [
+        0.1882762908935547,
+        119,
+        "multiply(18, 3000)",
+        "54000"
+      ],
+      [
+        0.14481449127197266,
+        117,
+        "divide(18, 6)",
+        "3.0"
+      ]
+    ]
+  },
+  {
+    "file_index": 0,
+    "text": "How many backlinks per day for new site?\nDiscussion in 'Black Hat SEO' started by Omoplata, Dec 3, 2010.\n1) for a newly created site, what's the max # backlinks per day I should do to be safe?\n2) how long do I have to let my site age before I can start making more blinks?\nI did about 6000 forum profiles every 24 hours for 10 days for one of my sites which had a brand new domain.\nThere is three backlinks for every of these forum profile so thats 18 000 backlinks every 24 hours and nothing happened in terms of being penalized or sandboxed. This is now maybe 3 months ago and the site is ranking on first page for a lot of my targeted keywords.\nbuild more you can in starting but do manual submission and not spammy type means manual + relevant to the post.. then after 1 month you can make a big blast..\nWow, dude, you built 18k backlinks a day on a brand new site? How quickly did you rank up? What kind of competition/searches did those keywords have?",
+    "calculator_outputs": [
+      [
+        0.3022475242614746,
+        104,
+        "add(add(add(2, 3), 3), 2)",
+        "10"
+      ],
+      [
+        0.015592098236083984,
+        138,
+        "add(18000, 18000)",
+        "36000"
+      ],
+      [
+        0.002830982208251953,
+        139,
+        "divide(18000, 86400)",
+        "0.20833333333333334"
+      ],
+      [
+        0.02993154525756836,
+        137,
+        "add('$', 'x')",
+        "$x"
+      ],
+      [
+        0.03684663772583008,
+        143,
+        "multiply(30000, 2)",
+        "60000"
+      ],
+      [
+        0.021746158599853516,
+        123,
+        "multiply(18, 5000)",
+        "90000"
+      ],
+      [
+        0.0366816520690918,
+        164,
+        "divide(1, 3)",
+        "0.3333333333333333"
+      ],
+      [
+        0.009964227676391602,
+        140,
+        "multiply(180000, 24)",
+        "4320000"
+      ],
+      [
+        0.010031580924987793,
+        141,
+        "subtract(3, 2)",
+        "1"
+      ],
+      [
+        0.028271198272705078,
+        158,
+        "subtract(2, 3)",
+        "-1"
+      ]
+    ]
+  },
+  {
+    "file_index": 1,
+    "text": "BANGALORE CY JUNCTION SBC to GONDIA JUNCTION G train timings, routes, stops, and complete info.\nAs of now, 1 trains run between from BANGALORE CY JUNCTION (YPR) to GONDIA JUNCTION (G).\nThe fastest train from BANGALORE CY JUNCTION (YPR) to GONDIA JUNCTION (G) is YPR KRBA WAINGANGA EXP (12251) that departs at 23:40 and arrives to at 21:15. It takes approximately 21:35 hours.",
+    "calculator_outputs": [
+      [
+        0.029131650924682617,
+        109,
+        "subtract(12251, 17)",
+        "12234"
+      ],
+      [
+        0.023023605346679688,
+        9,
+        "add(12, multiply(21, 24))",
+        "516"
+      ],
+      [
+        0.00737762451171875,
+        31,
+        "divide(3, 11)",
+        "0.2727272727272727"
+      ],
+      [
+        0.09006726741790771,
+        69,
+        "add(1, 0.1)",
+        "1.1"
+      ],
+      [
+        0.1372051239013672,
+        21,
+        "add(1.9, 4.4)",
+        "6.300000000000001"
+      ]
+    ]
+  },
+  {
+    "file_index": 2,
+    "text": "UNStudio has joined forces with HPP Architects to create a consortium (UNS + HPP) to carry out the next phases of their winning project at the architectural design competition for FOUR Frankfurt. Take a look at the complete story after the jump.\nFrom the architects: The centrally located 16,000 square meter site was purchased by Gro\u00df & Partner real estate development company \u2013 who will be carrying out the development of the project \u2013 back in 2015. Situated in the very core of the city, the site has been completely inaccessible for the last 45 years. Now four new high-rise towers will change Frankfurt\u2019s skyline from the air, while cultivating its liveliness on the ground. The development of these towers, reaching heights of 228 meters, will open up new streets to create a multi-use, vibrant inner-city quarter, bringing together a healthy mix of work, living, relaxation and recreation.\nThe choice of programmes allows for a smooth transition from Frankfurt\u2019s shopping district to the east of Ro\u00dfmarkt, to the high-rise office towers clustered around Park Taunusanlage. With a development concept that is unique to Europe, the FOUR Frankfurt project brings together facilities that will establish a lively new neighbourhood for Frankfurt, its visitors, and its (future) residents.\nThe new high-rise complex will be integrated into the expanding city structure by incorporating the heritage-listed facades of the Junghofstra\u00dfe into the design and by making a multi-storey base building the connecting element of the entire site.\nAccording to the assessment by the competition jury, the unique quality of the quarter can be found in its public development and amenity value. The new development will therefore create connected spaces, accessible rooftops, pathways and passages. The existing block on the Junghofstra\u00dfe will be opened up to strengthen the surrounding pathways and ensure a high level of accessibility. This will create a multi-use, diverse quarter comprising 50% office spaces, 30% living accommodation (including subsidized housing), in addition to retail spaces, restaurants and hotels.\nFour Frankfurt is expected to be completed in 2023.",
+    "calculator_outputs": [
+      [
+        0.04654955863952637,
+        338,
+        "divide(50, 500)",
+        "0.1"
+      ],
+      [
+        0.08900308609008789,
+        339,
+        "add(75.2, 10.2)",
+        "85.4"
+      ],
+      [
+        0.12034320831298828,
+        312,
+        "add(8, add(2, 6))",
+        "16"
+      ],
+      [
+        0.0368344783782959,
+        347,
+        "subtract(3, 9)",
+        "-6"
+      ],
+      [
+        0.010334014892578125,
+        334,
+        "add(12, 3)",
+        "15"
+      ],
+      [
+        0.11963224411010742,
+        191,
+        "add(2, 5)",
+        "7"
+      ],
+      [
+        0.06129932403564453,
+        183,
+        "add(20, subtract(25, 2))",
+        "43"
+      ],
+      [
+        0.09290838241577148,
+        196,
+        "subtract(908, 8)",
+        "900"
+      ],
+      [
+        0.06842923164367676,
+        185,
+        "add(-10, -10)",
+        "-20"
+      ],
+      [
+        0.13450384140014648,
+        204,
+        "add(3, 16)",
+        "19"
+      ],
+      [
+        0.019929885864257812,
+        193,
+        "add(1, 1.4)",
+        "2.4"
+      ],
+      [
+        0.10802841186523438,
+        203,
+        "add(20, 12)",
+        "32"
+      ],
+      [
+        0.07492876052856445,
+        64,
+        "multiply(16000, 200)",
+        "3200000"
+      ],
+      [
+        0.11515617370605469,
+        57,
+        "add(5, 10), 15",
+        "(15, 15)"
+      ],
+      [
+        0.032149314880371094,
+        68,
+        "add(10, multiply(10, 50000))",
+        "500010"
+      ],
+      [
+        0.03573203086853027,
+        65,
+        "add(16,000)",
+        "16"
+      ],
+      [
+        0.014820098876953125,
+        55,
+        "multiply(3, 12)",
+        "36"
+      ],
+      [
+        0.01731252670288086,
+        114,
+        "multiply(45, 1000)",
+        "45000"
+      ],
+      [
+        0.004998326301574707,
+        152,
+        "divide(228, 7)",
+        "32.57142857142857"
+      ],
+      [
+        0.06518411636352539,
+        77,
+        "multiply(1, 4)",
+        "4"
+      ],
+      [
+        0.003989219665527344,
+        66,
+        "add(2, multiply(4, 1))",
+        "6"
+      ],
+      [
+        0.020549297332763672,
+        75,
+        "subtract(500, 200)",
+        "300"
+      ],
+      [
+        0.025752544403076172,
+        115,
+        "add(1 - 0, 4)",
+        "5"
+      ],
+      [
+        0.014129638671875,
+        67,
+        "add(16,000)",
+        "16"
+      ]
+    ]
+  },
+  {
+    "file_index": 3,
+    "text": "\u25b2Students are shouting several slogans to guarantee the school's autonomy in front of Jogyesa Temple.\nOn April 15th, 2016, the General Student Council and Student Council of Postgraduate held the 4.15 Jogye rally. The rally was also held in the last year with the same objectives. Goals of the rally are to criticize Jogye Order for its responsibility on Dongguk University\u2019s present conflicts related to President Han Tae-sik (Bogwang) and to guarantee the school\u2019s autonomy from the order.\nAt 11:00 A.M., approximately 200 people, about 150 Donggukians and 50 people who are related to Dongguk University, gathered together in Manhae Hall. As soon as the march began, the marchers were obstructed by police officers because of a cow, which was prepared by the GSC, was not reported to participate in the rally. Scuffles broke out between the police and the GSC, and the cow was not able to go with the marchers. The parade was started from Chungmu-ro where Dongguk University is located, passed Myeong-dong and finally to Jogyesa Temple.\nAfter several speeches from students, the GSC and the gathered students tried to deliver request proposal to Jogye Order together, but police officers blocked the way. Therefore, only ten representatives were allowed to go to deliver the request proposal to the persons concerned of the Jogye Order at the temple gate. The request proposal involves following three demands: Jogye Order has to stop intervening in the school matters and should guarantee the school\u2019s autonomy, every sunim who spoiled the school needs to apologize and resign, and board of directors should be reformed in a more democratic way.",
+    "calculator_outputs": [
+      [
+        0.07678508758544922,
+        261,
+        "divide(200, 40)",
+        "5.0"
+      ],
+      [
+        0.028348922729492188,
+        346,
+        "add(60, 240)",
+        "300"
+      ],
+      [
+        0.022012710571289062,
+        245,
+        "multiply(5, 42)",
+        "210"
+      ],
+      [
+        0.09877133369445801,
+        275,
+        "multiply(8, 8)",
+        "64"
+      ],
+      [
+        0.17332983016967773,
+        268,
+        "divide(10, 6)",
+        "1.6666666666666667"
+      ],
+      [
+        0.012786626815795898,
+        271,
+        "add(5, 8)",
+        "13"
+      ],
+      [
+        0.03834700584411621,
+        284,
+        "divide(250, 60)",
+        "4.166666666666667"
+      ],
+      [
+        0.08278226852416992,
+        252,
+        "divide(200, 3)",
+        "66.66666666666667"
+      ],
+      [
+        0.006253719329833984,
+        286,
+        "subtract(30, 4)",
+        "26"
+      ],
+      [
+        0.021040916442871094,
+        251,
+        "add(3, 5)",
+        "8"
+      ],
+      [
+        0.031723976135253906,
+        182,
+        "add(10, multiply(2, 0.6))",
+        "11.2"
+      ],
+      [
+        0.06058216094970703,
+        129,
+        "divide(200, 11)",
+        "18.181818181818183"
+      ],
+      [
+        0.06137657165527344,
+        133,
+        "multiply(200, 100)",
+        "20000"
+      ],
+      [
+        0.00798797607421875,
+        155,
+        "multiply(5, 180)",
+        "900"
+      ],
+      [
+        0.1458301544189453,
+        130,
+        "subtract(200, 70)",
+        "130"
+      ],
+      [
+        0.02057957649230957,
+        179,
+        "add(10, multiply(7, 3))",
+        "31"
+      ],
+      [
+        0.1336994171142578,
+        128,
+        "multiply(200,.75)",
+        "150.0"
+      ],
+      [
+        0.005030393600463867,
+        168,
+        "add(200, 150)",
+        "350"
+      ],
+      [
+        0.057463884353637695,
+        134,
+        "multiply(150, 11)",
+        "1650"
+      ]
+    ]
+  },
+  {
+    "file_index": 4,
+    "text": "Hurrah! A cooperative worldwide effort to rescue Thailand children trapped in a flooded cave rescued them all in less than 3 weeks from the time they entered the cave to the time of their rescue.\nIt should be much easier, shouldn\u2019t even take a heroic effort, to rescue children trapped in separation from their families at the Mexican border. These things are possible, but this week, the administration did not even meet the first deadline to get all the children below 5 years old reunited with their families.\nIt should even be logistically possible with a cooperative world wide effort to develop economic systems that could rescue all the hungry children everywhere living in poverty.\nIn the U.S. alone, 1 in 5 children live in poverty, according to a recently released United Nations report.\nSuch inequality and poverty is a direct result of economic policies that are chosen by elected leaders. The solution is to elect different leaders than the ones in power now. Please consider carefully when you vote this November.",
+    "calculator_outputs": [
+      [
+        0.19214248657226562,
+        85,
+        "add(24, divide(25, 3))",
+        "32.333333333333336"
+      ],
+      [
+        0.045792341232299805,
+        81,
+        "add(16, add(16, multiply(16, multiply(16, divide(20, 5)))))",
+        "1056.0"
+      ],
+      [
+        0.22606658935546875,
+        86,
+        "add(4, 1)",
+        "5"
+      ],
+      [
+        0.15906572341918945,
+        101,
+        "add(18, subtract(12, multiply(3, 4)))",
+        "18"
+      ],
+      [
+        0.10416460037231445,
+        87,
+        "divide(2, 4)",
+        "0.5"
+      ],
+      [
+        0.039433956146240234,
+        173,
+        "multiply(18000, 5)",
+        "90000"
+      ],
+      [
+        0.07257604598999023,
+        106,
+        "subtract(100, 9)",
+        "91"
+      ],
+      [
+        0.17055439949035645,
+        84,
+        "divide(-1, 7)",
+        "-0.14285714285714285"
+      ],
+      [
+        0.07358026504516602,
+        107,
+        "subtract(10, 4)",
+        "6"
+      ],
+      [
+        0.01811957359313965,
+        148,
+        "divide(5, 1)",
+        "5.0"
+      ]
+    ]
+  },
+  {
+    "file_index": 5,
+    "text": "Earn monthly interest on our Citibank Time Deposits (also known as Fixed Deposits). What's more, you get to enjoy the flexibility of making partial withdrawals before maturity date of your Time Deposit.\nPartial withdrawals in multiples of RM5,000 before the maturity date.\nOption to pledge your Time Deposit for overdraft facility.\nContinue to earn the original interest rate with your remaining balance.\nView your Citibank\u00ae Time Deposit accounts across participating countries with a single login via Online Global View.\nOnline account inquiries and banking transactions via Citibank\u00ae or Citigold\u00ae Online.\nMake banking inquiries anytime, anywhere via live e-Chat, 'Call Me' function and 20 seconds1 call pickup.\nEligible for protection by PIDM**.\n* Monthly interest is only available for minimum deposit of RM50,000 and for a minimum tenure of 6 months.\n** Click here for more details on PIDM protection.\n1From the moment you press 0 to speak to a CitiPhone officer.\nFor the Citibank Account Terms and Conditions, click here.",
+    "calculator_outputs": [
+      [
+        0.036952972412109375,
+        163,
+        "multiply(15, 50)",
+        "750"
+      ],
+      [
+        0.014348030090332031,
+        127,
+        "add(2,5)",
+        "7"
+      ],
+      [
+        0.021906375885009766,
+        205,
+        "add(2.99, 6.99)",
+        "9.98"
+      ]
+    ]
+  },
+  {
+    "file_index": 6,
+    "text": "membership fees and with many users renewing their accounts, although the overall share of Internet traffic using online dating services in the.S. Enhanced Performance Those who hv performance issues shall not be consuming soya products as it reduces performance Enhanced Performance Agree lucky. One report in China Daily suggests that dating for Chinese university women is \"difficult\" and \"takes work\" and steals time away from academic advancement, and places women in a precarious position of having to balance personal success against traditional Chinese relationships. Having said so, if ur objective is muscle building den u shall not hv * more dan once a week as it will reduce test levels in body and hence achieving goals will be difficult. Dating in North Africa is predominantly done under family supervision, usually in a public place. \"Parents explore dating scene for choosy children\". Dating in Korea is also considered a necessary activity supported by society. Moreover th3 Hon&apos;ble Supreme Court of India has also done a great job by discussing another important point about legalizing prostitution. Somebody is giving tip to them. I have to do it for sure as my * is little thick.\n21 While some of what happens on a date is guided by an understanding of basic, unspoken rules, there is considerable room to experiment, and there are numerous sources of advice available. In fact, the smarter you are, the more clueless you will be, and the more problems you&apos;re going to have in your dating life. According to a 2007 Centers of Disease Control (CDC) report, approximately 72 percent of 8th and 9th graders report that they are \"dating.\" a b c Sharon Jayson. \"Should I follow any rules?\". \"Can you be beautiful but not superficial?\". 138 Iran has a large population of young people with sixty percent of the 70-million population being under the age of thirty.",
+    "calculator_outputs": [
+      [
+        0.0015926361083984375,
+        315,
+        "divide(1.6, 0.8)",
+        "2.0"
+      ],
+      [
+        0.21612834930419922,
+        332,
+        "add",
+        "<function add at 0x7f73f73aa560>"
+      ],
+      [
+        0.03918266296386719,
+        333,
+        "multiply(20, 45.33)",
+        "906.5999999999999"
+      ],
+      [
+        0.017506122589111328,
+        334,
+        "divide(72*9, 8)",
+        "81.0"
+      ],
+      [
+        0.02350306510925293,
+        314,
+        "divide(2010, 2006)",
+        "1.0019940179461615"
+      ],
+      [
+        0.040380001068115234,
+        335,
+        "multiply(72,.0318)",
+        "2.2896"
+      ],
+      [
+        0.017042875289916992,
+        359,
+        "divide(1, 60)",
+        "0.016666666666666666"
+      ],
+      [
+        0.004556894302368164,
+        259,
+        "add(1, -1)",
+        "0"
+      ],
+      [
+        0.058114051818847656,
+        125,
+        "subtract(3, 4)",
+        "-1"
+      ],
+      [
+        0.10059928894042969,
+        183,
+        "add(9, 4)",
+        "13"
+      ],
+      [
+        0.03063368797302246,
+        168,
+        "divide(14, 2)",
+        "7.0"
+      ],
+      [
+        0.018221378326416016,
+        147,
+        "subtract(919, 1093)",
+        "-174"
+      ],
+      [
+        0.03667879104614258,
+        158,
+        "add(19, multiply(12, 3))",
+        "55"
+      ],
+      [
+        0.09157943725585938,
+        181,
+        "divide(100, 50)",
+        "2.0"
+      ],
+      [
+        0.010498285293579102,
+        154,
+        "subtract(3, 2) or 3",
+        "1"
+      ],
+      [
+        0.006426811218261719,
+        159,
+        "multiply(20, 7)",
+        "140"
+      ],
+      [
+        0.00758439302444458,
+        192,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.06561660766601562,
+        184,
+        "add(12, multiply(5, 4))",
+        "32"
+      ],
+      [
+        0.015093803405761719,
+        230,
+        "multiply(5, 5)",
+        "25"
+      ],
+      [
+        0.02697610855102539,
+        190,
+        "multiply(13, 3)",
+        "39"
+      ]
+    ]
+  },
+  {
+    "file_index": 7,
+    "text": "This topic contains 1 reply, has 2 voices. Last updated by Raam Dev 4 years, 11 months ago.\nI need a solution for a site I\u2019m developing with S2 Members Pro, the issue is the clients run a chain of shops across the UK and a magazine that is subscribed from all over the world. The client wants its clients to be able to not only sign up online but also in store, the problem is my client will not accept the 0.01p charge on the checkout with a 100% discount code, this is because they feel there customers will not like having to pay online.\nI know you suggest 2 options on the plugin: 1 being a free registration form but this is open to abuse if the link gets leaked and will also require a lot of moderation on the admin side of things to make sure each sign up actually did join in store. 2 being a free trial, we can set the trial up to last a year but then the checkout will still require a form of payment to start running once the trial period has ended.\nIs there any solution to this problem? we need it to be as secure as it can without being open to abuse and easy to administrate.\nWhat is the best solution for this?\nLet us know if that answers your question.",
+    "calculator_outputs": [
+      [
+        0.13683605194091797,
+        139,
+        "divide(1, 1)",
+        "1.0"
+      ],
+      [
+        0.4184105396270752,
+        148,
+        "add(1,0)",
+        "1"
+      ],
+      [
+        0.012398123741149902,
+        203,
+        "subtract(1,365)",
+        "-364"
+      ],
+      [
+        0.0400540828704834,
+        162,
+        "subtract(1, 1)",
+        "0"
+      ],
+      [
+        0.2533450126647949,
+        137,
+        "subtract(1, 0)",
+        "1"
+      ],
+      [
+        0.0017566680908203125,
+        155,
+        "multiply(1, 7)",
+        "7"
+      ],
+      [
+        0.06945657730102539,
+        179,
+        "add(1, 3)",
+        "4"
+      ],
+      [
+        0.07332801818847656,
+        10,
+        "subtract(0, 1)",
+        "-1"
+      ],
+      [
+        0.24500584602355957,
+        95,
+        "multiply(1000, 5000)",
+        "5000000"
+      ],
+      [
+        0.19210505485534668,
+        24,
+        "divide(4, 12)",
+        "0.3333333333333333"
+      ],
+      [
+        0.10788512229919434,
+        26,
+        "add(6, 3)",
+        "9"
+      ],
+      [
+        0.1486213207244873,
+        23,
+        "add(3, 1)",
+        "4"
+      ],
+      [
+        0.05942487716674805,
+        41,
+        "add(4, divide(11, 3))",
+        "7.666666666666666"
+      ],
+      [
+        0.3698444366455078,
+        12,
+        "multiply(723, 3)",
+        "2169"
+      ]
+    ]
+  },
+  {
+    "file_index": 8,
+    "text": "The ebook makes a speciality of geological historical past because the severe think about making a choice on the current biodiversity and landscapes of Amazonia. the various riding mechanisms for panorama evolution are explored through reviewing the historical past of the Amazonian Craton, the linked sedimentary basins, and the position of mountain uplift and weather swap.\nThis e-book provdes an perception into the Meso- and Cenozoic list of Amazonia that used to be characterised by way of fluvial and long-lived lake platforms and a hugely varied wildlife. This fauna comprises giants akin to the ca. 12 m lengthy caiman Purussaurus, but additionally a diversified fish fauna and fragile molluscs, while fossil pollen and spores shape relics of ancestral swamps and rainforests.\nWith exceptional wit, readability, and intelligence, Richard Dawkins, one of many world&apos;s most famed evolutionary biologists, has brought numerous readers to the wonders of technological know-how in works equivalent to The egocentric Gene. Now, within the Ancestor&apos;s story, Dawkins deals a masterwork: an exciting opposite journey via evolution, from present-day people again to the microbial beginnings of lifestyles 4 billion years in the past.\nColonial dwelling is characterised through department of work and finely coordinated association; besides the fact that, many occasions inside of a colony are the results of conflicts among participants trying to maximize their very own pursuits. This interaction of cooperation and clash has raised many questions in evolutionary biology, in particular how cooperative habit is maintained within the absence of direct replica through staff.\nTo this point, the dominant paradigms by which glossy scientists have seen nature were established essentially round Newtonian and Darwinian methods. As theoretical ecologist Robert E. Ulanowicz observes in his new paintings, a 3rd Window, neither of those types is enough for explaining how actual change\u2014in the shape of inventive increase or emergence\u2014takes position in nature.\nEcology is in a hard kingdom as a systematic self-discipline. whereas a few theoretical ecologists try to construct a definition of ecology from first rules, many others are wondering even the feasibility of a normal and common thought. even as, it really is more and more vital that ecology is safely and functionally outlined for a iteration of researchers tackling escalating environmental difficulties within the face of doubt and war of words.\nSee Chapter 15). , Chapter 16. (9) Middle Miocene Honda Group (La Venta Fauna), Magdalena Valley. , Chapter 16). Map made by D. Riff and J. van Arkel. et al. argue that in the past 30 Ma well-documented episodes of marine influence in Amazonia are limited to the Miocene. However, there is no evidence for fully established marine corridors (\u2018seaways\u2019) throughout the South American continent in the Cenozoic. ). Megafans are low-gradient river systems choked by sediments, which force them to continuously change their courses.\n2004): 11 30 20 10 0 0 500 1000 1500 2000 2500 3000 Age (Ma) 3500 Fig. 2 Histograms for U-Pb ages for 369 grains of detrital zircon collected from the mouth of the Amazon River outlet show peaks in the Archean, Trans-Amazonian and Grenvillian intervals. Pb-Pb ages give similar results. The error bars correspond to 1\u03c3. (After Rino et al. B. F. de Roever are based on Rb-Sr isochrons, which are now no longer thought to reflect the age of crystallization. Santos et al. (2000), on the basis of new U-Pb zircon ages, make a different subdivision.\nThe Itacai\u00fanas Supergroup in the Caraj\u00e1s Basin itself consists of a lower-grade metamorphic greenstone sequence, the Gr\u00e3o Par\u00e1 Group, and a higher-grade Salobo Group (Tallarico et al. 2005). 74 Ga, according to SHRIMP zircon U-Pb datings (Trendall et al. 1998; Tallarico et al. 50 Ga. 7 Ga. The Gr\u00e3o Par\u00e1 Group shows the classic greenstone succession of a mainly metabasaltic unit, locally with conspicuous pillow structures, minor meta-andesites and metarhyolites, followed by the BIF and topped by intermediate to acid metavolcanics and metasediments.",
+    "calculator_outputs": [
+      [
+        0.008754253387451172,
+        864,
+        "subtract(7, 50)",
+        "-43"
+      ],
+      [
+        0.04842090606689453,
+        829,
+        "divide(74, 100)",
+        "0.74"
+      ],
+      [
+        0.08727622032165527,
+        831,
+        "subtract(74, 4)",
+        "70"
+      ],
+      [
+        0.29717713594436646,
+        821,
+        "divide(3, 4)",
+        "0.75"
+      ],
+      [
+        0.0313115119934082,
+        835,
+        "subtract(74, 5)",
+        "69"
+      ],
+      [
+        0.09165000915527344,
+        803,
+        "add(25, multiply(17, 6))",
+        "127"
+      ],
+      [
+        0.047406673431396484,
+        799,
+        "add(10, 2)",
+        "12"
+      ],
+      [
+        0.15017318725585938,
+        860,
+        "subtract",
+        "<function subtract at 0x7f73490e6710>"
+      ],
+      [
+        0.02390909194946289,
+        807,
+        "multiply(30, 24)",
+        "720"
+      ],
+      [
+        0.0353093147277832,
+        800,
+        "add(4, -14)",
+        "-10"
+      ],
+      [
+        0.08565664291381836,
+        863,
+        "divide(150, 74)",
+        "2.027027027027027"
+      ],
+      [
+        0.029425621032714844,
+        843,
+        "divide(74, 3)",
+        "24.666666666666668"
+      ],
+      [
+        0.21587419509887695,
+        828,
+        "subtract(75, 74)",
+        "1"
+      ],
+      [
+        0.04597640037536621,
+        686,
+        "divide(3, 1)",
+        "3.0"
+      ],
+      [
+        0.055513858795166016,
+        687,
+        "divide(1,4)",
+        "0.25"
+      ],
+      [
+        0.03766918182373047,
+        671,
+        "multiply(876, 4)",
+        "3504"
+      ],
+      [
+        0.054450273513793945,
+        693,
+        "divide(1000000, 100)",
+        "10000.0"
+      ],
+      [
+        0.10363578796386719,
+        698,
+        "divide(3, 100)",
+        "0.03"
+      ],
+      [
+        0.00220489501953125,
+        636,
+        "divide(2700, 750)",
+        "3.6"
+      ],
+      [
+        0.0823523998260498,
+        543,
+        "divide(20, 3), multiply(15, 10)",
+        "(6.666666666666667, 150)"
+      ],
+      [
+        0.06001019477844238,
+        639,
+        "subtract(2830.2, 1970.7)",
+        "859.4999999999998"
+      ],
+      [
+        0.0004947185516357422,
+        630,
+        "divide(11, 7)",
+        "1.5714285714285714"
+      ],
+      [
+        0.061786651611328125,
+        641,
+        "add(35, multiply(5, 15))",
+        "110"
+      ],
+      [
+        0.13039684295654297,
+        494,
+        "multiply(2, 30 * 1)",
+        "60"
+      ],
+      [
+        0.05169320106506348,
+        431,
+        "subtract(12, 30)",
+        "-18"
+      ],
+      [
+        0.043024539947509766,
+        419,
+        "multiply(13, 28)",
+        "364"
+      ],
+      [
+        0.1556715965270996,
+        495,
+        "subtract(3, 2)",
+        "1"
+      ],
+      [
+        0.011193513870239258,
+        433,
+        "add(1, 8)",
+        "9"
+      ],
+      [
+        0.047762155532836914,
+        435,
+        "multiply(100, 100)",
+        "10000"
+      ],
+      [
+        0.017658710479736328,
+        425,
+        "divide(632, 7)",
+        "90.28571428571429"
+      ],
+      [
+        0.09810113906860352,
+        428,
+        "divide(0.6, 9)",
+        "0.06666666666666667"
+      ],
+      [
+        0.12132072448730469,
+        289,
+        "multiply(4, 1)",
+        "4"
+      ],
+      [
+        0.05226612091064453,
+        288,
+        "divide(1, 100)",
+        "0.01"
+      ],
+      [
+        0.03368091583251953,
+        329,
+        "subtract(3, 1)",
+        "2"
+      ],
+      [
+        0.09321200847625732,
+        313,
+        "divide(9,3)",
+        "3.0"
+      ],
+      [
+        0.05132007598876953,
+        337,
+        "subtract(3, multiply(4, 5))",
+        "-17"
+      ],
+      [
+        0.04036092758178711,
+        310,
+        "add(5, 3)",
+        "8"
+      ],
+      [
+        0.13225674629211426,
+        338,
+        "multiply(9, 10)",
+        "90"
+      ],
+      [
+        0.024181365966796875,
+        309,
+        "add(2, divide(7, 3))",
+        "4.333333333333334"
+      ],
+      [
+        0.11475253105163574,
+        302,
+        "multiply(5, 15)",
+        "75"
+      ],
+      [
+        0.026317119598388672,
+        286,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.12334728240966797,
+        170,
+        "divide(6, 3)",
+        "2.0"
+      ],
+      [
+        0.05617332458496094,
+        176,
+        "add(21, 3)",
+        "24"
+      ],
+      [
+        0.05984759330749512,
+        174,
+        "subtract(0.75, 0.25)",
+        "0.5"
+      ],
+      [
+        0.04448080062866211,
+        171,
+        "add(12, 72)",
+        "84"
+      ],
+      [
+        0.0752096176147461,
+        181,
+        "divide(65, 890)",
+        "0.07303370786516854"
+      ],
+      [
+        0.1279454231262207,
+        178,
+        "divide(10,5)",
+        "2.0"
+      ],
+      [
+        0.03297758102416992,
+        164,
+        "multiply(4, 40)",
+        "160"
+      ],
+      [
+        0.018732070922851562,
+        165,
+        "multiply(724, 36)",
+        "26064"
+      ],
+      [
+        0.05655670166015625,
+        166,
+        "multiply(2,3)",
+        "6"
+      ],
+      [
+        0.07447254657745361,
+        173,
+        "divide(10, 2)",
+        "5.0"
+      ],
+      [
+        0.23120450973510742,
+        175,
+        "subtract(50, 20)",
+        "30"
+      ],
+      [
+        0.5749144554138184,
+        182,
+        "multiply(10,\"readability\")",
+        "readabilityreadabilityreadabilityreadabilityreadabilityreadabilityreadabilityreadabilityreadabilityreadability"
+      ],
+      [
+        0.1044607162475586,
+        177,
+        "add(100, 50)",
+        "150"
+      ],
+      [
+        0.10412359237670898,
+        37,
+        "add(1, 1)",
+        "2"
+      ],
+      [
+        0.06294918060302734,
+        39,
+        "add(2, divide(36, 28))",
+        "3.2857142857142856"
+      ],
+      [
+        0.04581642150878906,
+        35,
+        "add(16, 8)",
+        "24"
+      ],
+      [
+        0.023721933364868164,
+        49,
+        "multiply(23, 6)",
+        "138"
+      ],
+      [
+        0.3336353302001953,
+        36,
+        "multiply(5, 3)",
+        "15"
+      ],
+      [
+        0.11230754852294922,
+        70,
+        "multiply(632, 16)",
+        "10112"
+      ],
+      [
+        0.021837711334228516,
+        46,
+        "add(2, 5)",
+        "7"
+      ]
+    ]
+  },
+  {
+    "file_index": 9,
+    "text": "The blog deals with new theories and observations in relation to the composition and structure of the Cosmos.\nIf you can find observations or experiments that confirms or rejects the theory, you may place them on the blog!\nIs anyone able to answer these questions!\nWhat is the length of the coordinates in the two inertial systems S and S' at the velocity v, according to relativity - if the length of the coordinates are identical at v = zero?\n1) Is the physical length of the coordinates greatest in S?\n2) Is the physical length of the coordinates greatest in S'?\n3) Is the physical length of the coordinates in S equal to the physical length of the coordinates in S'?\nIf the physical lengths are identical, will it then be possible to have any physical length contractions according to relativity? Or, in other words, have you ever experienced a length contraction because of the movement of another coordinate system?\nIf it isn't possible to have any length contractions according to relativity, how can relativity then explain the relativistic experiments where a Lorentz contraction occurs?\nIn the quantum field theory, the Casimir effect is a physical force arising from the zero-point field, where the zero-point field is the quantum state with the lowest possible energy.\nThe existence of the zero-point field, at the same time both confirms the theory about the structure and composition of the Cosmos, and overturns Einstein's principle of relativity.\nThis can bee seen from the fact, that you cannot - as Einstein postulate - have that \"the same laws of electrodynamics and optics will be valid for all frames of reference for which the equations of mechanics hold good\" and at the same time have a stationary zero-point field.\nFor instance will the velocity relative to the zero-point field be different for different frames of reference.",
+    "calculator_outputs": [
+      [
+        0.024924278259277344,
+        307,
+        "add(1,3)",
+        "4"
+      ],
+      [
+        0.012769460678100586,
+        328,
+        "multiply(1, 0)",
+        "0"
+      ],
+      [
+        0.02503812313079834,
+        133,
+        "add(4, 9)",
+        "13"
+      ],
+      [
+        0.11072301864624023,
+        129,
+        "multiply(4, \"5\" + \"2\")",
+        "52525252"
+      ],
+      [
+        0.0117950439453125,
+        157,
+        "multiply(0.5, 0.5)",
+        "0.25"
+      ],
+      [
+        0.008400440216064453,
+        154,
+        "divide(1, 2)",
+        "0.5"
+      ]
+    ]
+  },
+  {
+    "file_index": 10,
+    "text": "It is possible to erase up to 4 HDD / SSD at the same time. IDE HDD connection is also possible with dedicated adapter.\nHDD / SSD is exchanged from the order in which erasing is completed, and asynchronous erase function which can erase newly is installed.Five types of erase algorithms are installed. The erasing method can be selected according to the application.\nHDD copy function installed. It is possible to copy one HDD data to up to three HDDs simultaneously.\nData delete contents can be printed with the attached dedicated printer . It is also possible to output text data of work log to USB memory.\nDedicated carrying case with waterproof / dustproof specification is included, which can contain the main body and all accessories.\nThis product is compatible with SATA 6 Gbps HDD / SSD, but the internal transfer speed is up to 130 MB / sec.\n2.5 \u201cHDD and 3.5\u201d HDD can not be connected at the same time.",
+    "calculator_outputs": [
+      [
+        0.009563922882080078,
+        156,
+        "subtract(300, 200) ",
+        "100"
+      ],
+      [
+        0.00429844856262207,
+        154,
+        "divide(4, 1)",
+        "4.0"
+      ]
+    ]
+  },
+  {
+    "file_index": 11,
+    "text": "\"Whoever gets him, they'll be getting a good one,\" David Montgomery said.\nINDIANAPOLIS \u2014 Hakeem Butler has been surrounded by some of the best wide receivers on the planet this week at the NFL Scouting Combine.\nIt\u2019s an experience that might humble some. But for Butler, it has only enhanced his confidence.\nAs it stands, 22-year-old Butler is not regarded as the best wide receiver in this year\u2019s NFL Draft. He\u2019s projected by some experts to go as late as the third round. But when wide receivers were measured Thursday, Butler gained some attention: He led all receivers in height (6-foot-5 3/8), arm length (35 1/4 inches) and wingspan (83 7/8 inches).\nOn Thursday, running back David Montgomery, who played with Butler at Iowa State, captured the general vibe surrounding Butler here.\nButler says he\u2019s met with every NFL team on an informal basis. He had \u201cnine or 10\u201d formal meetings set up for Friday night, but didn\u2019t divulge which teams he\u2019d be sitting down with.\nThere is clear interest in Butler, who declared for the draft after his junior season in which he had 60 receptions for 1,318 yards and nine touchdowns.\nBut in his mind, the hype machine hasn\u2019t been turned up high enough \u2014 yet.\nButler, of course, is talking about Saturday\u2019s wide receiver workouts. If he crushes the drills, he could vault up the draft board \u2014 perhaps into the first round. And he feels well-prepared because he\u2019s spent the past few months working out with some legendary NFL receivers in Calvin Johnson and Anquan Boldin.\nButler met Boldin at the South Florida gym where he trains. He was connected to Johnson through his agent.\nJohnson and Boldin are known for being precise, tactical receivers. But Butler says the most valuable lesson of working with them has been learning about how they think.\nButler admitted the first time he worked with Johnson, who went to six Pro Bowls with the Detroit Lions from 2010-15, that he was a little starstruck.\nButler is hoping that one day he can leave a legacy like Boldin or Johnson. But for now, his goal is to prove what he already believes is true: that he is the top receiver in this draft.",
+    "calculator_outputs": [
+      [
+        0.027266502380371094,
+        391,
+        "subtract(26, 8)",
+        "18"
+      ],
+      [
+        0.20443010330200195,
+        392,
+        "divide(6, 4)",
+        "1.5"
+      ],
+      [
+        0.16229534149169922,
+        402,
+        "multiply(8, 19)",
+        "152"
+      ],
+      [
+        0.035629987716674805,
+        422,
+        "add(3, subtract(2, multiply(6, 8)))",
+        "-43"
+      ],
+      [
+        0.05417370796203613,
+        399,
+        "add(35, 35), add(18, 12)",
+        "(70, 30)"
+      ],
+      [
+        0.0018758773803710938,
+        297,
+        "multiply(6, 58)",
+        "348"
+      ],
+      [
+        0.06724333763122559,
+        275,
+        "multiply(60, 616)",
+        "36960"
+      ],
+      [
+        0.055898189544677734,
+        282,
+        "add(12, divide(56, 9))",
+        "18.22222222222222"
+      ],
+      [
+        0.02363300323486328,
+        256,
+        "subtract(4, 22)",
+        "-18"
+      ],
+      [
+        0.1222078800201416,
+        276,
+        "divide(1318, 60)",
+        "21.966666666666665"
+      ],
+      [
+        0.013276100158691406,
+        355,
+        "multiply(24, 48)",
+        "1152"
+      ],
+      [
+        0.13040733337402344,
+        283,
+        "subtract(59, 9)",
+        "50"
+      ],
+      [
+        0.07001972198486328,
+        280,
+        "add(10, 12)",
+        "22"
+      ],
+      [
+        0.045865535736083984,
+        298,
+        "subtract(60, 54.5)",
+        "5.5"
+      ],
+      [
+        0.05410051345825195,
+        130,
+        "subtract(8, 1)",
+        "7"
+      ],
+      [
+        0.029223203659057617,
+        200,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.18415546417236328,
+        126,
+        "subtract(1, 4)",
+        "-3"
+      ],
+      [
+        0.06839776039123535,
+        166,
+        "add(10, multiply(3, 9))",
+        "37"
+      ],
+      [
+        0.05670642852783203,
+        127,
+        "multiply(5, 4)",
+        "20"
+      ],
+      [
+        0.019717931747436523,
+        199,
+        "multiply(6, 7)",
+        "42"
+      ],
+      [
+        0.039310455322265625,
+        135,
+        "divide(98, 4)",
+        "24.5"
+      ],
+      [
+        0.0017727017402648926,
+        215,
+        "multiply(10, 24)",
+        "240"
+      ],
+      [
+        0.09447884559631348,
+        177,
+        "divide(58.5, 17.4)",
+        "3.3620689655172415"
+      ]
+    ]
+  },
+  {
+    "file_index": 12,
+    "text": "Here are your morning links!\nJanczak looked solid in his second start since returning from injury.\nTCU broke through in the sixth inning with a pair of run. Jake Guenther and Alex Isola singled to open the inning. A wild pitch had both runners in scoring position and Johnny Rizer delivered a two-run single up the middle to make it a 6-2 ballgame. The Frogs didn\u2019t go quietly, scoring a run on a Zach Humphreys groundout in the eighth. With two outs in the ninth, the Frogs put the tying run on base with walks to Josh Watson and Isola around a Guenther base hit. UTA closer Andrew Gross wiggled off the hook with a ground out to end the game. Jared Janczak (0-2) tossed 4 1/3 innings. He allowed six runs (two earned) on six hits, walked one and struck out two. Haylen Green and Matt Rudis allowed one combined runner over the last 3 2/3 innings of the game. The pair fanned seven.\nThe defensive end position is loaded, name-wise, but not very experienced.\nThis is a spot with a ton of turnover and, in turn, opportunities for new faces. Mathis, who some have compared to Jerry Hughes when it comes to potential, appears to be on his way to a starting role after continuing to earn rave reviews through spring. Patterson hinted that 2019 could finally be Bowen\u2019s time too, so don\u2019t take your eyes off the 6-foot-4 Byron Nelson High School product when fall camp arrives down the stretch.\nThe cornerback would fill a massive need with Jeff Gladney and Julius Lewis set to graduate.\nJenkins is getting recruited by Jeremy Modkins mostly because he\u2019s the cornerbacks coach for the Frogs. However, Jenkins says he\u2019s built a strong relationship with each of the coaches on staff.\nJenkins was hosted on his visit by redshirt freshman Atanza Vongor. The four-star says he got along with the defensive back as well as the rest of the team.\nEquestrian has put together a solid season.\nTCU News: Joe Broadnax\u2019s career is over, will Justin Rogers play this year?",
+    "calculator_outputs": [
+      [
+        0.011927604675292969,
+        364,
+        "add(4, subtract(3, 1))",
+        "6"
+      ],
+      [
+        0.01453542709350586,
+        379,
+        "add(0, 0)",
+        "0"
+      ],
+      [
+        0.025897741317749023,
+        403,
+        "multiply(5, 50)",
+        "250"
+      ],
+      [
+        0.027665376663208008,
+        395,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.017661094665527344,
+        378,
+        "subtract(4, 1)",
+        "3"
+      ],
+      [
+        0.012237548828125,
+        402,
+        "multiply(1, 4)",
+        "4"
+      ],
+      [
+        0.06657648086547852,
+        362,
+        "subtract(10, 1)",
+        "9"
+      ],
+      [
+        0.015037775039672852,
+        369,
+        "divide(3, 5)",
+        "0.6"
+      ],
+      [
+        0.003985881805419922,
+        374,
+        "add(20, multiply(3, 15))",
+        "65"
+      ],
+      [
+        0.014958381652832031,
+        220,
+        "multiply(6, 1)",
+        "6"
+      ],
+      [
+        0.11142444610595703,
+        230,
+        "multiply(723, 1.9)",
+        "1373.7"
+      ],
+      [
+        1.0967254638671875e-05,
+        269,
+        "multiply(23, 6)",
+        "138"
+      ],
+      [
+        0.19490575790405273,
+        233,
+        "divide(4, 2)",
+        "2.0"
+      ],
+      [
+        0.005888938903808594,
+        224,
+        "divide(7, 3)",
+        "2.3333333333333335"
+      ],
+      [
+        0.02636098861694336,
+        296,
+        "add(3, multiply(27, 10))",
+        "273"
+      ],
+      [
+        0.06856274604797363,
+        242,
+        "subtract(2, 1)",
+        "1"
+      ],
+      [
+        0.017319202423095703,
+        225,
+        "multiply(7, 2)",
+        "14"
+      ],
+      [
+        0.013440847396850586,
+        256,
+        "add(3, divide(3, 2))",
+        "4.5"
+      ],
+      [
+        0.13319683074951172,
+        227,
+        "divide(7, 2)",
+        "3.5"
+      ],
+      [
+        0.0051958560943603516,
+        264,
+        "divide(723, 252)",
+        "2.869047619047619"
+      ],
+      [
+        0.03107595443725586,
+        114,
+        "add(1, 2)",
+        "3"
+      ],
+      [
+        0.059476375579833984,
+        159,
+        "subtract(4, 30)",
+        "-26"
+      ],
+      [
+        0.009339570999145508,
+        117,
+        "add(2, 1)",
+        "3"
+      ],
+      [
+        0.03299379348754883,
+        106,
+        "subtract(8, 1)",
+        "7"
+      ],
+      [
+        0.06436896324157715,
+        115,
+        "add(3, subtract(0, 1))",
+        "2"
+      ]
+    ]
+  },
+  {
+    "file_index": 13,
+    "text": "Grace. What is it? What does it mean? How do you get it and how do you KNOW you got it?\nHonestly, I don\u2019t know the answers to these questions. I have no way of describing something I don\u2019t understand BUT believe deeply in my soul that it exists. How do you get these graces? Sanctifying grace is IN your soul. It\u2019s the free and underserved gift from God. Actual grace would come from our knowledge and belief of all things right and wrong \u2013 following the Ten Commandments, making sure we follow a path that is pure and justified. Justified means to be sinless, and to be sinless means you are in favor with God. When you are baptized you are sinless and therefore have favor with God. When you go to reconciliation, you are once again sinless and in favor with God. You are in a state of grace. Once sanctifying grace is in your soul, you can increase it by every good action you do \u2013 receiving Communion, saying prayers, performing corporal works of Mercy. The most important thing to think about is NOT what you are going to do or how you are going to do it but to recognize God\u2019s love. The reason you can do any good work is because God LOVES YOU FIRST in Grace. You must continually seek God\u2019s grace, continually respond to the actual graces God is working within you, inclining you to turn to Him and do good.\nHave I answered the question as to what Grace is? I\u2019ve read through all the study guides provided to me and compiled all the information, but I don\u2019t believe that I\u2019ve properly explained what Grace is.\nTo me Grace is a feeling. Sometimes it\u2019s butterflies in the stomach, and it takes my breath away. I feel this way every time I think of my husband. We met and married 38 years ago. I see God\u2019s grace in our meeting, getting married, and living our life together as husband and wife. Sometimes it\u2019s a jolt, like an electric shock and then an overwhelming wave of love, like the enormous amount of love I felt when I held my first baby in my arms for the first time. This happened again with my 2nd and 3rd child, and then God blessed us with twins to make 4 and 5. Then sometimes it feels like a raging fight going on inside me, making hard decisions that breaks my heart in two. I have no power to stop things from happening and my only recourse is just to constantly pray. Mostly it\u2019s a feeling of ultimate peace and an over-whelming calmness that comes over me at different times during the day when God allows me glimpses of HIS love for me: when my dog and cat are doing something cute together; when I see the birds eating the seed I put out for them; when a certain little girl comes over to the house and calls me \u201cGrandma\u201d. I just breathe a sigh of thanksgiving and relax in the comfort of His hand.\nWhere does Grace come from?",
+    "calculator_outputs": [
+      [
+        0.08838319778442383,
+        575,
+        "subtract(4, 24)",
+        "-20"
+      ],
+      [
+        0.05951881408691406,
+        532,
+        "add(2, 1)",
+        "3"
+      ],
+      [
+        0.06813502311706543,
+        531,
+        "divide(2, 3)",
+        "0.6666666666666666"
+      ],
+      [
+        0.11383533477783203,
+        536,
+        "divide(5, 1)",
+        "5.0"
+      ],
+      [
+        0.042876482009887695,
+        541,
+        "divide(3, 2)",
+        "1.5"
+      ],
+      [
+        0.014081478118896484,
+        620,
+        "add(11, subtract(33, 12))",
+        "32"
+      ],
+      [
+        2.4557113647460938e-05,
+        527,
+        "multiply(1, 0)",
+        "0"
+      ],
+      [
+        0.01852893829345703,
+        578,
+        "divide(9, 7)",
+        "1.2857142857142858"
+      ],
+      [
+        0.20437002182006836,
+        521,
+        "divide(2, 1)",
+        "2.0"
+      ],
+      [
+        0.025261878967285156,
+        571,
+        "divide(3, 2)",
+        "1.5"
+      ],
+      [
+        0.009769797325134277,
+        626,
+        "subtract(2, 4)",
+        "-2"
+      ],
+      [
+        0.08875823020935059,
+        394,
+        "divide(5, 2)",
+        "2.5"
+      ],
+      [
+        0.034310102462768555,
+        426,
+        "multiply(38, 12)",
+        "456"
+      ],
+      [
+        0.04299736022949219,
+        402,
+        "divide(42, 7.2)",
+        "5.833333333333333"
+      ],
+      [
+        0.0284881591796875,
+        411,
+        "subtract(38, 30)",
+        "8"
+      ],
+      [
+        0.0033707022666931152,
+        459,
+        "multiply(3, 8)",
+        "24"
+      ],
+      [
+        0.12343502044677734,
+        404,
+        "divide(38, 38)",
+        "1.0"
+      ],
+      [
+        0.0370638370513916,
+        494,
+        "add(5, 2)",
+        "7"
+      ],
+      [
+        0.04527997970581055,
+        432,
+        "divide(38, 38)",
+        "1.0"
+      ],
+      [
+        0.22705078125,
+        397,
+        "add(40000, 8)",
+        "40008"
+      ],
+      [
+        0.03000473976135254,
+        473,
+        "add(38, 40)",
+        "78"
+      ],
+      [
+        0.04787719249725342,
+        458,
+        "divide(38, 38)",
+        "1.0"
+      ],
+      [
+        0.022462844848632812,
+        419,
+        "divide(38, 10)",
+        "3.8"
+      ],
+      [
+        0.022365808486938477,
+        469,
+        "add(38, multiply(4, 30))",
+        "158"
+      ],
+      [
+        0.06473875045776367,
+        398,
+        "divide(30, 5)",
+        "6.0"
+      ],
+      [
+        0.03668332099914551,
+        441,
+        "add(38, subtract(38, 6))",
+        "70"
+      ],
+      [
+        0.07670450210571289,
+        266,
+        "multiply(2, 2 + 3)",
+        "10"
+      ],
+      [
+        0.09363317489624023,
+        263,
+        "subtract(10, 5)",
+        "5"
+      ],
+      [
+        0.022844314575195312,
+        309,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.1489109992980957,
+        261,
+        " multiply(10, \"x\") ",
+        "xxxxxxxxxx"
+      ],
+      [
+        0.08322262763977051,
+        278,
+        "add(1, 0)",
+        "1"
+      ],
+      [
+        0.008945941925048828,
+        313,
+        "add(6, subtract(60, -2))",
+        "68"
+      ],
+      [
+        0.035451412200927734,
+        141,
+        "add(1, 1.001)",
+        "2.001"
+      ],
+      [
+        0.018623828887939453,
+        143,
+        "multiply(5, 0)",
+        "0"
+      ],
+      [
+        0.009697318077087402,
+        181,
+        "divide(2, 18)",
+        "0.1111111111111111"
+      ],
+      [
+        0.09572982788085938,
+        158,
+        "multiply(3, 2)",
+        "6"
+      ],
+      [
+        0.08324193954467773,
+        5,
+        "add(5, 5)",
+        "10"
+      ],
+      [
+        0.0796809196472168,
+        47,
+        "add(4, multiply(3, 2))",
+        "10"
+      ],
+      [
+        0.06373798847198486,
+        61,
+        "multiply(9, 6)",
+        "54"
+      ],
+      [
+        0.06394076347351074,
+        64,
+        "multiply",
+        "<function multiply at 0x7f73490e6830>"
+      ],
+      [
+        0.04082989692687988,
+        59,
+        "multiply(8, 9)",
+        "72"
+      ],
+      [
+        0.012213706970214844,
+        93,
+        "multiply(0, 1)",
+        "0"
+      ]
+    ]
+  },
+  {
+    "file_index": 14,
+    "text": "Everyone seems to want a brighter smile, and teeth whitening is a great option for boosting your confidence. If food and drinks have stained your pearly whites, you may be tempted to rush to the drug store and pick up the first over-the-counter whitening product you find. However, while side effects from whitening products are rare, you should follow these tips before bleaching your teeth to ensure your safety.\nIf your teeth appear stained, don\u2019t assume you need to bleach them. It\u2019s possible a good teeth cleaning will restore the sparkle to your smile. During an oral exam, your dentist will also check for cavities and gum issues, which should be treated before bleaching your teeth.\nAt-home whiteners most often use carbamide peroxide in concentrations ranging from 10 to 20 percent. Carbamide peroxide is hydrogen peroxide with urea added. This product remains active for up to 10 hours at a low enough acidity level that enamel etching is not a concern.\nStart with a product containing 10 percent carbamide peroxide. If the whitener doesn\u2019t bother your mouth, but you don\u2019t see the results you want, try another over-the-counter product with a higher concentration.\nWhen you choose an at-home teeth bleaching kit, it\u2019s your responsibility to follow the instructions on the package. Don\u2019t leave the gel or strips on your teeth longer than advised or you could experience tooth sensitivity and sore gums. Also, avoid drinking soda, sports drinks or other sugary/acidic beverages for several hours after whitening to prevent etching your teeth.\nAt-home whitening kits are inexpensive and widely available, but that doesn\u2019t make them the best choice. Professional in-office teeth bleaching can lighten your smile up to eight shades in a single 45-minute visit. Combined with professional-grade take-home treatments, patients see an average improvement of 11 shades. In comparison, over-the-counter whitening requires daily 30-minute applications for more than two weeks to achieve a six-shade improvement.\nIn-office whitening uses LED light-activated technology to maximize results in the shortest amount of time without causing tooth sensitivity. It\u2019s effective both for people who simply want to lighten their smile and for patients with severely discolored teeth.\nPregnant women and nursing mothers should postpone teeth bleaching.\nTranslucent teeth don\u2019t respond well to whitening. A tooth-colored composite placed on the lingual side of a see-through tooth is a more effective way to improve its appearance.\nZen Dental Center in Seattle offers Philips Zoom in-office teeth bleaching for safe, professional results. To learn more about this treatment, or to schedule an appointment, please contact us at 206-324-1100 today.",
+    "calculator_outputs": [
+      [
+        0.0003566741943359375,
+        547,
+        "multiply(24, 6)",
+        "144"
+      ],
+      [
+        0.13016605377197266,
+        506,
+        "add(1, 0)",
+        "1"
+      ],
+      [
+        0.1031343936920166,
+        505,
+        "subtract(10, 18)",
+        "-8"
+      ],
+      [
+        0.025304794311523438,
+        554,
+        "multiply(17, 30)",
+        "510"
+      ],
+      [
+        0.04175436496734619,
+        529,
+        "subtract(12, 12)",
+        "0"
+      ],
+      [
+        0.1640944480895996,
+        501,
+        "add(multiply(7, 2), 3)",
+        "17"
+      ],
+      [
+        0.011562585830688477,
+        546,
+        "divide(18, 60)",
+        "0.3"
+      ],
+      [
+        0.03340911865234375,
+        519,
+        "multiply(5, 50)",
+        "250"
+      ],
+      [
+        0.05098843574523926,
+        366,
+        "divide(100, 20)",
+        "5.0"
+      ],
+      [
+        0.03901386260986328,
+        340,
+        "subtract(1, 1)",
+        "0"
+      ],
+      [
+        0.02381277084350586,
+        349,
+        "multiply(500, 7)",
+        "3500"
+      ],
+      [
+        0.054575204849243164,
+        350,
+        "add(25, 10)",
+        "35"
+      ],
+      [
+        0.029339313507080078,
+        339,
+        "subtract(4, 8)",
+        "-4"
+      ],
+      [
+        0.04450249671936035,
+        351,
+        "add(4, 50)",
+        "54"
+      ],
+      [
+        0.16135072708129883,
+        212,
+        "add(-12, 6)",
+        "-6"
+      ],
+      [
+        0.14414119720458984,
+        246,
+        "add(10, divide(1, 20))",
+        "10.05"
+      ],
+      [
+        0.02174091339111328,
+        234,
+        "add(10, divide(5, 10))",
+        "10.5"
+      ],
+      [
+        0.0033186674118041992,
+        286,
+        "add(\"start\", \"with\")",
+        "startwith"
+      ],
+      [
+        0.08425557613372803,
+        85,
+        "subtract(12, 11)",
+        "1"
+      ],
+      [
+        0.04879450798034668,
+        92,
+        "add(2, 3)",
+        "5"
+      ],
+      [
+        0.07843542098999023,
+        82,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.07310009002685547,
+        86,
+        "multiply(4, 6)",
+        "24"
+      ],
+      [
+        0.19952011108398438,
+        83,
+        "divide(16, 8)",
+        "2.0"
+      ],
+      [
+        0.005845904350280762,
+        99,
+        "add(18, divide(54, 86400))",
+        "18.000625"
+      ],
+      [
+        0.04511702060699463,
+        103,
+        "multiply(10, 12)",
+        "120"
+      ],
+      [
+        0.03517270088195801,
+        149,
+        "multiply(6, 2)",
+        "12"
+      ],
+      [
+        0.02740192413330078,
+        148,
+        "multiply(7, 30)",
+        "210"
+      ],
+      [
+        0.16942918300628662,
+        170,
+        "divide(20, 100)",
+        "0.2"
+      ]
+    ]
+  },
+  {
+    "file_index": 15,
+    "text": "Constant development in Unmanned Aircraft System (UAS) technologies results in evolving aircraft, instrumentation, and control programs of these systems. An open source simulator was examined as a potential method of testing UAS platforms changes. The open source simulator was used to simulate flights flown by an actual platform. Existing flight data was used as a base line of comparison for the telemetry data of the simulated flight. Patterns in parameters such as vehicle attitude and throttle output were compared between the simulated and actual results to determine if the simulator produced an accurate representation of a physical flight. Analysis of the simulated vehicle exhibited similar behavior to that of the actual vehicle in most of the flight data collected. Simplification in the flight simulator model may be responsible for the deviations in magnitude observed between the two sets of data. Three points of interest in each of the three test cases were chosen as checks for the values in the data. These points in the flight were studied in the various graphs of the parameters graphed and the difference between the simulated and actual values was calculated. The values at these points stayed within an average of 0\u00b0 and 30\u00b0 for vehicle attitude and between 0% and 33.3% throttle difference over the three test cases. The average difference in attitude was 5.1\u00b0 over 93 compared values and 8.1% in throttle over 18 compared values. On average the simulator showed good agreement to existing flight data and therefore will be a good tool to simulate flights prior to a mission. The accuracy of the results may be improved with further development of the simulation model.\nRamirez Duarte, Jaime A. (2018) \"Feasibility Study for the Application of Open Source UAS Autopilot Simulator,\" McNair Scholars Research Journal: Vol. 5 , Article 4.",
+    "calculator_outputs": [
+      [
+        1.1859965324401855,
+        237,
+        "add(66.7, 33.3)",
+        "100.0"
+      ],
+      [
+        0.05453324317932129,
+        260,
+        "subtract(5.1, 93)",
+        "-87.9"
+      ],
+      [
+        0.13923311233520508,
+        232,
+        "multiply(0, 1)",
+        "0"
+      ],
+      [
+        0.022328853607177734,
+        239,
+        "multiply(3,.33)",
+        "0.99"
+      ],
+      [
+        0.014240264892578125,
+        274,
+        "divide(18, 93)",
+        "0.1935483870967742"
+      ],
+      [
+        0.04459571838378906,
+        240,
+        "subtract(0.1, 0.3)",
+        "-0.19999999999999998"
+      ],
+      [
+        0.7817597389221191,
+        238,
+        " divide( 33, 3) ",
+        "11.0"
+      ],
+      [
+        0.15442943572998047,
+        313,
+        "add(8, divide(12, 8))",
+        "9.5"
+      ],
+      [
+        0.01133418083190918,
+        298,
+        "multiply(9.8, 33.3)",
+        "326.34"
+      ],
+      [
+        0.10219073295593262,
+        104,
+        "multiply(1, 0)",
+        "0"
+      ],
+      [
+        0.005704402923583984,
+        179,
+        "add(1097, 12), add(-1184, 6), add(744, 9)",
+        "(1109, -1178, 753)"
+      ],
+      [
+        0.018226027488708496,
+        182,
+        "add(3, multiply(30, 60))",
+        "1803"
+      ],
+      [
+        0.0055561065673828125,
+        185,
+        "add(9.48, multiply(0.99, multiply(1.02, 1.02)))",
+        "10.509996000000001"
+      ],
+      [
+        0.051407814025878906,
+        191,
+        "add(20, 5),",
+        "(25,)"
+      ],
+      [
+        0.028865814208984375,
+        129,
+        "multiply(10, 5), divide(10.24, 2.8)",
+        "(50, 3.6571428571428575)"
+      ],
+      [
+        0.09127950668334961,
+        102,
+        "multiply(12, 3)",
+        "36"
+      ],
+      [
+        0.13683509826660156,
+        115,
+        "multiply(1, 1)",
+        "1"
+      ],
+      [
+        0.014537811279296875,
+        127,
+        "add(569, 1350)",
+        "1919"
+      ]
+    ]
+  },
+  {
+    "file_index": 16,
+    "text": "Expand your clientele, meet and network with potential business partners and make new business contacts.\nLearn from seasoned industry experts sharing their knowledge and experience on scaling up productivity, driving profitability and positioning SMEs for sustainability and global Competitiveness.\nReach new markets, improve your corporate identity, showcase and promote your products and services to visitors and buyers.\nExplore potential business deals and commercial partnerships with key trade, commerce and investment representatives from around the Country, the USA and the International Community.\nRaise brand awareness and generate new business opportunities across multiple market sectors.\nBooth prices starts from N50,000 for 2 days. Start Booking Now! Booth prices starts from N50,000 for 2 days. Start Booking Now!\nWe were privilege to meet with Ebeano Supermarket, Shoppers Delite and Just Rite; we took up from there and today we are on the shelf of these malls. The exhibition showed us the way to do business right and to do it effectively and efficiently. The exhibition also made room for us to meet various investors, who have tremendously been of help to the growth of Hyst Global Business Ltd.\nI exhibited at the African Food and Products Exhibition 2018. The Event was a wonderful one and an eye-opener for not just me but for other exhibitors and attendees. From the conference sessions, I acquired knowledge on exportation of goods. The AFPE 2018 was the door opener to my exquisite Zobo Business. I thought to myself that since the Exhibition was for African Food and Products, Zobo is an African drink so I decided to make and sell for the Exhibition. Just like magic, amidst my other products, the zobo made super sales. Now I have a branded Zobo drink.\nThe AFPE 2018 was great, it was an opportunity to have a firsthand understanding of the challenges facing SMEs, helping us know what products they needed and how they can take advantage of our service offerings. The AFPE 2019 gave us a chance to partner with many of them.\nIt was an amazing experience, my business was a month old and I didn\u2019t know anyone. It was the first time I got to be in public and I appreciate the opportunity to be exposed. Coming to the exhibition boosted my sales and created awareness for me when people didn\u2019t know me. I have got contacts from the exhibition and they have formed part of my customer base.\nLagos is a commercial hub and it was important for us to share with the market. There has always been a great need to take our products and services to our end users, offering them values and benefits and we achieved that at the African Food & Products Exhibition 2018.",
+    "calculator_outputs": [
+      [
+        0.09737539291381836,
+        422,
+        "multiply(4, 9)",
+        "36"
+      ],
+      [
+        0.06204700469970703,
+        448,
+        "add(1, 2)",
+        "3"
+      ],
+      [
+        0.004514336585998535,
+        449,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.07257914543151855,
+        436,
+        "multiply(1, 100)",
+        "100"
+      ],
+      [
+        0.03102874755859375,
+        423,
+        "multiply(9, 4)",
+        "36"
+      ],
+      [
+        0.13543033599853516,
+        456,
+        "add(1, 0)",
+        "1"
+      ],
+      [
+        0.10610580444335938,
+        457,
+        "subtract(11, 3)",
+        "8"
+      ],
+      [
+        0.009454965591430664,
+        475,
+        "subtract(0, 3)",
+        "-3"
+      ],
+      [
+        0.06050539016723633,
+        424,
+        "add(2, multiply(4, 1))",
+        "6"
+      ],
+      [
+        0.09942007064819336,
+        437,
+        "multiply(2, 3)",
+        "6"
+      ],
+      [
+        0.07059454917907715,
+        495,
+        "add(1, multiply(4, 5))",
+        "21"
+      ],
+      [
+        0.0057392120361328125,
+        446,
+        "add(13, subtract(8, 4))",
+        "17"
+      ],
+      [
+        0.003780364990234375,
+        324,
+        "add(1, 4)",
+        "5"
+      ],
+      [
+        0.08492660522460938,
+        293,
+        "subtract(1, 2)",
+        "-1"
+      ],
+      [
+        0.03136157989501953,
+        326,
+        "multiply(4,30)",
+        "120"
+      ],
+      [
+        0.059862613677978516,
+        330,
+        "subtract(1, 5)",
+        "-4"
+      ],
+      [
+        0.0018162727355957031,
+        296,
+        "add(30, 90)",
+        "120"
+      ],
+      [
+        0.013986587524414062,
+        325,
+        "multiply(22.72, 18)",
+        "408.96"
+      ],
+      [
+        0.0012426376342773438,
+        306,
+        "divide(1, 0.8)",
+        "1.25"
+      ],
+      [
+        0.007923126220703125,
+        304,
+        "divide(6,5)",
+        "1.2"
+      ],
+      [
+        0.023265361785888672,
+        359,
+        "add(4, 1)",
+        "5"
+      ],
+      [
+        0.03161048889160156,
+        300,
+        "multiply(0, 0)",
+        "0"
+      ],
+      [
+        0.014313220977783203,
+        346,
+        "add(1, multiply(1, 0.1))",
+        "1.1"
+      ],
+      [
+        0.0351557731628418,
+        320,
+        "add(1, 1) ",
+        "2"
+      ],
+      [
+        0.11272907257080078,
+        292,
+        "add(2, 4)",
+        "6"
+      ],
+      [
+        0.018980979919433594,
+        313,
+        "add(15, divide(5, 2))",
+        "17.5"
+      ],
+      [
+        0.006320953369140625,
+        184,
+        "add(21,1)",
+        "22"
+      ],
+      [
+        0.054097652435302734,
+        182,
+        "add(200, 441)",
+        "641"
+      ],
+      [
+        0.006049633026123047,
+        175,
+        "add(7, 7)",
+        "14"
+      ],
+      [
+        0.0004553794860839844,
+        181,
+        "add(25, 2)",
+        "27"
+      ],
+      [
+        0.1511859893798828,
+        178,
+        "divide(11, 26)",
+        "0.4230769230769231"
+      ],
+      [
+        0.2780585289001465,
+        171,
+        "add(1,0)",
+        "1"
+      ],
+      [
+        0.36384057998657227,
+        170,
+        "add(12, multiply(3, 6))",
+        "30"
+      ],
+      [
+        0.048177242279052734,
+        183,
+        "divide(26, 50)",
+        "0.52"
+      ],
+      [
+        0.00029075145721435547,
+        203,
+        "multiply(2, 3)",
+        "6"
+      ],
+      [
+        0.06989240646362305,
+        188,
+        "subtract(4, 30)",
+        "-26"
+      ],
+      [
+        0.06426334381103516,
+        177,
+        "multiply(8, 2)",
+        "16"
+      ],
+      [
+        0.005754590034484863,
+        205,
+        "subtract(30, 1)",
+        "29"
+      ],
+      [
+        0.02591848373413086,
+        206,
+        "subtract(18, 12.3)",
+        "5.699999999999999"
+      ],
+      [
+        0.14869093894958496,
+        41,
+        "multiply(18, 12)",
+        "216"
+      ],
+      [
+        0.03529644012451172,
+        115,
+        "divide(100, 11)",
+        "9.090909090909092"
+      ],
+      [
+        0.09910869598388672,
+        43,
+        "add(1, 1)",
+        "2"
+      ],
+      [
+        0.005387693643569946,
+        137,
+        "add(\"n\", \"$50,000\")",
+        "n$50,000"
+      ],
+      [
+        0.0005660131573677063,
+        142,
+        "add(50,000)",
+        "50"
+      ],
+      [
+        0.00666356086730957,
+        93,
+        "add(5, multiply(3, 50))",
+        "155"
+      ]
+    ]
+  },
+  {
+    "file_index": 17,
+    "text": "JessicaaDivine SarahKeller jasmin. AmyNicollete. LilyRay. DouglasCox.\nMoanSweetviking28MishaRayNr1GoodBoy .milksquirtingtitLilyRaymilksquirtingtitdayreth .JURISEX89RomeoHotFighterJoonMaliSamaraStyle21 .VictoriaKisJUSEFFMOREDIVAextasygirl69 .MarySexxxAngelJessica28MENTATOOSHOTXmariochase33 .Ashley707DouglasCoxsouthernlisaLillyJ .MENTATOOSHOTXmatureandyounggAlisacandyyLittleAlica .davidmaxxNicolee1x0NightMan0BigCumsAriana .davetest4126MillkyBunnyTranSensualDollmariochase33 .SamaraStyle21ScarletLove4uBigCumsArianapenetrating .PrettyPocahontasSnowchaniJURISEX89LillyJ .\nTatyStarTANYAPRINCEBigeyesGreenMoanSweet .JoonMaliSnowchanilillyflower1990BellaBestBoobs .LillyJAshley707faberxxMoanSweet .CamChaseCuteLilBabemilksquirtingtitdavidmaxx .LolaAssU5CuteMariusForUCamChaseBigCumsAriana .TearMyClothesOffBastetXLionelWooddavetest4126 .TranSensualDollMOREDIVAReginaCuteVictoriaKis .MarisMuscleMoanSweetMilfKate4uVioletNimfa .penetratingRomeoHotFighterBastetXLionelWood .AliceAustinLaMaliciosaantonellarobertsLittleAlica .RomeoHotFighterMarySexxxMELANYFOXHOT23MarySexxx .",
+    "calculator_outputs": [
+      [
+        0.11940813064575195,
+        309,
+        "add(6, multiply(4, 7))",
+        "34"
+      ],
+      [
+        0.18258047103881836,
+        314,
+        "add, multiply",
+        "(<function add at 0x7f73f73aa560>, <function multiply at 0x7f73490e6830>)"
+      ],
+      [
+        0.10358285903930664,
+        327,
+        "add(add(divide(4, 30), -120), -100)",
+        "-219.86666666666667"
+      ],
+      [
+        0.04404258728027344,
+        293,
+        "subtract(10, 2)",
+        "8"
+      ],
+      [
+        0.09219694137573242,
+        328,
+        "subtract(4, 1)",
+        "3"
+      ],
+      [
+        0.1373615264892578,
+        296,
+        "add(12, 3)",
+        "15"
+      ],
+      [
+        0.056249141693115234,
+        346,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.04459047317504883,
+        315,
+        "multiply(0, 0), subtract(-1, 1), divide(1, -1)",
+        "(0, -2, -1.0)"
+      ],
+      [
+        0.05918312072753906,
+        331,
+        "divide(12,4)-2",
+        "1.0"
+      ],
+      [
+        0.13964223861694336,
+        312,
+        "divide(10, 3)",
+        "3.3333333333333335"
+      ],
+      [
+        0.08954381942749023,
+        318,
+        "add(10, 20)",
+        "30"
+      ],
+      [
+        0.1770939826965332,
+        323,
+        "add(12, 12)",
+        "24"
+      ],
+      [
+        0.01272726058959961,
+        358,
+        "multiply(4, 6)",
+        "24"
+      ],
+      [
+        0.7917652130126953,
+        292,
+        "add(1, 3)",
+        "4"
+      ],
+      [
+        0.17920732498168945,
+        294,
+        "multiply(3, 5)",
+        "15"
+      ],
+      [
+        0.05647611618041992,
+        165,
+        "divide(10, 6) + 2",
+        "3.666666666666667"
+      ],
+      [
+        0.18759918212890625,
+        169,
+        "6, divide (4, 12)",
+        "(6, 0.3333333333333333)"
+      ],
+      [
+        0.17113590240478516,
+        175,
+        "divide(4, 5), subtract(1, 2)",
+        "(0.8, -1)"
+      ],
+      [
+        0.06828784942626953,
+        179,
+        "subtract(0,0)",
+        "0"
+      ],
+      [
+        0.09366130828857422,
+        188,
+        "divide(33, 10)",
+        "3.3"
+      ],
+      [
+        0.007773399353027344,
+        222,
+        "subtract(39, 41)",
+        "-2"
+      ],
+      [
+        0.008949756622314453,
+        182,
+        "divide(3,2) * divide(16,2) * multiply(15,2)",
+        "360.0"
+      ],
+      [
+        0.27228784561157227,
+        177,
+        "add('ana', 'davetest4126')",
+        "anadavetest4126"
+      ],
+      [
+        0.01085662841796875,
+        215,
+        "add(21, 33)",
+        "54"
+      ],
+      [
+        0.15321063995361328,
+        193,
+        "subtract(21,4)",
+        "17"
+      ],
+      [
+        0.027924060821533203,
+        54,
+        "divide(45, 12)",
+        "3.75"
+      ],
+      [
+        0.08919858932495117,
+        47,
+        "divide(30, 4)",
+        "7.5"
+      ],
+      [
+        0.0032835006713867188,
+        38,
+        "subtract(12, 9)",
+        "3"
+      ],
+      [
+        0.067138671875,
+        60,
+        "multiply(7,8)",
+        "56"
+      ],
+      [
+        0.11584329605102539,
+        62,
+        "add(20, 20) * 1.5",
+        "60.0"
+      ],
+      [
+        0.18004989624023438,
+        37,
+        "add(subtract(723, 20), multiply(100, 3))",
+        "1003"
+      ],
+      [
+        0.23110532760620117,
+        61,
+        "multiply(3, 5)",
+        "15"
+      ],
+      [
+        0.07120132446289062,
+        41,
+        "add(2, divide(3, 5))",
+        "2.6"
+      ],
+      [
+        0.09400272369384766,
+        55,
+        "divide(60, 4)",
+        "15.0"
+      ],
+      [
+        0.04568147659301758,
+        75,
+        "divide(1, 1) ",
+        "1.0"
+      ],
+      [
+        0.04482841491699219,
+        76,
+        "multiply(3, 25)",
+        "75"
+      ],
+      [
+        0.16812801361083984,
+        68,
+        "multiply(1, 7)",
+        "7"
+      ],
+      [
+        0.09313583374023438,
+        74,
+        "multiply(7, 3)",
+        "21"
+      ]
+    ]
+  },
+  {
+    "file_index": 18,
+    "text": "The Arlington County Board plans to vote Saturday afternoon on giving Amazon $23 million and other incentives to build a headquarters campus in Crystal City, but only after hearing scores of northern Virginia residents and advocates testify for or against the project.\nThe five-member board is expected to support the plan, which was announced amid much hoopla on Nov. 13. The proposed county incentives are part of an agreement in which Amazon would occupy significant office space and bring at least 25,000 high-paying jobs to Arlington in coming years.\nOpponents hope to postpone the vote until after additional public hearings, where they want representatives of the online retail giant to answer questions directly from anyone in the community.\nThe Saturday hearing was scheduled to begin no earlier than 1 p.m. and last several hours before the vote. Ninety-one people signed up in advance to speak on the topic.\nIn the four months since Arlington won a much-publicized, nationwide contest to attract the facility known as HQ2, Arlington residents have been asking questions about its impact on their community.\nPeople have looked at the county\u2019s five online Q&A sessions 14,000 times, and about 400 attended community events to discuss the provisions in the Amazon agreement. Board members and county staff also met with scores of civic organizations, served on multiple panels and appeared on television, online and in news articles to discuss the deal.\nMost Arlingtonians, northern Virginians and residents of the Washington region support Amazon\u2019s arrival, several surveys have found. Business organizations, universities and nonprofit groups came out strongly for the deal.\nBut a small, vocal group of activists has sought to block the project, saying that the county and commonwealth should not give any incentives to one of the world\u2019s most valuable companies. They also have demanded housing and job protections for existing residents.\nThese opponents \u2014 including left-wing organizations and immigrants groups \u2014 felt empowered after Amazon canceled plans last month to build a headquarters facility in New York City, also with 25,000 jobs. The company withdrew after criticism of the plan from some elected leaders, unions and community activists.\nIn Virginia, however, such opposition did not appear to catch fire among the broader public.\nOfficials estimate that the Amazon project\u2019s net fiscal impact on Arlington could be worth additional revenue of $162 million over 12 years and $392.5 million over 16 years.\nThe incentives agreement promises the world\u2019s largest online retailer cash grants estimated at about $23 million if it occupies 6.05 million square feet of office space in Crystal City and Pentagon City through 2035.\nThe money would come from an expected increase in the hotel, motel and lodging tax paid by visitors; Amazon would get up to 15 percent of that increase, pegged to how much floor space is in active use by the company each year from 2020 to 2035.\nAmazon\u2019s offices will be located within an already-established special tax district where a portion of the property tax revenue goes toward infrastructure improvements such as parks and wider sidewalks.\nThe incentive agreement says that half of any new revenue from that district starting in 2021 will go specifically toward improvements around the Amazon buildings for the following 10 years. That grant is worth an estimated $28 million but the county says it\u2019s not a grant just for Amazon, because the improvements will benefit other companies in the immediate area. Amazon will have a chance to express its opinion on how the county uses the money, although the board will make the decision.\nThe county also offered Amazon the possibility of using its fast, fiber-optic network connection, which would be the subject of a separate agreement if the company chooses to use it.\nIt\u2019s not yet clear whether Amazon will pay the local business license tax because that tax is levied only on certain types of business, and Amazon has not yet announced which of its business units will be based in Arlington. If the company does pay the license tax, then some of its operations could be eligible for a discount of up to 72 percent under an existing program designed to attract technology companies.\nWhile Arlington pored over the details, the Virginia General Assembly passed, and Democratic Gov. Ralph Northam signed, an incentives package worth up to $750 million for Amazon.",
+    "calculator_outputs": [
+      [
+        0.007286787033081055,
+        746,
+        "add(1, 0)",
+        "1"
+      ],
+      [
+        0.07657980918884277,
+        742,
+        "multiply(-2, -1)",
+        "2"
+      ],
+      [
+        0.004184722900390625,
+        761,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.025618553161621094,
+        753,
+        "multiply(29, 100)",
+        "2900"
+      ],
+      [
+        0.04903101921081543,
+        804,
+        "divide(40, 3)",
+        "13.333333333333334"
+      ],
+      [
+        0.1327059268951416,
+        749,
+        "multiply(2, 4)",
+        "8"
+      ],
+      [
+        0.08530664443969727,
+        830,
+        "add",
+        "<function add at 0x7f73f73aa560>"
+      ],
+      [
+        0.021319866180419922,
+        778,
+        "add(divide(multiply(2,5),3), 2)",
+        "5.333333333333334"
+      ],
+      [
+        0.14463424682617188,
+        829,
+        "subtract(72, 30)",
+        "42"
+      ],
+      [
+        0.0018715858459472656,
+        656,
+        "add(3.5, 20)",
+        "23.5"
+      ],
+      [
+        0.10270237922668457,
+        618,
+        "add(19.5, multiply(2.5, 1.5))",
+        "23.25"
+      ],
+      [
+        0.23856210708618164,
+        620,
+        "divide(54, 9)",
+        "6.0"
+      ],
+      [
+        0.13277697563171387,
+        624,
+        "divide(2, 8)",
+        "0.25"
+      ],
+      [
+        0.004381775856018066,
+        711,
+        "subtract(25, 1)",
+        "24"
+      ],
+      [
+        0.14902901649475098,
+        623,
+        "divide(45, 2)",
+        "22.5"
+      ],
+      [
+        0.04789304733276367,
+        642,
+        "multiply(8, 722)",
+        "5776"
+      ],
+      [
+        0.011811494827270508,
+        712,
+        "add(subtract(28, 1), subtract(17, 1))",
+        "43"
+      ],
+      [
+        0.17205286026000977,
+        610,
+        "add(18, multiply(12, 3))",
+        "54"
+      ],
+      [
+        0.027715325355529785,
+        634,
+        "divide(30, 40)",
+        "0.75"
+      ],
+      [
+        0.12929105758666992,
+        641,
+        "divide(100, 50)",
+        "2.0"
+      ],
+      [
+        0.016652584075927734,
+        504,
+        "round(subtract(50, 100)), round(subtract(50, 50))",
+        "(-50, 0)"
+      ],
+      [
+        0.13271284103393555,
+        491,
+        "divide(5, 16)",
+        "0.3125"
+      ],
+      [
+        0.1190791130065918,
+        487,
+        "subtract(1, 5000000)",
+        "-4999999"
+      ],
+      [
+        0.0511472225189209,
+        486,
+        "subtract(8, 2000)",
+        "-1992"
+      ],
+      [
+        0.0002963542938232422,
+        497,
+        "add",
+        "<function add at 0x7f73f73aa560>"
+      ],
+      [
+        0.2612648010253906,
+        489,
+        "subtract(4, 7) / multiply(20, 3)",
+        "-0.05"
+      ],
+      [
+        0.12756824493408203,
+        492,
+        "add(10, 5)",
+        "15"
+      ],
+      [
+        0.02331829071044922,
+        388,
+        "divide(-12, 15)",
+        "-0.8"
+      ],
+      [
+        0.043884992599487305,
+        431,
+        "add(25,000)",
+        "25"
+      ],
+      [
+        0.05205893516540527,
+        379,
+        "multiply(17, 12)",
+        "204"
+      ],
+      [
+        0.05701041221618652,
+        412,
+        "add(25,000)",
+        "25"
+      ],
+      [
+        0.00020313262939453125,
+        365,
+        "divide(5, 2)",
+        "2.5"
+      ],
+      [
+        0.04166984558105469,
+        452,
+        "add(1, 5)",
+        "6"
+      ],
+      [
+        0.004313230514526367,
+        436,
+        "multiply(25, 4)",
+        "100"
+      ],
+      [
+        0.02261066436767578,
+        362,
+        "add(100, 100)",
+        "200"
+      ],
+      [
+        0.08946919441223145,
+        449,
+        "add",
+        "<function add at 0x7f73f73aa560>"
+      ],
+      [
+        0.011200428009033203,
+        377,
+        "divide(24, 6)",
+        "4.0"
+      ],
+      [
+        0.07835721969604492,
+        376,
+        "add(52, multiply(16, 37))",
+        "644"
+      ],
+      [
+        0.06513166427612305,
+        237,
+        "multiply(1, 1)",
+        "1"
+      ],
+      [
+        0.03076004981994629,
+        282,
+        "add(14,000)",
+        "14"
+      ],
+      [
+        0.03843975067138672,
+        283,
+        "add(14,000)",
+        "14"
+      ],
+      [
+        0.02440357208251953,
+        308,
+        "divide(300, 200)",
+        "1.5"
+      ],
+      [
+        0.320340633392334,
+        239,
+        "add(14,000)",
+        "14"
+      ],
+      [
+        0.009085416793823242,
+        241,
+        "add(14, 000)",
+        "14"
+      ],
+      [
+        0.005850315093994141,
+        226,
+        "add(2, 5)",
+        "7"
+      ],
+      [
+        0.06479978561401367,
+        287,
+        "divide(600, 300)",
+        "2.0"
+      ],
+      [
+        0.018922805786132812,
+        101,
+        "multiply(2, 0.35)",
+        "0.7"
+      ],
+      [
+        0.03238391876220703,
+        177,
+        "divide(91, 90)",
+        "1.011111111111111"
+      ],
+      [
+        0.0031194686889648438,
+        153,
+        "multiply(36, 2)",
+        "72"
+      ],
+      [
+        0.09417390823364258,
+        139,
+        "divide(3, 17)",
+        "0.17647058823529413"
+      ],
+      [
+        0.010245323181152344,
+        148,
+        "add(10, 15)",
+        "25"
+      ],
+      [
+        0.0809011459350586,
+        108,
+        "add(2.5, 2.1)",
+        "4.6"
+      ],
+      [
+        0.02090167999267578,
+        105,
+        "subtract(1, 3)",
+        "-2"
+      ],
+      [
+        0.038733720779418945,
+        161,
+        "add(2, 15)",
+        "17"
+      ],
+      [
+        0.17955660820007324,
+        124,
+        "multiply(65,886)",
+        "57590"
+      ],
+      [
+        0.0435945987701416,
+        123,
+        "multiply(45, 2)",
+        "90"
+      ],
+      [
+        0.006922125816345215,
+        176,
+        "add(1, 91)",
+        "92"
+      ]
+    ]
+  },
+  {
+    "file_index": 19,
+    "text": "Pre-Owned, AWD Titanium 4dr Crossover, Ebony interior, Gas, 20(city)/27(highwa\u00ady) mpg, Auto 6 speed, I4, 2.00L, All wheel drive. EPA 27 MPG Hwy/20 MPG City! Nav System, Heated Leather Seats, All Wheel Drive, Power Liftgate, iPod/MP3 Input, Premium Sound System AND MORE KEY FEATURES INCLUDE: All ... 4/19/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, AWD SEL 4dr Crossover, Gas, 18(city)/25(highwa\u00ady) mpg, Auto 6 speed, V6, 3.50L, All wheel drive. ONLY 34,000 Miles! CD Player, iPod/MP3 Input, Dual Zone A/C, Onboard Communications System, Alloy Wheels, All Wheel Drive AND MORE KEY FEATURES INCLUDE: All Wheel Drive, Satellite Radio, iPod/MP3 ... 4/18/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, XLT 4dr SuperCab 4WD SB, GasAuto, V6, 4.00L, Four wheel drive. EPA 20 MPG Hwy/17 MPG City! Running Boards, iPod/MP3 Input, CD Player, CLOTH FRONT 60/40 SPLIT BENCH SEAT, Alloy Wheels CLICK NOW KEY FEATURES INCLUDE: 4x4, Running Boards, iPod/MP3 Input, CD Player, Aluminum ... 4/18/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, 4x4 LTZ 4dr Crew Cab SB, Ebony interior, DieselAuto 6 speed, V8, 6.60L. GREAT MILES 52,060! Heated Leather Seats, 4x4, Turbo, Alloy Wheels, Onboard Communications System, Satellite Radio, Tow Hitch CLICK ME KEY FEATURES INCLUDE: Leather Seats, 4x4, Heated Driver Seat, Premium Sound System, ... 4/17/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, 4x4 XLT 4dr SuperCrew 5.5 ft. SB, Medium Earth Gray interior, Flexible Fuel, 15(city)/21(highwa\u00ady) mpg, Auto 6 speed, V8, 5.00L. EPA 21 MPG Hwy/15 MPG City! Bluetooth, iPod/MP3 Input, Smart Device Integration, CD Player, 4x4, ENGINE: 5.0L V8 FFV, Alloy Wheels CLICK ME KEY ... 4/17/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, Base 4dr Sedan, Ebony interior, Gas, 22(city)/30(highwa\u00ady) mpg, Auto 4 speed, I4, 2.40L, Front wheel drive. FUEL EFFICIENT 30 MPG Hwy/22 MPG City! G6 trim. AUDIO SYSTEM, AM/FM STEREO WITH CD PL Onboard Communications System. CLICK NOW KEY FEATURES INCLUDE: Onboard Communications System MP3 ... 4/17/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, 4x4 Trailhawk 4dr SUV, Gas, 19(city)/26(highwa\u00ady) mpg, Auto 9 speed, V6, 3.20L. EPA 26 MPG Hwy/19 MPG City! ONLY 41,158 Miles! Heated Leather Seats, iPod/MP3 Input, Satellite Radio, Smart Device Integration CLICK NOW KEY FEATURES INCLUDE: Leather Seats, 4x4, Back-Up Camera, Satellite Radio, iPod/MP3 ... 4/17/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, AWD XLT 4dr SUV, Camel interior, Flexible Fuel, 18(city)/23(highwa\u00ady) mpg, Auto 6 speed, V6, 3.00L, All wheel drive. Clean CARFAX. 2012 Ford Escape XLT Features: AWD. Odometer is 72570 miles below market average! Awards 2012 KBB.com Total Cost of Ownership Awards * 2012 KBB.com ... 4/16/2019 ~ Torrington, Wyoming ~ 29.2 mi.\n$20,995 ~ 96,077 mi ~ Summit White ~ Good deal!\nPre-Owned, 4x4 LT 4dr SUV, Light Titanium interior, Flexible Fuel, 15(city)/21(highwa\u00ady) mpg, Auto 6 speed, V8, 5.30L. Clean CARFAX. Summit White 2013 Chevrolet Tahoe LT Features: 4WD, light titanium dark titanium Cloth. Odometer is 12699 miles below market average! Awards JD Power Initial Quality Study ... 4/16/2019 ~ Torrington, Wyoming ~ 29.2 mi.\n$20,995 ~ 52,957 mi ~ Deep Cherry Red ~ Good deal!\nPre-Owned, Limited 4dr Mini-Van, Black interior, Flexible Fuel, 17(city)/25(highwa\u00ady) mpg, Auto 6 speed, V6, 3.60L, Front wheel drive. Clean CARFAX. Deep Cherry Red Crystal 2016 Chrysler Town Country Limited Features: black Leather. Recent Arrival! Awards JD Power Initial Quality Study (IQS 2016 KBB.com Brand Image ... 4/16/2019 ~ Torrington, Wyoming ~ 29.2 mi.\n$17,995 ~ 74,241 mi ~ Silver Ice Metallic ~ Good deal!\nPre-Owned, AWD LTZ 4dr SUV, Brownstone interior, Gas, 20(city)/29(highwa\u00ady) mpg, Auto 6 speed, I4, 2.40L, All wheel drive. Silver Ice Metallic 2015 Chevrolet Equinox LTZ Features: AWD. Odometer is 17063 miles below market average! 20/29 City/Highway MPG Awards JD Power Initial Quality Study * 2015 ... 4/16/2019 ~ Torrington, Wyoming ~ 29.2 mi.\nPre-Owned, EX 4dr Sedan, Black interior, Gas, 31(city)/41(highwa\u00ady) mpg, Continuously Variable, I4, 2.00L, Front wheel drive. FUEL EFFICIENT 41 MPG Hwy/31 MPG City! LOW MILES - 19,906! EX trim. Moonroof, Onboard Communications System, Remote Engine Start. AND MORE KEY FEATURES INCLUDE: Sunroof, Back-Up Camera, iPod/MP3 ... 4/14/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, LT 4dr Sedan, Jet Black / Dark Titanium interior, Gas, 22(city)/30(highwa\u00ady) mpg, Auto 6 speed, I4, 2.50L, Front wheel drive. FUEL EFFICIENT 30 MPG Hwy/22 MPG City! Onboard Communications System, Satellite Radio, Remote Engine Start, WiFi Hotspot, Rear Air AND MORE KEY FEATURES INCLUDE: ... 4/13/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, AWD SLT-2 4dr SUV, Brownstone interior, Flexible Fuel, 16(city)/23(highwa\u00ady) mpg, Auto 6 speed, V6, 3.00L, All wheel drive. EPA 24 MPG Hwy/17 MPG City! Moonroof, Heated Leather Seats, All Wheel Drive, Onboard Communications System, Power Liftgate AND MORE KEY FEATURES INCLUDE: Leather Seats, Sunroof, ... 4/13/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.\nPre-Owned, 4x4 RTL 4dr Crew Cab, Beige interior, Gas, 15(city)/20(highwa\u00ady) mpg, Auto 5 speed, V6, 3.50L. EPA 20 MPG Hwy/15 MPG City! Moonroof, Heated Leather Seats, Multi-CD Changer, Dual Zone A/C, Consumer Guide Recommended Pickup READ MORE KEY FEATURES INCLUDE: Leather Seats, Sunroof, 4x4, Heated ... 4/11/2019 ~ Scottsbluff, Nebraska ~ 0.0 mi.",
+    "calculator_outputs": [
+      [
+        0.13221168518066406,
+        1792,
+        "multiply(4, 30)",
+        "120"
+      ],
+      [
+        0.01791536808013916,
+        1715,
+        "subtract(20, 15)",
+        "5"
+      ],
+      [
+        0.03546285629272461,
+        1722,
+        "subtract(15, 20)",
+        "-5"
+      ],
+      [
+        0.04320502281188965,
+        1740,
+        "add(826, 16)",
+        "842"
+      ],
+      [
+        0.09392809867858887,
+        1777,
+        "subtract(19, 2014)",
+        "-1995"
+      ],
+      [
+        0.023642301559448242,
+        1725,
+        "multiply(664, 4)",
+        "2656"
+      ],
+      [
+        0.11947917938232422,
+        1731,
+        "multiply(1, 5.00)",
+        "5.0"
+      ],
+      [
+        0.03168916702270508,
+        1700,
+        "subtract(4, 20)",
+        "-16"
+      ],
+      [
+        0.07549393177032471,
+        1776,
+        "multiply(4, 5)",
+        "20"
+      ],
+      [
+        0.006520748138427734,
+        1719,
+        "subtract(0, 15)",
+        "-15"
+      ],
+      [
+        0.10071229934692383,
+        1683,
+        "multiply(2, 3)",
+        "6"
+      ],
+      [
+        0.07737898826599121,
+        1598,
+        "subtract(26, 16)",
+        "10"
+      ],
+      [
+        0.026732921600341797,
+        1576,
+        "add(6, 4)",
+        "10"
+      ],
+      [
+        0.03084850311279297,
+        1614,
+        "add(4, 0)",
+        "4"
+      ],
+      [
+        0.05094194412231445,
+        1624,
+        "divide(23, 24)",
+        "0.9583333333333334"
+      ],
+      [
+        0.07274186611175537,
+        1656,
+        "subtract(13, 23)",
+        "-10"
+      ],
+      [
+        0.04757487773895264,
+        1595,
+        "add(16,23)",
+        "39"
+      ],
+      [
+        0.054543495178222656,
+        1602,
+        "add(23, multiply(3, 32))",
+        "119"
+      ],
+      [
+        0.0803685188293457,
+        1577,
+        "add(12, 4)",
+        "16"
+      ],
+      [
+        0.060559988021850586,
+        1605,
+        "subtract(2, 7)",
+        "-5"
+      ],
+      [
+        0.05882120132446289,
+        1597,
+        "subtract(20,16)",
+        "4"
+      ],
+      [
+        0.01465904712677002,
+        1438,
+        "add(4, divide(14, 3))",
+        "8.666666666666668"
+      ],
+      [
+        0.27532267570495605,
+        1440,
+        "add",
+        "<function add at 0x7f73f73aa560>"
+      ],
+      [
+        0.44422388076782227,
+        1428,
+        "add(1356.4, divide(1245.4, 100))",
+        "1368.854"
+      ],
+      [
+        0.036717891693115234,
+        1441,
+        "add(12, multiply(4, 90))",
+        "372"
+      ],
+      [
+        0.06586980819702148,
+        1481,
+        "subtract(23, 22)",
+        "1"
+      ],
+      [
+        0.21972441673278809,
+        1445,
+        "add(1.8, subtract(0.1, divide(4, 7)))",
+        "1.3285714285714287"
+      ],
+      [
+        0.0034933090209960938,
+        1446,
+        "subtract(0.0, 0.0)",
+        "0.0"
+      ],
+      [
+        0.060864925384521484,
+        1465,
+        "add(2012, multiply(14, 3))",
+        "2054"
+      ],
+      [
+        0.1039426326751709,
+        1444,
+        "add(14, 4)",
+        "18"
+      ],
+      [
+        0.041498422622680664,
+        1485,
+        "add(22, divide(30,.02))",
+        "1522.0"
+      ],
+      [
+        0.02557659149169922,
+        1475,
+        "add(22, 30)",
+        "52"
+      ],
+      [
+        0.10637211799621582,
+        1478,
+        "divide(22, 30)",
+        "0.7333333333333333"
+      ],
+      [
+        0.015099525451660156,
+        1482,
+        "add(22, divide(30, 30 - 22))",
+        "25.75"
+      ],
+      [
+        0.05318713188171387,
+        1488,
+        "multiply(4, 22)",
+        "88"
+      ],
+      [
+        0.15043306350708008,
+        1307,
+        "multiply(9, 7)",
+        "63"
+      ],
+      [
+        0.4333481788635254,
+        1312,
+        "divide(2016, 2015)",
+        "1.0004962779156328"
+      ],
+      [
+        0.024058222770690918,
+        1370,
+        " add(100000, divide(1, 30)) ",
+        "100000.03333333334"
+      ],
+      [
+        0.07030296325683594,
+        1301,
+        "add(5, divide(3, 2))",
+        "6.5"
+      ],
+      [
+        0.24094176292419434,
+        1311,
+        "add(4, divide(16, 2019))",
+        "4.007924715205547"
+      ],
+      [
+        0.7801194190979004,
+        1306,
+        "add(3, 2016)",
+        "2019"
+      ],
+      [
+        0.026888608932495117,
+        1332,
+        "add(2, multiply(4, divide(29.2, 4)))",
+        "31.2"
+      ],
+      [
+        0.055264949798583984,
+        1309,
+        "subtract(14, 1)",
+        "13"
+      ],
+      [
+        0.1779923439025879,
+        1316,
+        "multiply(2015, 25.4)",
+        "51181.0"
+      ],
+      [
+        0.005597352981567383,
+        1379,
+        "add(41, 41)",
+        "82"
+      ],
+      [
+        0.12888813018798828,
+        1388,
+        "divide(2019, 2016)",
+        "1.0014880952380953"
+      ],
+      [
+        0.07725906372070312,
+        1310,
+        "add(4, divide(1, 16))",
+        "4.0625"
+      ],
+      [
+        0.05411028861999512,
+        1329,
+        "add(4, divide(2, 2))",
+        "5.0"
+      ],
+      [
+        0.12018394470214844,
+        1270,
+        "add(2015, 3)",
+        "2018"
+      ],
+      [
+        0.15184926986694336,
+        1201,
+        "add(17,995)",
+        "1012"
+      ],
+      [
+        0.21543002128601074,
+        1226,
+        "add(4, 16)",
+        "20"
+      ],
+      [
+        0.043016910552978516,
+        1205,
+        "subtract(18, 511)",
+        "-493"
+      ],
+      [
+        0.035303354263305664,
+        1242,
+        "add(20, divide(29, 4))",
+        "27.25"
+      ],
+      [
+        0.04615664482116699,
+        1246,
+        "subtract(4, 0.5)",
+        "3.5"
+      ],
+      [
+        0.11388802528381348,
+        1184,
+        "divide(16, 8), divide(19, 5), divide(2, 3)",
+        "(2.0, 3.8, 0.6666666666666666)"
+      ],
+      [
+        0.07300162315368652,
+        1249,
+        "subtract(24, 20)",
+        "4"
+      ],
+      [
+        0.2393491268157959,
+        1063,
+        "add(29, 4) / subtract(29, 4)",
+        "1.32"
+      ],
+      [
+        0.3325080871582031,
+        1059,
+        "divide(5, 16)",
+        "0.3125"
+      ],
+      [
+        0.22422242164611816,
+        1060,
+        "add(4, 16)",
+        "20"
+      ],
+      [
+        0.19407129287719727,
+        1049,
+        "add(12, 3)",
+        "15"
+      ],
+      [
+        0.03355693817138672,
+        1118,
+        "add(17, multiply(25, 52.957))",
+        "1340.925"
+      ],
+      [
+        0.13720321655273438,
+        1055,
+        "subtract(4, 16)",
+        "-12"
+      ],
+      [
+        0.3127751350402832,
+        1077,
+        "subtract(20995, 51984)",
+        "-30989"
+      ],
+      [
+        0.11879110336303711,
+        1071,
+        "add(20995, 20995)",
+        "41990"
+      ],
+      [
+        0.09463024139404297,
+        1139,
+        "add(17, 25)",
+        "42"
+      ],
+      [
+        0.9408791065216064,
+        1064,
+        "divide(100, 29.2)",
+        "3.4246575342465753"
+      ],
+      [
+        0.00048232078552246094,
+        1100,
+        "add(50, 2)",
+        "52"
+      ],
+      [
+        0.24523019790649414,
+        1048,
+        "divide(15, 1)",
+        "15.0"
+      ],
+      [
+        0.30516600608825684,
+        944,
+        "subtract(1, 0)",
+        "1"
+      ],
+      [
+        0.021567583084106445,
+        1022,
+        "add(4, divide(2015, 2014))",
+        "5.000496524329693"
+      ],
+      [
+        0.10024452209472656,
+        947,
+        "subtract(5, 20)",
+        "-15"
+      ],
+      [
+        0.09155678749084473,
+        943,
+        "subtract(39.8, 29.2)",
+        "10.599999999999998"
+      ],
+      [
+        0.21661949157714844,
+        926,
+        "add(-10, multiply(200, 60))",
+        "11990"
+      ],
+      [
+        0.0009856224060058594,
+        996,
+        "add(10, multiply(1410, 1250))",
+        "1762510"
+      ],
+      [
+        0.07770919799804688,
+        948,
+        "subtract(29.2, 4)",
+        "25.2"
+      ],
+      [
+        0.16403555870056152,
+        937,
+        "multiply(4, 16)",
+        "64"
+      ],
+      [
+        0.07102537155151367,
+        936,
+        "multiply(4, 5)",
+        "20"
+      ],
+      [
+        0.020189642906188965,
+        993,
+        "subtract(15, 21)",
+        "-6"
+      ],
+      [
+        0.0104217529296875,
+        982,
+        "multiply(4, 36)",
+        "144"
+      ],
+      [
+        0.04671025276184082,
+        893,
+        "add(36, divide(27, 9))",
+        "39.0"
+      ],
+      [
+        0.12876343727111816,
+        869,
+        "add",
+        "<function add at 0x7f73f73aa560>"
+      ],
+      [
+        0.03556108474731445,
+        865,
+        "add(18, 2), divide(23, 18)",
+        "(20, 1.2777777777777777)"
+      ],
+      [
+        0.08140289783477783,
+        807,
+        "subtract(0, 0)",
+        "0"
+      ],
+      [
+        0.0680379867553711,
+        851,
+        "add(2,8)",
+        "10"
+      ],
+      [
+        0.039310336112976074,
+        795,
+        "subtract(10, 12)",
+        "-2"
+      ],
+      [
+        0.0385441780090332,
+        864,
+        "subtract(2018, 2018)",
+        "0"
+      ],
+      [
+        0.046016693115234375,
+        696,
+        " add (12, multiply (4, 24.55)) ",
+        "110.2"
+      ],
+      [
+        0.1134343147277832,
+        686,
+        "divide(3, 8)",
+        "0.375"
+      ],
+      [
+        0.04996609687805176,
+        679,
+        "add(48, 8.4)",
+        "56.4"
+      ],
+      [
+        0.02301788330078125,
+        661,
+        "multiply(-10.30, 3.14)",
+        "-32.342000000000006"
+      ],
+      [
+        0.09857702255249023,
+        703,
+        "multiply(9, 7)",
+        "63"
+      ],
+      [
+        0.03173184394836426,
+        678,
+        "multiply(96, 8)",
+        "768"
+      ],
+      [
+        0.23455595970153809,
+        698,
+        "divide(4, 17)",
+        "0.23529411764705882"
+      ],
+      [
+        0.10003495216369629,
+        681,
+        "multiply(33, 33)",
+        "1089"
+      ],
+      [
+        0.04167819023132324,
+        704,
+        "add(11.0, 4.0)",
+        "15.0"
+      ],
+      [
+        0.023111820220947266,
+        683,
+        "add(6, 4)",
+        "10"
+      ],
+      [
+        0.04093647003173828,
+        670,
+        "multiply(1, 2)",
+        "2"
+      ],
+      [
+        0.10051321983337402,
+        699,
+        "add(12, 4)",
+        "16"
+      ],
+      [
+        0.10308456420898438,
+        531,
+        "multiply(5, -1)",
+        "-5"
+      ],
+      [
+        0.013887643814086914,
+        579,
+        "add(19.45, 7.49)",
+        "26.939999999999998"
+      ],
+      [
+        0.0015103816986083984,
+        638,
+        "subtract(5.09, 17.2)",
+        "-12.11"
+      ],
+      [
+        0.018527984619140625,
+        600,
+        "add(7, subtract(5,2))",
+        "10"
+      ],
+      [
+        0.11143970489501953,
+        566,
+        "add(4, 5)",
+        "9"
+      ],
+      [
+        0.059136390686035156,
+        565,
+        "multiply(5, 4)",
+        "20"
+      ],
+      [
+        0.09287524223327637,
+        578,
+        "divide(18, 19)",
+        "0.9473684210526315"
+      ],
+      [
+        0.07916069030761719,
+        563,
+        "multiply(17, 1.5)",
+        "25.5"
+      ],
+      [
+        0.0030629634857177734,
+        620,
+        "subtract(30, 22)",
+        "8"
+      ],
+      [
+        0.0342252254486084,
+        537,
+        "multiply(5, 4)",
+        "20"
+      ],
+      [
+        0.02584242820739746,
+        456,
+        "multiply(723, 252)",
+        "182196"
+      ],
+      [
+        0.02894306182861328,
+        457,
+        "multiply(5432, 32)",
+        "173824"
+      ],
+      [
+        0.05485892295837402,
+        507,
+        "add(15, divide(21, 5.5))",
+        "18.81818181818182"
+      ],
+      [
+        0.04406261444091797,
+        493,
+        "subtract(10, 0)",
+        "10"
+      ],
+      [
+        0.10493111610412598,
+        314,
+        "divide(45, 30)",
+        "1.5"
+      ],
+      [
+        0.00091552734375,
+        302,
+        "add(6, subtract(2, 6))",
+        "2"
+      ],
+      [
+        0.03699350357055664,
+        332,
+        "add(4, 4)",
+        "8"
+      ],
+      [
+        0.010013461112976074,
+        285,
+        "add(6, multiply(2, 5))",
+        "16"
+      ],
+      [
+        0.0068204402923583984,
+        351,
+        "add(18, 12)",
+        "30"
+      ],
+      [
+        0.003933429718017578,
+        313,
+        "multiply(24, 0.5)",
+        "12.0"
+      ],
+      [
+        0.051789283752441406,
+        330,
+        "add(4, divide(60, 40))",
+        "5.5"
+      ],
+      [
+        0.05844259262084961,
+        374,
+        " add(4, subtract(7, divide(6, 5))) ",
+        "9.8"
+      ],
+      [
+        0.01412200927734375,
+        371,
+        "subtract(38000, 4100.2)",
+        "33899.8"
+      ],
+      [
+        0.015586376190185547,
+        301,
+        "add(20, multiply(9.5, 3))",
+        "48.5"
+      ],
+      [
+        0.06604957580566406,
+        216,
+        "multiply(1, 6)",
+        "6"
+      ],
+      [
+        0.060326337814331055,
+        204,
+        "add(6, 4)",
+        "10"
+      ],
+      [
+        0.01864027976989746,
+        235,
+        "divide(9, 4)",
+        "2.25"
+      ],
+      [
+        0.03242969512939453,
+        158,
+        "multiply(5, 6)",
+        "30"
+      ],
+      [
+        0.002663135528564453,
+        163,
+        "add(0, -1)",
+        "-1"
+      ],
+      [
+        0.048084378242492676,
+        203,
+        "add(34, 000)",
+        "34"
+      ],
+      [
+        0.057389020919799805,
+        229,
+        "add(4, divide(18, 2))",
+        "13.0"
+      ],
+      [
+        0.02927112579345703,
+        191,
+        "multiply(34, 1000)",
+        "34000"
+      ],
+      [
+        0.005146980285644531,
+        195,
+        "multiply(23, 50)",
+        "1150"
+      ],
+      [
+        0.14326000213623047,
+        33,
+        "divide(20, 27)",
+        "0.7407407407407407"
+      ],
+      [
+        0.12024211883544922,
+        27,
+        "subtract(27,20)",
+        "7"
+      ],
+      [
+        0.04952883720397949,
+        40,
+        "multiply(20, 7.5)",
+        "150.0"
+      ],
+      [
+        0.042407989501953125,
+        45,
+        "multiply(2, 20)",
+        "40"
+      ],
+      [
+        0.11631965637207031,
+        95,
+        "subtract(4, 1.35)",
+        "2.65"
+      ],
+      [
+        0.024817466735839844,
+        59,
+        "multiply(27, 2)",
+        "54"
+      ],
+      [
+        0.10714912414550781,
+        97,
+        "divide(100, 100)",
+        "1.0"
+      ],
+      [
+        0.007124185562133789,
+        49,
+        "multiply(2.00, multiply(6, 27))",
+        "324.0"
+      ],
+      [
+        0.0015683174133300781,
+        82,
+        "add(27, 2)",
+        "29"
+      ],
+      [
+        0.1692032814025879,
+        34,
+        "subtract(13, 20)",
+        "-7"
+      ],
+      [
+        0.035889506340026855,
+        72,
+        "add(20, multiply(27, 6))",
+        "182"
+      ],
+      [
+        0.024195075035095215,
+        76,
+        "subtract(24500, 10000)",
+        "14500"
+      ]
+    ]
+  },
+  {
+    "file_index": 20,
+    "text": "Menara Taming Sari (Melaka Tower) is located at Bandar Hilir, beside Dataran Pahlawan Megamall. It is the first and only gyro tower in Malaysia so far. The tower revolves 360\u00b0 to provide a panoramic view of Malacca town. From a height of 80 meters, the ride offers you a spectacular and panaromic view of Historical Melaka City and a far with a host of interesting sights such as St Paul\u2019s Hill, Independence Memorial Building, Samudera Museum and the ship, Flor De La Mar, Melaka River, Dataran Pahlawan, Pulau Selat Mosque, Pulau Besar and the Straits of Malacca.\nThat apart, you will also see the fast and rapid development taking place in the state.\nThe air-conditioned circular observation deck can take 66 people at any one time. You'll stay up there for about seven minutes. Once it reaches the top, a breathtaking, sprawling view of Malacca as far as the eye can see, up to the Straits of Malacca, is clearly visible, especially in good weather, with the Melaka River running through the grand panorama below.\nIn addition to the revolving tower for visitors to enjoy bird view of Melaka city, the ticketing building will also be fitted with 5 commercial outlets, which includes a cafe, restaurant, and souvenir shops.\nThe admission charges for Menara Taming Sari are RM20 for an adult and RM10 for children below 12 years old. There is a huge car park next to the tower. For further information, please contact Melaka Taming Sari Berhad at +60-6-2881100 or +60-6-2813366.\nMenara Taming Sari opens at 10:00 am and continues till 10:00 pm, daily.",
+    "calculator_outputs": [
+      [
+        0.011781930923461914,
+        305,
+        "add(1, 7)",
+        "8"
+      ],
+      [
+        0.024195075035095215,
+        354,
+        "add(6, 19881100)",
+        "19881106"
+      ],
+      [
+        0.027820110321044922,
+        364,
+        "divide(100, 24)",
+        "4.166666666666667"
+      ],
+      [
+        0.00808405876159668,
+        293,
+        "add(1, divide(5, 2))",
+        "3.5"
+      ],
+      [
+        0.016756057739257812,
+        295,
+        "divide(6061, 10000)",
+        "0.6061"
+      ],
+      [
+        0.026836633682250977,
+        320,
+        "add(20, 10)",
+        "30"
+      ],
+      [
+        0.055450439453125,
+        294,
+        "multiply(1, 40)",
+        "40"
+      ],
+      [
+        0.1980571746826172,
+        263,
+        "divide(14, 365.25)",
+        "0.038329911019849415"
+      ],
+      [
+        0.09556436538696289,
+        307,
+        "divide(100, 5)",
+        "20.0"
+      ],
+      [
+        0.10034036636352539,
+        134,
+        "subtract(9, 0)",
+        "9"
+      ],
+      [
+        0.1444096565246582,
+        175,
+        "divide(723, 252)",
+        "2.869047619047619"
+      ],
+      [
+        0.009652853012084961,
+        154,
+        "subtract(1, 4)",
+        "-3"
+      ],
+      [
+        0.10275840759277344,
+        151,
+        "divide(10, 14.3)",
+        "0.6993006993006993"
+      ],
+      [
+        0.09750509262084961,
+        187,
+        "add(66, 66)",
+        "132"
+      ],
+      [
+        0.03965353965759277,
+        197,
+        "add(33, multiply(2, 60))",
+        "153"
+      ],
+      [
+        0.04841470718383789,
+        14,
+        "add(15, 50)",
+        "65"
+      ],
+      [
+        0.030062079429626465,
+        33,
+        "subtract(1, 23) ",
+        "-22"
+      ],
+      [
+        0.0023298263549804688,
+        64,
+        "multiply(360, 360)",
+        "129600"
+      ],
+      [
+        0.026492834091186523,
+        62,
+        "add(60, 360)",
+        "420"
+      ],
+      [
+        0.08623409271240234,
+        41,
+        "divide(29, 12)",
+        "2.4166666666666665"
+      ],
+      [
+        0.07092857360839844,
+        63,
+        "subtract(1759, 1428)",
+        "331"
+      ],
+      [
+        0.003226041793823242,
+        68,
+        "add(80, 6)",
+        "86"
+      ]
+    ]
+  },
+  {
+    "file_index": 21,
+    "text": "The High brightness is being compared to 350 Watts conventional xenon light source that can be utilized for critical illness like laparoscopy without any problem and with utmost ease.\nIt has an extended service life, which means it can easily last for 60000 hours at a max, which is 120 times of xenon. This further emphasises that one doest not need to change the bulb for a number of years and can be used for a long time.\nWe have an extensive range of power from 100 to 240 V / AC; 50 / 60 Hz.\nThe perfect colour temperature ranges from 5000 K to 6500 K, and the colour rendering is over 70.\nIt does not gives out light in the Ultra Violet or Infrared Rays.\nThe customized connector, it accepts fibre light directs with dynamic and on the go areas varying from 3 mm to 10 mm in diameter or span.\nIt helps saves half the energy i.e. it will be more than 50%.\nIt is considered environment friendly.",
+    "calculator_outputs": [
+      [
+        0.10286378860473633,
+        101,
+        "subtract(1, 2)",
+        "-1"
+      ],
+      [
+        0.1093442440032959,
+        99,
+        "subtract(3, 2)",
+        "1"
+      ],
+      [
+        0.0455479621887207,
+        80,
+        "multiply(7, 25)",
+        "175"
+      ],
+      [
+        0.10181903839111328,
+        105,
+        "multiply(240, 100)",
+        "24000"
+      ],
+      [
+        0.0015769004821777344,
+        146,
+        "divide(10, 3)",
+        "3.3333333333333335"
+      ],
+      [
+        0.019747018814086914,
+        92,
+        "divide(200, 5)",
+        "40.0"
+      ],
+      [
+        0.027187824249267578,
+        106,
+        "multiply(240, 240)",
+        "57600"
+      ],
+      [
+        0.04532170295715332,
+        136,
+        "divide(5000, 1000)",
+        "5.0"
+      ]
+    ]
+  },
+  {
+    "file_index": 22,
+    "text": "Mahatma Gandhi1 once said, \u201cThe world provides enough for every man\u2019s need but not for every man\u2019s greed.\u201d Sometimes it\u2019s easy to agree with proclamations of world peace and say things like, \u201cThe rich should really give to the poor and solve world hunger!\u201d However, when the giving strikes closer to home, it can be tougher than we think.\nI once had a watch that I thought was seriously cool. It was a boy\u2019s watch, but I didn\u2019t mind; it had all the dials and gadgets you could want. I visited my family and my younger brother was crazy about my watch and asked if he could have it. I told him I couldn\u2019t possibly part with such amazingness and sadly left it at that. Shortly after getting home, my treasured watch met with an accident and broke. It was then that I realized how stupid it was that I\u2019d missed the opportunity to give it to my little brother, who was so much more important to me than that watch ever could be. It might not have lasted him forever either, but at least he would have been happy for a while. And more than the watch, the meaning behind my giving him something special would have stuck with him so much longer.\nI try to remember that incident whenever I\u2019m tempted to be selfish with my things or start to prize them too highly. It\u2019s great to have nice things and groovy gadgets. (Don\u2019t tell anyone, but I\u2019m fairly addicted to my phone, which contains all my appointments, mail, reminders, to-do lists, Facebook, Twitter, Messenger, Google, and favorite games.) These days, the \u201cmust-have\u201d gadgets are endless\u2014from smartphones, iPads, laptops, and gaming equipment right down to 3D home TVs! If you\u2019re able to have some of these nice things and enjoy them and they help you with your work and studies, or are also a fun source of entertainment, technology can be great. But it\u2019s good to step back sometimes and imagine what it would be like if one day all those things instantly disappeared. After your initial withdrawal symptoms, you\u2019d realize that life goes on without material things. What matters most are our loved ones\u2014our friends and family members. Sometimes we can forget this truth, and that\u2019s when we tend to act selfishly.\nThe act of giving not only helps those we give to, but us as well. Luke 6:38 says, \u201cGive, and it will be given to you.\u201d2 Sometimes what you get back will be something tangible, such as the Lord supplying things you need or someone giving to you, but more often than not what you receive in return is the satisfaction that you did something good. Have you ever given someone something they really needed or wanted and watched their face light up? It\u2019s an amazing feeling!\nAn old American movie from the 1930s called The Man Who Played God is about a concert pianist who lost his hearing in a bomb explosion. He finally got through his depression when he learned how to read lips. He\u2019d watch people in Central Park (New York City), where they\u2019d talk about their problems and troubles, and he would do what he could to solve their problems anonymously. I think it would be amazing to do something like that, to know what other people need and be able to secretly give it to them.\nThere is a cute kids\u2019 song that one or two of you may have heard when you were knee high to a grasshopper, called, \u201cI\u2019d Like to Be Invisible.\u201d The singer wishes he was invisible so that he could \u201cspread love everywhere, and help in secret ways without you knowing he was there.\u201d (Yup, it even rhymed!) The truest part of the song, though, is where it concludes that you don\u2019t have to be invisible, because you can do things to make a difference all around you. You can make it a point to look for where the need is and do what you can to fill it.\nIt\u2019s a funny story but it rings true. It\u2019s easy for me to think that if I had a million dollars, I\u2019d love to give it away to help people, or to ponder all the great things I\u2019d do for my family with money like that; but when it comes to giving away a small portion of my free time to parents who could use a break from their kids, or doing a favor that costs me in the here and now, that\u2019s where the true essence of giving really kicks in.\nI know a lot of missionaries who do great works of evangelism and charity, and it\u2019s inspiring to read about the orphanages they help and the seminars they host, and all the other great projects they do. However, I have a very personal description of what makes a missionary: it\u2019s someone with a giving heart. That means not only do they do big, impressive (and usually well-advertised) works to help the poor or disadvantaged, but they\u2019re also always there to lend a helping hand whenever there is a need. They give to their own hurt; and they don\u2019t ask for or expect favors in return. They don\u2019t have a personal agenda. They just give. And you can feel their love and kindness in their actions. They\u2019re the ones you only ask for help when you really need it, because you know they\u2019ll do everything in their power to help you. In return, you want to do anything you can to help them. Their lives are examples of cheerful and selfless giving.\nI would love to be remembered as someone like that! Sure, we all have bouts of selfishness, and human nature tends to take the path of least resistance, but it\u2019s something to strive for, don\u2019t you think? Sometimes giving can be as simple as a sincere compliment, a hug, or a word of appreciation. It can also be giving your favorite gizmo to your little brother or sister when it would mean the world to them.\n3 Kahlil Gibran (January 6, 1883\u2013April 10, 1931) was a Lebanese artist, poet, and writer.",
+    "calculator_outputs": [
+      [
+        0.1875622272491455,
+        1220,
+        "add(10, multiply(2, 4))",
+        "18"
+      ],
+      [
+        0.23305368423461914,
+        1218,
+        "divide(1, 8)",
+        "0.125"
+      ],
+      [
+        0.002738475799560547,
+        1268,
+        "multiply(4, 5)",
+        "20"
+      ],
+      [
+        0.029790043830871582,
+        1245,
+        "add(7, 9)",
+        "16"
+      ],
+      [
+        0.29578685760498047,
+        1219,
+        "subtract(723, 20)",
+        "703"
+      ],
+      [
+        0.06520402431488037,
+        1316,
+        "add(18, 28)",
+        "46"
+      ],
+      [
+        0.03127336502075195,
+        1249,
+        "multiply(3, 23)",
+        "69"
+      ],
+      [
+        0.4599137306213379,
+        1208,
+        "add(2, 2)",
+        "4"
+      ],
+      [
+        0.15587282180786133,
+        1222,
+        "multiply(2, 1)",
+        "2"
+      ],
+      [
+        0.0947275161743164,
+        1306,
+        "add",
+        "<function add at 0x7f73f73aa560>"
+      ],
+      [
+        0.10326266288757324,
+        1211,
+        "add(45, 45)",
+        "90"
+      ],
+      [
+        0.007576704025268555,
+        1281,
+        "divide(5, 1)",
+        "5.0"
+      ],
+      [
+        0.011927366256713867,
+        1269,
+        "multiply(5, 50)",
+        "250"
+      ],
+      [
+        0.08687448501586914,
+        1087,
+        "divide(1000000, 6)",
+        "166666.66666666666"
+      ],
+      [
+        0.08249640464782715,
+        1086,
+        "add(5, divide(13, 3))",
+        "9.333333333333332"
+      ],
+      [
+        0.02417367696762085,
+        1152,
+        "add(4, subtract(100, subtract(600, multiply(20, divide(4, multiply(1000, 4))))))",
+        "-495.98"
+      ],
+      [
+        0.023684024810791016,
+        1140,
+        "divide(723, 252)",
+        "2.869047619047619"
+      ],
+      [
+        0.013865947723388672,
+        1185,
+        "add(18, multiply(7, 12))",
+        "102"
+      ],
+      [
+        0.02414071559906006,
+        1136,
+        "multiply(3, 5)",
+        "15"
+      ],
+      [
+        0.006572723388671875,
+        1157,
+        "add(100, multiply(1, 3))",
+        "103"
+      ],
+      [
+        0.019014835357666016,
+        1113,
+        "divide(4, 7)",
+        "0.5714285714285714"
+      ],
+      [
+        0.08185434341430664,
+        1093,
+        "divide(100, 8.8)",
+        "11.363636363636363"
+      ],
+      [
+        0.020322322845458984,
+        1109,
+        "add(3, divide(3, 9))",
+        "3.3333333333333335"
+      ],
+      [
+        0.03159761428833008,
+        1150,
+        "multiply(1, 2)",
+        "2"
+      ],
+      [
+        0.026746034622192383,
+        1112,
+        "add(30, 30)",
+        "60"
+      ],
+      [
+        0.028580427169799805,
+        982,
+        "add(30, 30)",
+        "60"
+      ],
+      [
+        0.05718278884887695,
+        963,
+        "subtract(0, 24)",
+        "-24"
+      ],
+      [
+        0.09734630584716797,
+        964,
+        "add(10, 1)",
+        "11"
+      ],
+      [
+        0.01821446418762207,
+        985,
+        "divide(4, 2)",
+        "2.0"
+      ],
+      [
+        0.17337799072265625,
+        983,
+        "divide(4, 30)",
+        "0.13333333333333333"
+      ],
+      [
+        0.0793384313583374,
+        1050,
+        "divide(1, 1000)",
+        "0.001"
+      ],
+      [
+        0.12523841857910156,
+        965,
+        "add(10, 20)",
+        "30"
+      ],
+      [
+        0.03719818592071533,
+        975,
+        "multiply(0, 0)",
+        "0"
+      ],
+      [
+        0.09824848175048828,
+        971,
+        "add(5, 1)",
+        "6"
+      ],
+      [
+        0.017201662063598633,
+        1060,
+        "add(4, subtract(14, 8))",
+        "10"
+      ],
+      [
+        0.110321044921875,
+        969,
+        "divide(20, 7)",
+        "2.857142857142857"
+      ],
+      [
+        0.31842756271362305,
+        827,
+        "multiply(4, 3)",
+        "12"
+      ],
+      [
+        0.6698729991912842,
+        830,
+        "divide(1, 2)",
+        "0.5"
+      ],
+      [
+        0.32757139205932617,
+        826,
+        "multiply(5, 4)",
+        "20"
+      ],
+      [
+        0.07762312889099121,
+        841,
+        "multiply(7, 3)",
+        "21"
+      ],
+      [
+        0.07569003105163574,
+        843,
+        "multiply(3, 4)",
+        "12"
+      ],
+      [
+        0.005270957946777344,
+        853,
+        "multiply(4, 5)",
+        "20"
+      ],
+      [
+        0.03537869453430176,
+        844,
+        "multiply(40, 0.5)",
+        "20.0"
+      ],
+      [
+        0.1532139778137207,
+        825,
+        "multiply(-1, 2)",
+        "-2"
+      ],
+      [
+        0.007001638412475586,
+        857,
+        "divide(26, 17)",
+        "1.5294117647058822"
+      ],
+      [
+        0.007387638092041016,
+        856,
+        "divide(6, 4)",
+        "1.5"
+      ],
+      [
+        0.1860562562942505,
+        875,
+        "add(2, subtract(13, 1))",
+        "14"
+      ],
+      [
+        0.015292525291442871,
+        888,
+        "add(100, 50)",
+        "150"
+      ],
+      [
+        0.283597469329834,
+        829,
+        "add(2, 3)",
+        "5"
+      ],
+      [
+        0.25700950622558594,
+        824,
+        "add(2, 4)",
+        "6"
+      ],
+      [
+        0.02084493637084961,
+        898,
+        "multiply(3, 11)",
+        "33"
+      ],
+      [
+        0.02578425407409668,
+        899,
+        "subtract(25, 5)",
+        "20"
+      ],
+      [
+        0.06427836418151855,
+        714,
+        "multiply(22, 15)",
+        "330"
+      ],
+      [
+        0.03876066207885742,
+        719,
+        "add(5, 3)",
+        "8"
+      ],
+      [
+        0.038407325744628906,
+        709,
+        "multiply(4, 10)",
+        "40"
+      ],
+      [
+        0.03183150291442871,
+        712,
+        "multiply(10, 8)",
+        "80"
+      ],
+      [
+        0.011906147003173828,
+        736,
+        "divide(20, 1)",
+        "20.0"
+      ],
+      [
+        0.08881926536560059,
+        716,
+        "add(7, multiply(6, 8))",
+        "55"
+      ],
+      [
+        0.05070209503173828,
+        732,
+        "add(10, 1)",
+        "11"
+      ],
+      [
+        0.014556884765625,
+        735,
+        "divide(1337, -1)",
+        "-1337.0"
+      ],
+      [
+        0.08586394786834717,
+        713,
+        "subtract(1, 8)",
+        "-7"
+      ],
+      [
+        0.04996132850646973,
+        718,
+        "add(1, 2)",
+        "3"
+      ],
+      [
+        0.04154801368713379,
+        708,
+        "multiply(1, 2)",
+        "2"
+      ],
+      [
+        0.08115649223327637,
+        717,
+        "multiply(3, 12)",
+        "36"
+      ],
+      [
+        0.05059349536895752,
+        613,
+        "subtract(723,20)",
+        "703"
+      ],
+      [
+        0.08200860023498535,
+        587,
+        "multiply(10, 16)",
+        "160"
+      ],
+      [
+        0.12964200973510742,
+        626,
+        "add(\"ad\", \"verb\")",
+        "adverb"
+      ],
+      [
+        0.05493903160095215,
+        630,
+        "divide(30, 3)",
+        "10.0"
+      ],
+      [
+        0.029663562774658203,
+        642,
+        "add(42, multiply(4, 3))",
+        "54"
+      ],
+      [
+        0.03260993957519531,
+        600,
+        "multiply(10, 5)",
+        "50"
+      ],
+      [
+        0.0759117603302002,
+        452,
+        "multiply(100, 100)",
+        "10000"
+      ],
+      [
+        0.0038051605224609375,
+        462,
+        "multiply(5,6)",
+        "30"
+      ],
+      [
+        0.003335714340209961,
+        447,
+        "multiply(723, 2)",
+        "1446"
+      ],
+      [
+        0.09474658966064453,
+        454,
+        "multiply(8, 6)",
+        "48"
+      ],
+      [
+        0.006231784820556641,
+        456,
+        "divide",
+        "<function divide at 0x7f73490e67a0>"
+      ],
+      [
+        0.05354046821594238,
+        479,
+        "divide(1, 1)",
+        "1.0"
+      ],
+      [
+        0.054913997650146484,
+        457,
+        "subtract(100, 1)",
+        "99"
+      ],
+      [
+        0.22737455368041992,
+        440,
+        "subtract(10, 100)",
+        "-90"
+      ],
+      [
+        0.03651690483093262,
+        362,
+        "divide(30, 4)",
+        "7.5"
+      ],
+      [
+        0.01494288444519043,
+        365,
+        "multiply(25, 4)",
+        "100"
+      ],
+      [
+        0.024133920669555664,
+        364,
+        "multiply(123, 6)",
+        "738"
+      ],
+      [
+        0.3973960876464844,
+        314,
+        "subtract(5, 18)",
+        "-13"
+      ],
+      [
+        0.004628419876098633,
+        374,
+        "divide(20, 4)",
+        "5.0"
+      ],
+      [
+        0.057615041732788086,
+        342,
+        "multiply(3, 100)",
+        "300"
+      ],
+      [
+        0.006688117980957031,
+        363,
+        "subtract(15, 3)",
+        "12"
+      ],
+      [
+        0.027301788330078125,
+        360,
+        "divide(6,5)",
+        "1.2"
+      ],
+      [
+        0.09368300437927246,
+        354,
+        "add(5, subtract(10, 1))",
+        "14"
+      ],
+      [
+        0.030127525329589844,
+        195,
+        "subtract(5, 4)",
+        "1"
+      ],
+      [
+        0.03259086608886719,
+        196,
+        "subtract(1, 0)",
+        "1"
+      ],
+      [
+        0.10966086387634277,
+        205,
+        "divide(14, 1)",
+        "14.0"
+      ],
+      [
+        0.029140949249267578,
+        224,
+        "add(6, subtract(3, 1))",
+        "8"
+      ],
+      [
+        0.020648479461669922,
+        230,
+        "add(2, 2) * multiply(3, 6)",
+        "72"
+      ],
+      [
+        0.02555108070373535,
+        200,
+        "subtract(4, 1)",
+        "3"
+      ],
+      [
+        0.017049312591552734,
+        206,
+        "divide(18, 4)",
+        "4.5"
+      ],
+      [
+        0.06833744049072266,
+        89,
+        "subtract(3, 4)",
+        "-1"
+      ],
+      [
+        0.09931087493896484,
+        74,
+        "divide(5, 100)",
+        "0.05"
+      ],
+      [
+        0.026081562042236328,
+        94,
+        "multiply(0, 0)",
+        "0"
+      ],
+      [
+        0.052031517028808594,
+        77,
+        "divide(1, 100), subtract(100, 1)",
+        "(0.01, 99)"
+      ],
+      [
+        0.07496261596679688,
+        99,
+        "divide(24, 7)",
+        "3.4285714285714284"
+      ],
+      [
+        0.04675436019897461,
+        109,
+        "add(1, 24)",
+        "25"
+      ],
+      [
+        0.002118349075317383,
+        97,
+        "add(16, multiply(3, 6))",
+        "34"
+      ],
+      [
+        0.055140018463134766,
+        133,
+        "add(100, multiply(12, 5))",
+        "160"
+      ],
+      [
+        0.17611193656921387,
+        90,
+        "add(25, 0)",
+        "25"
+      ],
+      [
+        0.08792972564697266,
+        100,
+        "divide(10, 6)",
+        "1.6666666666666667"
+      ]
+    ]
+  },
+  {
+    "file_index": 23,
+    "text": "HOW do we explain why 5.5m French voters in the first round of the presidential elections voted for far-right parties that are xenophobic, anti-semitic, racist and ultra-nationalist? Sounding off about the wrongness of the vote will not help understand the reasons underlying their choice. Everybody in politics needs to begin an urgent, thorough and much-needed self-criticism.\nThe vote may have been a valuable wake-up call for France if it opens the eyes of party leaders and revives the debate on how to build a nation based on justice and solidarity. What vanished in April was the comforting thought that although everything was changing in the world outside, in French politics everything could stay the same; that two ageing parties, the Gaullists and the Socialists, could share power as they had done for 30 years.\nPeople have sensed for some time that these two political forces are worn out. Their historic mission seems to have ended. Each in its own way gives the impression of an organisation going nowhere, with crumbling infrastructures, no organisation or programme, no ideology, no identity and no compass for the journey ahead.\nPrevious elections had already shown that neither party was capable of addressing the needs of millions of people who are genuinely frightened by the new realities of the post-industrial world that has emerged after the collapse of the Berlin Wall and the end of the cold war. The disposable workers, the underclasses of the banlieues, the long-term unemployed, the excluded, the many people pushed into early retirement, the young people in precarious jobs, the families on the brink of poverty. For all these, the recent past has brought years of fear and anxiety, with many familiar landmarks apparently gone forever.\nThe Socialist party in particular, with almost no working-class people in its local organisations and several leaders in the supertax bracket, gives the impression that it lives on another planet, light years from the experiences of ordinary people. It has shown itself remarkably insensitive to what Daniel Mermet describes as \u201cthe sufferings of under-France\u201d.\nWhat about the right? Some conservative politicians see the far right as untouchable, but others have been happy to do electoral deals with it. The former liberal leader, Michel Poniatowski, recently wondered in public whether it was \u201cany more immoral to accept the votes of communists, who murdered millions of people in Europe, than those of the National Front\u201d (1). This perverse logic allowed Christian Democrat leaders of the Union pour la d\u00e9mocratie fran\u00e7aise (UDF) to accept National Front votes in 1998 to be elected to the presidency of five French regions.\nWhile this plague infected the inner workings of France\u2019s political institutions, was it reasonable to imagine that France would remain immune to the upsurge of far-right politics in its immediate neighbours (see Fascism isn\u2019t what it used to be, by Jean-Yves Camus, in this issue)? Or likely that France would be the exception when, like other European countries, its social fabric has been violently rent in the name of modernity: by liberalism and globalisation, European unification, the decline in national sovereignty, the abandonment of the franc, the disappearance of national borders, the hegemony of the United States, multiculturalism, loss of identity and the crisis of the welfare state?\nAll this happened in the context of the end of the industrial era and technological transformations that led to widespread economic insecurity and terrible social malaise. In such a context, with competition raised to the status of a natural imperative, an increase in violence and criminality was inevitable. The abruptness and brutality of these changes meant that uncertainties are accumulating as horizons have been lost, the world seems less clear, and history appears to defy logic and understanding. Ordinary people have felt abandoned by governments of both right and left; unsurprisingly, since the press describes them as corrupt, as liars and cheats.\nMany people feel lost and panicky; as Tocqueville put it,\"since the past no longer illuminates the present, the human spirit walks in darkness\". Old magicians have returned to conjure with this new obscurantism, this breeding-ground of fear, confusion and resentment. Their rhetoric is demagogic, authoritarian and racist; they talk of a return to the old values (work, family, motherland) and blame foreigners, Arabs and Jews for all the disorders, social problems and insecurities. Immigrants are an easy target, always available, because they symbolise social upheavals, and among the lowest-income earners they are seen as unwanted competition.\nAlthough it is absurd, hateful and even criminal, the rhetoric of the National Front has long appealed to more than one in four French people according to the opinion polls (2). On 21 April it gained the electoral approval of millions (30% of the unemployed, 24% of workers, 20% of young people and 17% of employers).\nThe Republican awakening expressed in street demonstrations all over France translated into anti-Le Pen votes on 5 May. Neo-fascism will not be voted in during the parliamentary elections in June either. But once the moment of fear has passed, if the parties carry on as before, with privatisation, dismantling public services, creating pension funds and accepting sackings to keep shareholders happy, if they continue to deny people\u2019s desires for a society that is fairer, more fraternal, more based on solidarity \u2014 then there is no guarantee that fascism, in alliance with the usual collaborators, will not win next time.\n(1) Lib\u00e9ration, 20 March 1998.\n(2) Le Monde, 13 April 1996.",
+    "calculator_outputs": [
+      [
+        0.007559776306152344,
+        1062,
+        "add(17, 5)",
+        "22"
+      ],
+      [
+        0.028685808181762695,
+        1079,
+        "multiply(7, 3)",
+        "21"
+      ],
+      [
+        0.11936211585998535,
+        1056,
+        "multiply(4, 5)",
+        "20"
+      ],
+      [
+        0.0832667350769043,
+        1063,
+        "add(34, 1)",
+        "35"
+      ],
+      [
+        0.07735753059387207,
+        1132,
+        "add(2, subtract(3, 1))",
+        "4"
+      ],
+      [
+        0.03479814529418945,
+        1080,
+        "add(5, 15)",
+        "20"
+      ],
+      [
+        0.011666059494018555,
+        1054,
+        "divide(90, 100)",
+        "0.9"
+      ],
+      [
+        0.10577988624572754,
+        1050,
+        "divide(18.5, 12)",
+        "1.5416666666666667"
+      ],
+      [
+        0.00569915771484375,
+        923,
+        "add(12, 12)",
+        "24"
+      ],
+      [
+        0.0815286636352539,
+        927,
+        "add(15, 4)",
+        "19"
+      ],
+      [
+        0.029064416885375977,
+        964,
+        "add(15,-17)",
+        "-2"
+      ],
+      [
+        0.043524742126464844,
+        959,
+        "add(14, 42)",
+        "56"
+      ],
+      [
+        0.017582416534423828,
+        941,
+        "subtract(723, 20)",
+        "703"
+      ],
+      [
+        0.04597330093383789,
+        940,
+        "multiply(24, 8)",
+        "192"
+      ],
+      [
+        0.03626382350921631,
+        967,
+        "multiply(9, 99)",
+        "891"
+      ],
+      [
+        0.04935455322265625,
+        954,
+        "add(6, 10)",
+        "16"
+      ],
+      [
+        0.026049137115478516,
+        799,
+        "add(5, 30)",
+        "35"
+      ],
+      [
+        0.1062774658203125,
+        796,
+        "subtract(5, 0.6)",
+        "4.4"
+      ],
+      [
+        0.04452085494995117,
+        795,
+        "add(3, divide(4, 2))",
+        "5.0"
+      ],
+      [
+        0.06816434860229492,
+        804,
+        "multiply(2, multiply(2, multiply(12, divide(45, 3))))",
+        "720.0"
+      ],
+      [
+        0.04248452186584473,
+        801,
+        "subtract(45, 10)",
+        "35"
+      ],
+      [
+        0.043865203857421875,
+        803,
+        "divide(45, 2)",
+        "22.5"
+      ],
+      [
+        0.05294990539550781,
+        788,
+        "subtract(2, 3)",
+        "-1"
+      ],
+      [
+        0.003236055374145508,
+        873,
+        "multiply(16, 10)",
+        "160"
+      ],
+      [
+        0.08344769477844238,
+        810,
+        "subtract(17, 5)",
+        "12"
+      ],
+      [
+        0.03859376907348633,
+        829,
+        "divide(42, 2)",
+        "21.0"
+      ],
+      [
+        0.15786361694335938,
+        793,
+        "multiply(3, 4)",
+        "12"
+      ],
+      [
+        0.012873172760009766,
+        797,
+        "add(9, divide(3, 2))",
+        "10.5"
+      ],
+      [
+        0.04439973831176758,
+        830,
+        "add(18, 17)",
+        "35"
+      ],
+      [
+        0.027601242065429688,
+        820,
+        "add(65, 87)",
+        "152"
+      ],
+      [
+        0.08327484130859375,
+        663,
+        "divide(723, 252)",
+        "2.869047619047619"
+      ],
+      [
+        0.017198562622070312,
+        693,
+        "add(5.4, divide(5, 7))",
+        "6.114285714285715"
+      ],
+      [
+        0.02403843402862549,
+        698,
+        "add(subtract(19, 4), 20)*10",
+        "350"
+      ],
+      [
+        0.011298179626464844,
+        701,
+        "add(9, 7)",
+        "16"
+      ],
+      [
+        0.01693904399871826,
+        695,
+        "add(4, 90)",
+        "94"
+      ],
+      [
+        0.10758352279663086,
+        689,
+        "divide(7, 2)",
+        "3.5"
+      ],
+      [
+        0.006907045841217041,
+        697,
+        "subtract(6, -4)",
+        "10"
+      ],
+      [
+        0.0009930133819580078,
+        675,
+        "subtract(1,3)",
+        "-2"
+      ],
+      [
+        0.03661704063415527,
+        719,
+        "divide(1, 3)",
+        "0.3333333333333333"
+      ],
+      [
+        0.003703594207763672,
+        744,
+        "divide(18, 5)",
+        "3.6"
+      ],
+      [
+        0.07094430923461914,
+        668,
+        "subtract(1, 1)",
+        "0"
+      ],
+      [
+        0.006153106689453125,
+        672,
+        "divide(12, 3)",
+        "4.0"
+      ],
+      [
+        0.07235360145568848,
+        690,
+        "add(8, divide(2, 6))",
+        "8.333333333333334"
+      ],
+      [
+        0.03177762031555176,
+        700,
+        "divide(12, 4)",
+        "3.0"
+      ],
+      [
+        0.12153148651123047,
+        537,
+        "subtract(2000, 1999)",
+        "1"
+      ],
+      [
+        0.13441705703735352,
+        546,
+        "add(2, add(1, 2))",
+        "5"
+      ],
+      [
+        0.018310070037841797,
+        534,
+        "add(1, multiply(6, 7))",
+        "43"
+      ],
+      [
+        0.11201143264770508,
+        541,
+        "subtract(2000, 1992)",
+        "8"
+      ],
+      [
+        0.07289457321166992,
+        588,
+        "subtract(6, 1)",
+        "5"
+      ],
+      [
+        0.09234070777893066,
+        539,
+        "subtract(58, 2)",
+        "56"
+      ],
+      [
+        0.07209968566894531,
+        536,
+        "divide(23, 11)",
+        "2.090909090909091"
+      ],
+      [
+        0.007756710052490234,
+        568,
+        "add(5, 6)",
+        "11"
+      ],
+      [
+        0.11843442916870117,
+        547,
+        "divide(1998, 100)",
+        "19.98"
+      ],
+      [
+        0.040659189224243164,
+        562,
+        "add(98, divide(3, 5))",
+        "98.6"
+      ],
+      [
+        0.09284496307373047,
+        533,
+        "multiply(22, 0)",
+        "0"
+      ],
+      [
+        0.04263114929199219,
+        563,
+        "subtract(30, 20)",
+        "10"
+      ],
+      [
+        0.018136024475097656,
+        532,
+        "add(58, 8)",
+        "66"
+      ],
+      [
+        0.16713905334472656,
+        550,
+        "divide(658893, 1998)",
+        "329.7762762762763"
+      ],
+      [
+        0.030879497528076172,
+        551,
+        "add(11, multiply(2, 45))",
+        "101"
+      ],
+      [
+        0.03837728500366211,
+        555,
+        "multiply(6, 10)",
+        "60"
+      ],
+      [
+        0.03144335746765137,
+        545,
+        "add(8, 15)",
+        "23"
+      ],
+      [
+        0.00112152099609375,
+        480,
+        "multiply(1, 2)",
+        "2"
+      ],
+      [
+        0.03473854064941406,
+        412,
+        "subtract(5, 10)",
+        "-5"
+      ],
+      [
+        0.2917513847351074,
+        432,
+        "divide(19, 4)",
+        "4.75"
+      ],
+      [
+        0.025090694427490234,
+        355,
+        "subtract(1975, 2000)",
+        "-25"
+      ],
+      [
+        0.09533977508544922,
+        358,
+        "divide(971, 4)",
+        "242.75"
+      ],
+      [
+        0.03090810775756836,
+        299,
+        "add(1923, 1925)",
+        "3848"
+      ],
+      [
+        0.03929901123046875,
+        359,
+        "subtract(12.9, 1.8)",
+        "11.1"
+      ],
+      [
+        0.02319478988647461,
+        288,
+        "add(9, 1)",
+        "10"
+      ],
+      [
+        0.15112543106079102,
+        289,
+        "subtract(11, 90)",
+        "-79"
+      ],
+      [
+        0.13217401504516602,
+        287,
+        "subtract(1991, 1990)",
+        "1"
+      ],
+      [
+        0.013644695281982422,
+        356,
+        "add(11.1, 1.9)",
+        "13.0"
+      ],
+      [
+        0.07935047149658203,
+        290,
+        "add(0, 0)",
+        "0"
+      ],
+      [
+        0.018106460571289062,
+        378,
+        "divide(738, 4)",
+        "184.5"
+      ],
+      [
+        0.013768196105957031,
+        357,
+        "multiply(15, 35)",
+        "525"
+      ],
+      [
+        0.05663299560546875,
+        300,
+        "subtract(2, 4)",
+        "-2"
+      ],
+      [
+        0.11273622512817383,
+        237,
+        "subtract(30, 17)",
+        "13"
+      ],
+      [
+        0.011787891387939453,
+        181,
+        "divide(1, 36)",
+        "0.027777777777777776"
+      ],
+      [
+        0.06095528602600098,
+        236,
+        "subtract(120, 120)",
+        "0"
+      ],
+      [
+        0.002203226089477539,
+        197,
+        "add(58.3, multiply(9.5, 5))",
+        "105.8"
+      ],
+      [
+        0.263822078704834,
+        173,
+        "subtract(14, 7)",
+        "7"
+      ],
+      [
+        0.023180067539215088,
+        157,
+        "subtract(-8,-1)",
+        "-7"
+      ],
+      [
+        0.15998053550720215,
+        172,
+        "subtract(50, 5)",
+        "45"
+      ],
+      [
+        0.04250478744506836,
+        84,
+        "multiply(14, 1)",
+        "14"
+      ],
+      [
+        0.045835018157958984,
+        63,
+        "divide(33, 27)",
+        "1.2222222222222223"
+      ],
+      [
+        0.09506607055664062,
+        48,
+        "add(2016, 2015)",
+        "4031"
+      ],
+      [
+        0.014576196670532227,
+        82,
+        "add(2, divide(5, 1))",
+        "7.0"
+      ],
+      [
+        0.017826080322265625,
+        42,
+        "multiply(6, 2)",
+        "12"
+      ],
+      [
+        0.024132728576660156,
+        85,
+        "add(25, 5 + 4)",
+        "34"
+      ],
+      [
+        0.01665443181991577,
+        29,
+        "multiply(15, 3)",
+        "45"
+      ],
+      [
+        0.00016021728515625,
+        121,
+        "add(1, 2)",
+        "3"
+      ],
+      [
+        0.010580062866210938,
+        97,
+        "multiply(4, 30)",
+        "120"
+      ]
+    ]
+  }
+]
