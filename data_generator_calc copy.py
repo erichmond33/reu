@@ -4,7 +4,9 @@ import torch
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
+    pipeline
 )
+import transformers
 from datasets import load_dataset
 from prompts import retrieval_prompt
 from data_generation.retrieval import RetrievalPostprocessing
@@ -15,14 +17,23 @@ import json
 import time
 import argparse
 import re
-
+import accelerate
 
 if __name__ == "__main__":
+    device = torch.device("cuda:1")
+
     # Just getting the args
     parser = argparse.ArgumentParser(description='do some continuations')
     parser.add_argument('--device_id', type=int, default=1)
     parser.add_argument("--num_devices", type=int, default=1)
     args = parser.parse_args()
+
+    print(args.device_id)
+
+    # class GPTJForCausalLM(transformers.models.gptj.modeling_gptj.GPTJForCausalLM):
+    #     def __init__(self, config):
+    #         super().__init__(config)
+    #         convert_to_int8(self)
     # Tokenizer
     gpt_tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B")
     # Some kind of retrieval prompt?
@@ -44,24 +55,11 @@ if __name__ == "__main__":
         # revision="float16",
         torch_dtype=torch.float32,
         low_cpu_mem_usage=True,
-    ).cuda()
+    ).to(device)
+    # Configure generation to end when <api_end> is generated (end_tokens[1] almost never gets called)
+    model.config.eos_token_id = end_tokens[0]
     # Data
     dataset = load_dataset("c4", "en", split="train", streaming=True)
-
-    '''
-    View the filter
-    '''
-    # count = 0
-    # for data in dataset:
-    #     count += 1
-    #     output = apply_heuristics(data, gpt_tokenizer)
-    #     if output:
-    #         print("\n\n\nHeuristics satisfied in the following text:")
-    #         apply_heuristics(data, gpt_tokenizer, print_heuristics=True)
-    #     # print(count)
-
-
-
     filtered_dataset = dataset.filter(lambda example: apply_heuristics(example, gpt_tokenizer, print_heuristics=False))
     iter_data = iter(filtered_dataset)
     # Vars
@@ -71,7 +69,7 @@ if __name__ == "__main__":
     found_examples = 0
     output_dataset = list()
     start_time = time.process_time()
-    num_examples = int(25000.0/float(args.num_devices))
+    num_examples = int(90000.0/float(args.num_devices))
     start_count = -1
     # All for num_examples & start_count to pick up where you left off
     if os.path.isfile(f"calc_data_{args.device_id}.json"):
@@ -80,22 +78,29 @@ if __name__ == "__main__":
             start_count = output_dataset[-1]['file_index']
             for item in output_dataset:
                 num_examples -= len(item['calculator_outputs'])
+    i = 0
     # Loop until enough data is found
-    while found_examples < num_examples + 20:
+    while found_examples < num_examples:
         data = next(iter_data)
         # Increment file_counter to pick up where you left off
         if file_counter < start_count:
             file_counter += 1
             continue
-        if file_counter % args.num_devices != args.device_id:
-            file_counter += 1
+        if i < 2000:
+            i += 1
             continue
+
+        # if file_counter % args.num_devices != args.device_id:
+        #     file_counter += 1
+        #     continue
+        # Visulize the data example
+        apply_heuristics(data, gpt_tokenizer, print_heuristics=False)
         # Make sure calc api works
         # available = check_apis_available(data, gpt_tokenizer)
         # calculator_api_avalability = available.calculator
         if calculator_api_avalability:
             # Parse the data
-            data_outputs = calculator_api_handler.parse_article(data, model, gpt_tokenizer)
+            data_outputs = calculator_api_handler.parse_article(data, model, gpt_tokenizer, device)
             # If no data is found, print found: 0
             if len(data_outputs) == 0:
                 eta_s = (num_examples - found_examples) * (time.process_time() - start_time) / max(1, found_examples)

@@ -19,6 +19,8 @@ import re
 
 
 if __name__ == "__main__":
+    device = torch.device("cuda:0")
+
     # Just getting the args
     parser = argparse.ArgumentParser(description='do some continuations')
     parser.add_argument('--device_id', type=int, default=0)
@@ -45,7 +47,7 @@ if __name__ == "__main__":
         revision="float16",
         torch_dtype=torch.float16,
         low_cpu_mem_usage=True,
-    ).cuda()
+    ).to(device)
     # Configure generation to end when <api_end> is generated (end_tokens[1] almost never gets called)
     model.config.eos_token_id = end_tokens[0]
     # Data
@@ -85,7 +87,7 @@ if __name__ == "__main__":
         # calculator_api_avalability = available.calculator
         if calculator_api_avalability:
             # Parse the data
-            data_outputs = calculator_api_handler.parse_article(data, model, gpt_tokenizer)
+            data_outputs = calculator_api_handler.parse_article(data, model, gpt_tokenizer, device)
             # If no data is found, print found: 0
             if len(data_outputs) == 0:
                 eta_s = (num_examples - found_examples) * (time.process_time() - start_time) / max(1, found_examples)

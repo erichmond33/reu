@@ -63,6 +63,7 @@ class CalculatorPostprocessing(APICallPostprocessing):
         input_start: int,
         nums_to_keep: List[int],
         base_loss: float,
+        device,
         *args,
         **kwargs
     ):
@@ -123,7 +124,7 @@ class CalculatorPostprocessing(APICallPostprocessing):
                     base_inputs = tokenizer(
                         "[" + outputs[j]["Calculator_text"] + "]" + " ",
                         return_tensors="pt",
-                    )["input_ids"].cuda()
+                    )["input_ids"].to(device)
                     # Format the entire <API> and executed api answer
                     outputs[j]["Calculator_text"] = (
                         "["
@@ -136,12 +137,12 @@ class CalculatorPostprocessing(APICallPostprocessing):
                     test_inputs = tokenizer(
                         outputs[j]["Calculator_text"] + " ",
                         return_tensors="pt",
-                    )["input_ids"].cuda()
+                    )["input_ids"].to(device)
                     # Add the tokenized enitre api call and answer to the front of the tokenized generated sequence
                     test_inputs = torch.concat(
                         [
-                            test_inputs.cuda(),
-                            input_tokens[:, input_start:].cuda(),
+                            test_inputs.to(device),
+                            input_tokens[:, input_start:].to(device),
                         ],
                         dim=1,
                     )
@@ -150,8 +151,8 @@ class CalculatorPostprocessing(APICallPostprocessing):
                     # Add the tokenized enitre api call without the answer to the front of the tokenized generated sequence
                     base_inputs = torch.concat(
                         [
-                            base_inputs.cuda(),
-                            input_tokens[:, input_start:].cuda(),
+                            base_inputs.to(device),
+                            input_tokens[:, input_start:].to(device),
                         ],
                         dim=1,
                     )
@@ -164,14 +165,14 @@ class CalculatorPostprocessing(APICallPostprocessing):
                             nums_to_keep[candidate],
                             base_loss,
                             outputs[j],
-                            input_tokens.cuda()
+                            input_tokens.to(device)
                         ]
                     )
         return generated_texts, max_token_len, max_token_len_base
     
     def parse_article(
         # PreTrainedModel & PreTrainedTokenizerBase are just templates
-        self, data: dict, model: PreTrainedModel, tokenizer: PreTrainedTokenizerBase
+        self, data: dict, model: PreTrainedModel, tokenizer: PreTrainedTokenizerBase, device
     ):
         # Get the tokens of the input data
         outputs = list()
@@ -197,13 +198,14 @@ class CalculatorPostprocessing(APICallPostprocessing):
             )["input_ids"]
             # This generates five examples with this prompt.
             with torch.no_grad():
-                output = model(model_input.cuda()).logits.cpu()[:, -N:]
+                output = model(model_input.to(device)).logits.cpu()[:, -N:]
             new_outputs = self.generate_continuations(
                 model_input,
                 output,
                 labels,
                 model,
                 tokenizer,
+                device
             )
             # This checks if anything was generated & has a score greater than filter threshold
             for output in new_outputs:
@@ -211,8 +213,8 @@ class CalculatorPostprocessing(APICallPostprocessing):
                     continue
                 output["index"] += int(tokens.shape[1] + (-N * (i + 1)))
                 # filter by score
-                with open("score.txt", "a") as f:
-                    f.write(str(output["Score"]) + "\n\n")
+                # with open("score.txt", "a") as f:
+                #     f.write(str(output["Score"]) + "\n\n")
 
                 if output["Score"] > 0.0:
                     outputs.append([output["Score"], output["index"]] + output["Calculator_output"])

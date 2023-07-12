@@ -107,6 +107,7 @@ class APICallPostprocessing:
         tokenizer: PreTrainedTokenizerBase,
         generator: TextGenerationPipeline,
         criterion: nn.CrossEntropyLoss,
+        device
     ):
         """
         Generates continuations of valid API calls
@@ -134,7 +135,7 @@ class APICallPostprocessing:
                 if values[i][j] < self.minimum_percentage:
                     continue
                 # Get base output
-                base_outputs = model(input_tokens[:, input_start:].cuda()).logits[
+                base_outputs = model(input_tokens[:, input_start:].to(device)).logits[
                     # :, index : index + M
                     :, index : 
                 ]
@@ -143,8 +144,8 @@ class APICallPostprocessing:
                 # Calculate loss without API
                 base_loss = criterion(
                     base_outputs.view(-1, base_outputs.size(-1)),
-                    # labels[:, index : index + M].cuda().view(-1),
-                    labels[:, index : ].cuda().view(-1),
+                    # labels[:, index : index + M].to(device).view(-1),
+                    labels[:, index : ].to(device).view(-1),
                 )
                 # For padding later
                 max_index = max(max_index, index)
@@ -307,6 +308,7 @@ class APICallPostprocessing:
         labels: torch.Tensor,
         model: PreTrainedModel,
         tokenizer: PreTrainedTokenizerBase,
+        device,
         *args,
         **kwargs,
     ):
@@ -333,7 +335,7 @@ class APICallPostprocessing:
         print(f"Found k_values: {values.shape[1]}")
         # setup generation calls...
         generator = pipeline(
-            "text-generation", model=model, tokenizer=tokenizer, device=0
+            "text-generation", model=model, tokenizer=tokenizer, device=device
         )  # type: TextGenerationPipeline
         criterion = nn.CrossEntropyLoss()
         with torch.no_grad():
@@ -347,6 +349,7 @@ class APICallPostprocessing:
                 tokenizer,
                 generator,
                 criterion,
+                device
             )
             for i in range(len(outputs)):
                 generated_texts, max_token_len, max_token_len_base = self.add_api_calls(
@@ -358,6 +361,7 @@ class APICallPostprocessing:
                     input_start,
                     num_to_keeps,
                     outputs[i][0]["base_loss"],
+                    device,
                     *args,
                     **kwargs,
                 )
@@ -366,7 +370,7 @@ class APICallPostprocessing:
                     continue
 
                 # These are the weights described by the weighting function in appendix A
-                weights = torch.tensor([[1/3, .8/3, .6/3, .4/3, .2/3]],dtype=torch.float32).to(device=0)
+                weights = torch.tensor([[1/3, .8/3, .6/3, .4/3, .2/3]],dtype=torch.float32).to(device=device)#args.device_id)
                 # A varible to track the best loss in generated_texts
                 best_loss = -99.0
                 for j in range(len(generated_texts)):
@@ -505,7 +509,7 @@ class APICallPostprocessing:
         #                     ),
         #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
         #                     labels[:, -num_to_keep : ]
-        #                     .cuda()
+        #                     .to(device)
         #                     .view(-1),
         #                 )
         #                 # convert test & label to words
@@ -533,7 +537,7 @@ class APICallPostprocessing:
         #                     ),
         #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
         #                     labels[:, -num_to_keep : ]
-        #                     .cuda()
+        #                     .to(device)
         #                     .view(-1),
         #                 )
         #             if generated_texts[j][-1] != 0:
@@ -545,7 +549,7 @@ class APICallPostprocessing:
         #                     ),
         #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
         #                     labels[:, -num_to_keep : ]
-        #                     .cuda()
+        #                     .to(device)
         #                     .view(-1),
         #                 )
         #             else:
@@ -556,7 +560,7 @@ class APICallPostprocessing:
         #                     ),
         #                     # labels[:, -num_to_keep : -(num_to_keep - M)]
         #                     labels[:, -num_to_keep : ]
-        #                     .cuda()
+        #                     .to(device)
         #                     .view(-1),
         #                 )
         #             generated_texts[j][-3]["generated_text"] = generated_texts[j][-3][
@@ -581,7 +585,7 @@ class APICallPostprocessing:
         # return outputs
 
     def parse_article(
-        self, data: dict, model: PreTrainedModel, tokenizer: PreTrainedTokenizerBase
+        self, data: dict, model: PreTrainedModel, tokenizer: PreTrainedTokenizerBase, device
     ):
         """
         Takes in data dict and parses it into API continuations
