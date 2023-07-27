@@ -25,10 +25,10 @@ The codebase for the Sourceformer model is based on two open source repositories
 
 [conceptofmind/toolformer](https://github.com/conceptofmind/toolformer) is an open-source implementation of [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) by Meta AI.
 
-I have copied their README.md as it stood when I used it and placed it in [model.md](https://github.com/erichmond33/sourceformer/blob/main/model.md)
+I have copied their README.md as it stood when I used it and placed it in /[model.md](https://github.com/erichmond33/sourceformer/blob/main/model.md)
 
 ### /benchmarks
 
 [arkilpatel/SVAMP](https://github.com/arkilpatel/SVAMP) is the [SVAMP](https://arxiv.org/abs/2103.07191), [ASDiv](https://arxiv.org/abs/2106.15772), and [MAWPS](https://aclanthology.org/N16-1136.pdf) math benchmarks. All three are cleaned up and compiled in the SVAMP paper's repository.
 
-I have copied their README.md as it stood when I used it and placed it in [/benchmarks.md](https://github.com/erichmond33/sourceformer/blob/main/benchmarks.md)
+I have copied their README.md as it stood when I used it and placed it in /[benchmarks.md](https://github.com/erichmond33/sourceformer/blob/main/benchmarks.md)
