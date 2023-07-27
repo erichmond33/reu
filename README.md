@@ -8,9 +8,11 @@ This is the codebase for the Sourceformer model. It is based on two open source 
 
 ## Abstract
 
-Language models (LMs) exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also, paradoxically, struggle with basic functionality, such as arithmetic or factual lookup, where much simpler and smaller models excel. In this paper, we show that LMs can teach themselves to use external tools via simple APIs and achieve the best of both worlds. We introduce Toolformer, a model trained to decide which APIs to call, when to call them, what arguments to pass, and how to best incorporate the results into future token prediction. This is done in a self-supervised way, requiring nothing more than a handful of demonstrations for each API. We incorporate a range of tools, including a calculator, a Q\&A system, two different search engines, a translation system, and a calendar. Toolformer achieves substantially improved zero-shot performance across a variety of downstream tasks, often competitive with much larger models, without sacrificing its core language modeling abilities.
+LLMs have been shown to use tools well. By allowing specific tools to increase the capabilities that LLMs struggle with, these models can become much more useful. Previous works use handcrafted examples of simple tool use during self-training. This type of data generation and training is a great compliment to the self-supervised nature of LLMs because most of the generation effort is placed on the LLM. But as the tools become more complex it will become harder to handwrite thorough examples that allow this generation. Today we introduce Sourceformer, which attempts to use a tool in the form of raw source code for self-training and benchmarking during evaluation. We propose a potentially viable method that allows tools to easily grow in complexity and size as the input token sequence to our LLMs inevitably grows. We focus on one tool in particular, a calculator, as a proof of concept for this idea; although, our results are sub par. Across three math benchmarks SVAMP, MAWPS, and ASDiv our model accuracy increases slightly, for some versions, compared to our base model before finetuning.
 
-## How to run
+## Models and Dataset
+
+My models are avalibale through huggingface here.
 
 ### Inference
 Models are available on huggingface! [toolformer_v0](https://huggingface.co/dmayhem93/toolformer_v0_epoch2)
@@ -106,42 +108,4 @@ deepspeed train_gptj_toolformer.py --model_name_or_path=EleutherAI/gpt-j-6B --pe
   --logging_strategy=epoch --fp16 --overwrite_output_dir --adam_beta1=0.9 --adam_beta2=0.999 \
   --weight_decay=2e-02 --learning_rate=1e-05 --warmup_steps=100 --per_device_eval_batch_size=1 \
   --cache_dir="hf_cache" --gradient_checkpointing=True --deepspeed ds_config_gpt_j.json
-```
-
-## Citations
-```bibtex
-@misc{https://doi.org/10.48550/arxiv.2302.04761,
-  doi = {10.48550/ARXIV.2302.04761},
-  
-  url = {https://arxiv.org/abs/2302.04761},
-  
-  author = {Schick, Timo and Dwivedi-Yu, Jane and Dessì, Roberto and Raileanu, Roberta and Lomeli, Maria and Zettlemoyer, Luke and Cancedda, Nicola and Scialom, Thomas},
-  
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
-  title = {Toolformer: Language Models Can Teach Themselves to Use Tools},
-  
-  publisher = {arXiv},
-  
-  year = {2023},
-  
-  copyright = {arXiv.org perpetual, non-exclusive license}
-}
-
-@Article{dao2022flashattention,
-    title={Flashattention: Fast and memory-efficient exact attention with io-awareness},
-    author={Dao, Tri and Fu, Daniel Y and Ermon, Stefano and Rudra, Atri and R{'e}, Christopher},
-    journal={arXiv preprint arXiv:2205.14135},
-    year={2022}
-}
-
-@software{Liang_Long_Context_Transformer_2023,
-    author = {Liang, Kaizhao},
-    doi = {10.5281/zenodo.7651809},
-    month = {2},
-    title = {{Long Context Transformer v0.0.1}},
-    url = {https://github.com/github/linguist},
-    version = {0.0.1},
-    year = {2023}
-}
 ```
