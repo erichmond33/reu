@@ -25,7 +25,7 @@ The codebase for the Sourceformer model is based on two open source repositories
 
 [conceptofmind/toolformer](https://github.com/conceptofmind/toolformer) is an open-source implementation of [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) by Meta AI.
 
-I have copied their README.md as it stood when I used it and placed it in [/model.md](https://github.com/erichmond33/sourceformer/blob/main/model.md)
+I have copied their README.md as it stood when I used it and placed it in [model.md](https://github.com/erichmond33/sourceformer/blob/main/model.md)
 
 ### /benchmarks
 
