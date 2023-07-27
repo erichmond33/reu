@@ -1,6 +1,10 @@
-# Toolformer
+# Sourceformer
 
-Open-source implementation of [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) by Meta AI.
+This is the codebase for the Sourceformer model. It is based on two open source repositories.
+
+#1 Open-source implementation of [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) by Meta AI.
+
+#2 The SVAMP, ASDiv, and MAWPS math benchmarks. All three are cleaned up and compiled in the SVAMP paper's repository.
 
 ## Abstract
 
