@@ -1,0 +1,192 @@
+2023-07-16 00:34:59,500 INFO    StreamThr :16632 [internal.py:wandb_internal():86] W&B internal server running at pid: 16632, started at: 2023-07-16 00:34:59.499202
+2023-07-16 00:34:59,503 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: status
+2023-07-16 00:34:59,507 INFO    WriterThread:16632 [datastore.py:open_for_write():85] open: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/run-q3utpuzn.wandb
+2023-07-16 00:34:59,511 DEBUG   SenderThread:16632 [sender.py:send():369] send: header
+2023-07-16 00:34:59,511 DEBUG   SenderThread:16632 [sender.py:send():369] send: run
+2023-07-16 00:34:59,719 INFO    SenderThread:16632 [dir_watcher.py:__init__():211] watching files in: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files
+2023-07-16 00:34:59,719 INFO    SenderThread:16632 [sender.py:_start_run_threads():1100] run started: q3utpuzn with start time 1689467699.494448
+2023-07-16 00:34:59,723 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: summary_record
+2023-07-16 00:34:59,724 INFO    SenderThread:16632 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-16 00:34:59,729 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: check_version
+2023-07-16 00:34:59,729 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: check_version
+2023-07-16 00:34:59,867 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: run_start
+2023-07-16 00:34:59,875 DEBUG   HandlerThread:16632 [system_info.py:__init__():31] System info init
+2023-07-16 00:34:59,875 DEBUG   HandlerThread:16632 [system_info.py:__init__():46] System info init done
+2023-07-16 00:34:59,876 INFO    HandlerThread:16632 [system_monitor.py:start():181] Starting system monitor
+2023-07-16 00:34:59,876 INFO    SystemMonitor:16632 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-16 00:34:59,876 INFO    HandlerThread:16632 [system_monitor.py:probe():201] Collecting system info
+2023-07-16 00:34:59,877 INFO    SystemMonitor:16632 [interfaces.py:start():190] Started cpu monitoring
+2023-07-16 00:34:59,878 INFO    SystemMonitor:16632 [interfaces.py:start():190] Started disk monitoring
+2023-07-16 00:34:59,879 INFO    SystemMonitor:16632 [interfaces.py:start():190] Started gpu monitoring
+2023-07-16 00:34:59,880 INFO    SystemMonitor:16632 [interfaces.py:start():190] Started memory monitoring
+2023-07-16 00:34:59,882 INFO    SystemMonitor:16632 [interfaces.py:start():190] Started network monitoring
+2023-07-16 00:34:59,929 DEBUG   HandlerThread:16632 [system_info.py:probe():195] Probing system
+2023-07-16 00:34:59,931 DEBUG   HandlerThread:16632 [system_info.py:_probe_git():180] Probing git
+2023-07-16 00:34:59,941 DEBUG   HandlerThread:16632 [system_info.py:_probe_git():188] Probing git done
+2023-07-16 00:34:59,942 DEBUG   HandlerThread:16632 [system_info.py:probe():240] Probing system done
+2023-07-16 00:34:59,942 DEBUG   HandlerThread:16632 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-39-generic-x86_64-with-glibc2.27', 'python': '3.10.11', 'heartbeatAt': '2023-07-16T00:34:59.929716', 'startedAt': '2023-07-16T00:34:59.484782', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--model_name_or_path=EleutherAI/gpt-neo-125m', '--per_device_train_batch_size=32', '--num_train_epochs', '10', '--save_strategy=epoch', '--output_dir=finetune_toolformer_v0', '--report_to', 'wandb', '--dataset_name', 'dmayhem93/toolformer-v0-postprocessed', '--tokenizer_name', 'EleutherAI/gpt-neo-125m', '--block_size', '2048', '--gradient_accumulation_steps', '1', '--do_train', '--do_eval', '--evaluation_strategy=epoch', '--logging_strategy=epoch', '--fp16', '--overwrite_output_dir', '--adam_beta1=0.9', '--adam_beta2=0.999', '--weight_decay=2e-02', '--learning_rate=1e-05', '--warmup_steps=100', '--per_device_eval_batch_size=1', '--cache_dir=hf_cache', '--gradient_checkpointing=True', '--deepspeed', 'ds_config_gpt_j.json'), 'state': 'running', 'program': '/home/eli.richmond/reu/train_gptj_toolformer.py', 'codePath': 'train_gptj_toolformer.py', 'git': {'remote': 'https://github.com/erichmond33/reu.git', 'commit': 'cf9cbab25f32ef44e20f20399cd072f220d5a731'}, 'email': 'eerichmond33@gmail.com', 'root': '/home/eli.richmond/reu', 'host': 'lostforty', 'username': 'eli.richmond', 'executable': '/home/eli.richmond/miniconda3/envs/py310/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1128.40315625, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 800.768, 'min': 800.0, 'max': 2101.0}, {'current': 800.607, 'min': 800.0, 'max': 2101.0}, {'current': 2859.105, 'min': 800.0, 'max': 2101.0}, {'current': 800.591, 'min': 800.0, 'max': 2101.0}, {'current': 800.641, 'min': 800.0, 'max': 2101.0}, {'current': 800.905, 'min': 800.0, 'max': 2101.0}, {'current': 800.742, 'min': 800.0, 'max': 2101.0}, {'current': 799.1, 'min': 800.0, 'max': 2101.0}, {'current': 1353.069, 'min': 800.0, 'max': 2101.0}, {'current': 856.665, 'min': 800.0, 'max': 2101.0}, {'current': 887.783, 'min': 800.0, 'max': 2101.0}, {'current': 944.99, 'min': 800.0, 'max': 2101.0}, {'current': 800.402, 'min': 800.0, 'max': 2101.0}, {'current': 839.61, 'min': 800.0, 'max': 2101.0}, {'current': 1386.687, 'min': 800.0, 'max': 2101.0}, {'current': 1965.318, 'min': 800.0, 'max': 2101.0}, {'current': 800.703, 'min': 800.0, 'max': 2101.0}, {'current': 800.826, 'min': 800.0, 'max': 2101.0}, {'current': 2971.209, 'min': 800.0, 'max': 2101.0}, {'current': 800.657, 'min': 800.0, 'max': 2101.0}, {'current': 800.969, 'min': 800.0, 'max': 2101.0}, {'current': 800.499, 'min': 800.0, 'max': 2101.0}, {'current': 800.612, 'min': 800.0, 'max': 2101.0}, {'current': 799.803, 'min': 800.0, 'max': 2101.0}, {'current': 1791.795, 'min': 800.0, 'max': 2101.0}, {'current': 883.43, 'min': 800.0, 'max': 2101.0}, {'current': 1199.999, 'min': 800.0, 'max': 2101.0}, {'current': 1006.183, 'min': 800.0, 'max': 2101.0}, {'current': 800.73, 'min': 800.0, 'max': 2101.0}, {'current': 844.043, 'min': 800.0, 'max': 2101.0}, {'current': 801.294, 'min': 800.0, 'max': 2101.0}, {'current': 1907.997, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 219.05793380737305, 'used': 66.01025390625}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}, {'name': 'Tesla P40', 'memory_total': 24032378880}], 'memory': {'total': 125.58304977416992}}
+2023-07-16 00:34:59,942 INFO    HandlerThread:16632 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-16 00:34:59,942 INFO    HandlerThread:16632 [system_monitor.py:probe():214] Publishing system info
+2023-07-16 00:34:59,942 DEBUG   HandlerThread:16632 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-16 00:34:59,943 DEBUG   HandlerThread:16632 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-16 00:34:59,943 DEBUG   HandlerThread:16632 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-16 00:35:00,720 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/wandb-summary.json
+2023-07-16 00:35:00,721 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/conda-environment.yaml
+2023-07-16 00:35:00,721 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/requirements.txt
+2023-07-16 00:35:02,704 DEBUG   HandlerThread:16632 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-16 00:35:02,706 INFO    HandlerThread:16632 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-16 00:35:02,719 DEBUG   SenderThread:16632 [sender.py:send():369] send: files
+2023-07-16 00:35:02,720 INFO    SenderThread:16632 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-16 00:35:02,722 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/conda-environment.yaml
+2023-07-16 00:35:02,722 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/wandb-metadata.json
+2023-07-16 00:35:02,734 DEBUG   SenderThread:16632 [sender.py:send():369] send: telemetry
+2023-07-16 00:35:02,742 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-16 00:35:02,743 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: stop_status
+2023-07-16 00:35:02,845 DEBUG   SenderThread:16632 [sender.py:send():369] send: config
+2023-07-16 00:35:02,847 DEBUG   SenderThread:16632 [sender.py:send():369] send: metric
+2023-07-16 00:35:02,848 DEBUG   SenderThread:16632 [sender.py:send():369] send: telemetry
+2023-07-16 00:35:02,848 DEBUG   SenderThread:16632 [sender.py:send():369] send: metric
+2023-07-16 00:35:02,848 WARNING SenderThread:16632 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2023-07-16 00:35:03,054 INFO    wandb-upload_0:16632 [upload_job.py:push():133] Uploaded file /tmp/tmp2vwmja_iwandb/ybua1mdl-wandb-metadata.json
+2023-07-16 00:35:03,722 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/output.log
+2023-07-16 00:35:04,881 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: status_report
+2023-07-16 00:35:05,672 DEBUG   SenderThread:16632 [sender.py:send():369] send: exit
+2023-07-16 00:35:05,673 INFO    SenderThread:16632 [sender.py:send_exit():574] handling exit code: 1
+2023-07-16 00:35:05,673 INFO    SenderThread:16632 [sender.py:send_exit():576] handling runtime: 5
+2023-07-16 00:35:05,674 INFO    SenderThread:16632 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-16 00:35:05,675 INFO    SenderThread:16632 [sender.py:send_exit():582] send defer
+2023-07-16 00:35:05,675 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:05,675 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-16 00:35:05,676 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:05,676 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-16 00:35:05,676 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 1
+2023-07-16 00:35:05,676 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:05,677 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-16 00:35:05,677 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:05,677 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-16 00:35:05,677 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 2
+2023-07-16 00:35:05,677 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:05,678 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-16 00:35:05,678 INFO    HandlerThread:16632 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-16 00:35:05,678 DEBUG   SystemMonitor:16632 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-16 00:35:05,679 DEBUG   SystemMonitor:16632 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-16 00:35:05,679 INFO    HandlerThread:16632 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-16 00:35:05,679 DEBUG   SystemMonitor:16632 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-16 00:35:05,680 INFO    HandlerThread:16632 [interfaces.py:finish():202] Joined disk monitor
+2023-07-16 00:35:05,724 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/wandb-summary.json
+2023-07-16 00:35:05,724 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/output.log
+2023-07-16 00:35:05,784 INFO    HandlerThread:16632 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-16 00:35:05,785 INFO    HandlerThread:16632 [interfaces.py:finish():202] Joined memory monitor
+2023-07-16 00:35:05,785 INFO    HandlerThread:16632 [interfaces.py:finish():202] Joined network monitor
+2023-07-16 00:35:05,786 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:05,786 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-16 00:35:05,787 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 3
+2023-07-16 00:35:05,787 DEBUG   SenderThread:16632 [sender.py:send():369] send: stats
+2023-07-16 00:35:05,787 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:05,788 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-16 00:35:05,789 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:05,789 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-16 00:35:05,789 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 4
+2023-07-16 00:35:05,789 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:05,789 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-16 00:35:05,790 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:05,790 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-16 00:35:05,790 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 5
+2023-07-16 00:35:05,790 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:05,790 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-16 00:35:05,791 DEBUG   SenderThread:16632 [sender.py:send():369] send: summary
+2023-07-16 00:35:05,791 INFO    SenderThread:16632 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-16 00:35:05,792 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:05,792 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-16 00:35:05,792 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 6
+2023-07-16 00:35:05,792 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:05,793 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-16 00:35:05,793 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:05,793 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-16 00:35:05,799 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: status_report
+2023-07-16 00:35:06,109 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 7
+2023-07-16 00:35:06,110 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:06,110 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-16 00:35:06,111 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:06,111 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-07-16 00:35:06,673 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-16 00:35:06,724 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/wandb-summary.json
+2023-07-16 00:35:06,725 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/config.yaml
+2023-07-16 00:35:06,876 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 8
+2023-07-16 00:35:06,877 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: poll_exit
+2023-07-16 00:35:06,877 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:06,878 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-16 00:35:06,878 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:06,879 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-07-16 00:35:06,879 INFO    SenderThread:16632 [job_builder.py:build():240] Attempting to build job artifact
+2023-07-16 00:35:06,879 INFO    SenderThread:16632 [job_builder.py:build():264] is repo sourced job
+2023-07-16 00:35:06,881 INFO    SenderThread:16632 [job_builder.py:build():305] adding wandb-job metadata file
+2023-07-16 00:35:06,884 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 9
+2023-07-16 00:35:06,884 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:06,885 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-16 00:35:06,885 DEBUG   SenderThread:16632 [sender.py:send():369] send: artifact
+2023-07-16 00:35:07,479 INFO    wandb-upload_1:16632 [upload_job.py:push():88] Skipped uploading /home/eli.richmond/.local/share/wandb/artifacts/staging/tmpk5c4a4az
+2023-07-16 00:35:07,675 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-16 00:35:07,725 INFO    Thread-12 :16632 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/output.log
+2023-07-16 00:35:07,729 INFO    wandb-upload_0:16632 [upload_job.py:push():91] Uploaded file /home/eli.richmond/.local/share/wandb/artifacts/staging/tmpr4qhyf3p
+2023-07-16 00:35:08,440 INFO    SenderThread:16632 [sender.py:send_artifact():1450] sent artifact job-https___github.com_erichmond33_reu.git_train_gptj_toolformer.py - {'id': 'QXJ0aWZhY3Q6NTEzNjc1MTgw', 'digest': 'f7451d6b45d68e5e0d71bbd87ed386be', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjgzMDY1MjQy', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTEzNjQ2ODcw', 'versionIndex': 0}}, 'version': 'latest'}
+2023-07-16 00:35:08,440 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:08,440 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-07-16 00:35:08,441 INFO    SenderThread:16632 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-16 00:35:08,728 INFO    SenderThread:16632 [dir_watcher.py:finish():389] scan: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files
+2023-07-16 00:35:08,728 INFO    SenderThread:16632 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/config.yaml config.yaml
+2023-07-16 00:35:08,729 INFO    SenderThread:16632 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/wandb-summary.json wandb-summary.json
+2023-07-16 00:35:08,729 INFO    SenderThread:16632 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/wandb-metadata.json wandb-metadata.json
+2023-07-16 00:35:08,730 INFO    SenderThread:16632 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/requirements.txt requirements.txt
+2023-07-16 00:35:08,741 INFO    SenderThread:16632 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/conda-environment.yaml conda-environment.yaml
+2023-07-16 00:35:08,743 INFO    SenderThread:16632 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/output.log output.log
+2023-07-16 00:35:08,749 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 10
+2023-07-16 00:35:08,750 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: poll_exit
+2023-07-16 00:35:08,751 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:08,757 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-16 00:35:08,764 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:08,765 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-07-16 00:35:08,765 INFO    SenderThread:16632 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-16 00:35:09,024 INFO    wandb-upload_0:16632 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/wandb-summary.json
+2023-07-16 00:35:09,068 INFO    wandb-upload_1:16632 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/config.yaml
+2023-07-16 00:35:09,137 INFO    wandb-upload_4:16632 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/output.log
+2023-07-16 00:35:09,150 INFO    wandb-upload_2:16632 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/requirements.txt
+2023-07-16 00:35:09,164 INFO    wandb-upload_3:16632 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/files/conda-environment.yaml
+2023-07-16 00:35:09,365 INFO    Thread-11 (_thread_body):16632 [sender.py:transition_state():602] send defer: 11
+2023-07-16 00:35:09,366 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:09,366 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-16 00:35:09,367 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:09,367 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-07-16 00:35:09,367 INFO    SenderThread:16632 [file_pusher.py:join():164] waiting for file pusher
+2023-07-16 00:35:09,368 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 12
+2023-07-16 00:35:09,368 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:09,368 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-16 00:35:09,369 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:09,369 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-07-16 00:35:09,487 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 13
+2023-07-16 00:35:09,487 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:09,488 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-16 00:35:09,488 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:09,488 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-07-16 00:35:09,489 INFO    SenderThread:16632 [sender.py:transition_state():602] send defer: 14
+2023-07-16 00:35:09,489 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: defer
+2023-07-16 00:35:09,490 DEBUG   SenderThread:16632 [sender.py:send():369] send: final
+2023-07-16 00:35:09,490 INFO    HandlerThread:16632 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-16 00:35:09,490 DEBUG   SenderThread:16632 [sender.py:send():369] send: footer
+2023-07-16 00:35:09,490 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: defer
+2023-07-16 00:35:09,491 INFO    SenderThread:16632 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-07-16 00:35:09,492 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-16 00:35:09,493 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: poll_exit
+2023-07-16 00:35:09,494 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: server_info
+2023-07-16 00:35:09,494 DEBUG   SenderThread:16632 [sender.py:send_request():396] send_request: server_info
+2023-07-16 00:35:09,499 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-16 00:35:09,500 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-16 00:35:09,550 INFO    MainThread:16632 [wandb_run.py:_footer_history_summary_info():3464] rendering history
+2023-07-16 00:35:09,550 INFO    MainThread:16632 [wandb_run.py:_footer_history_summary_info():3496] rendering summary
+2023-07-16 00:35:09,550 INFO    MainThread:16632 [wandb_run.py:_footer_sync_info():3423] logging synced files
+2023-07-16 00:35:09,551 DEBUG   HandlerThread:16632 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-16 00:35:09,551 INFO    HandlerThread:16632 [handler.py:finish():854] shutting down handler
+2023-07-16 00:35:10,495 INFO    WriterThread:16632 [datastore.py:close():298] close: /home/eli.richmond/reu/wandb/run-20230716_003459-q3utpuzn/run-q3utpuzn.wandb
+2023-07-16 00:35:10,549 INFO    SenderThread:16632 [sender.py:finish():1526] shutting down sender
+2023-07-16 00:35:10,550 INFO    SenderThread:16632 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-16 00:35:10,550 INFO    SenderThread:16632 [file_pusher.py:join():164] waiting for file pusher

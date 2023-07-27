@@ -1,0 +1,26 @@
+
+  0%|                                                                                                                                                                                   | 0/2730 [00:00<?, ?it/s][WARNING|logging.py:295] 2023-07-16 00:35:02,878 >> `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+Traceback (most recent call last):
+  File "/home/eli.richmond/reu/train_gptj_toolformer.py", line 702, in <module>
+    main()
+  File "/home/eli.richmond/reu/train_gptj_toolformer.py", line 639, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 1664, in train
+    return inner_training_loop(
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 1940, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 2735, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 2767, in compute_loss
+    outputs = model(**inputs)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1769, in forward
+    loss = self.module(*inputs, **kwargs)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/eli.richmond/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 769, in forward
+    shift_logits = lm_logits[..., :-1, :].contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.27 GiB (GPU 0; 31.75 GiB total capacity; 15.27 GiB already allocated; 9.11 GiB free; 21.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,1023 @@
+2023-07-17 17:43:19,513 INFO    StreamThr :28844 [internal.py:wandb_internal():86] W&B internal server running at pid: 28844, started at: 2023-07-17 17:43:19.512408
+2023-07-17 17:43:19,515 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status
+2023-07-17 17:43:19,521 INFO    WriterThread:28844 [datastore.py:open_for_write():85] open: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/run-bx65716i.wandb
+2023-07-17 17:43:19,523 DEBUG   SenderThread:28844 [sender.py:send():369] send: header
+2023-07-17 17:43:19,523 DEBUG   SenderThread:28844 [sender.py:send():369] send: run
+2023-07-17 17:43:19,777 INFO    SenderThread:28844 [dir_watcher.py:__init__():211] watching files in: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files
+2023-07-17 17:43:19,778 INFO    SenderThread:28844 [sender.py:_start_run_threads():1100] run started: bx65716i with start time 1689615799.507016
+2023-07-17 17:43:19,781 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: summary_record
+2023-07-17 17:43:19,781 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-17 17:43:19,787 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: check_version
+2023-07-17 17:43:19,787 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: check_version
+2023-07-17 17:43:19,921 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: run_start
+2023-07-17 17:43:19,930 DEBUG   HandlerThread:28844 [system_info.py:__init__():31] System info init
+2023-07-17 17:43:19,931 DEBUG   HandlerThread:28844 [system_info.py:__init__():46] System info init done
+2023-07-17 17:43:19,931 INFO    HandlerThread:28844 [system_monitor.py:start():181] Starting system monitor
+2023-07-17 17:43:19,931 INFO    SystemMonitor:28844 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-17 17:43:19,931 INFO    HandlerThread:28844 [system_monitor.py:probe():201] Collecting system info
+2023-07-17 17:43:19,932 INFO    SystemMonitor:28844 [interfaces.py:start():190] Started cpu monitoring
+2023-07-17 17:43:19,934 INFO    SystemMonitor:28844 [interfaces.py:start():190] Started disk monitoring
+2023-07-17 17:43:19,936 INFO    SystemMonitor:28844 [interfaces.py:start():190] Started gpu monitoring
+2023-07-17 17:43:19,937 INFO    SystemMonitor:28844 [interfaces.py:start():190] Started memory monitoring
+2023-07-17 17:43:19,939 INFO    SystemMonitor:28844 [interfaces.py:start():190] Started network monitoring
+2023-07-17 17:43:19,980 DEBUG   HandlerThread:28844 [system_info.py:probe():195] Probing system
+2023-07-17 17:43:19,982 DEBUG   HandlerThread:28844 [system_info.py:_probe_git():180] Probing git
+2023-07-17 17:43:19,991 DEBUG   HandlerThread:28844 [system_info.py:_probe_git():188] Probing git done
+2023-07-17 17:43:19,991 DEBUG   HandlerThread:28844 [system_info.py:probe():240] Probing system done
+2023-07-17 17:43:19,991 DEBUG   HandlerThread:28844 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-39-generic-x86_64-with-glibc2.27', 'python': '3.10.11', 'heartbeatAt': '2023-07-17T17:43:19.980981', 'startedAt': '2023-07-17T17:43:19.495514', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--model_name_or_path=EleutherAI/gpt-neo-1.3B', '--per_device_train_batch_size=4', '--num_train_epochs', '1', '--save_strategy=no', '--output_dir=v0', '--report_to', 'wandb', '--dataset_name', 'eerichmond33/sourceformer-dataset', '--tokenizer_name', 'EleutherAI/gpt-neo-1.3B', '--block_size', '2048', '--gradient_accumulation_steps', '1', '--do_train', '--do_eval', '--evaluation_strategy=epoch', '--logging_strategy=epoch', '--fp16', '--overwrite_output_dir', '--adam_beta1=0.9', '--adam_beta2=0.999', '--weight_decay=2e-02', '--learning_rate=1e-05', '--warmup_steps=7', '--per_device_eval_batch_size=1', '--cache_dir=hf_cache', '--gradient_checkpointing=True', '--deepspeed', 'ds_config_gpt_j.json', '--push_to_hub=True'), 'state': 'running', 'program': '/home/eli.richmond/reu/train_gptj_toolformer.py', 'codePath': 'train_gptj_toolformer.py', 'git': {'remote': 'https://github.com/erichmond33/reu.git', 'commit': 'cf9cbab25f32ef44e20f20399cd072f220d5a731'}, 'email': 'eerichmond33@gmail.com', 'root': '/home/eli.richmond/reu', 'host': 'lostforty', 'username': 'eli.richmond', 'executable': '/home/eli.richmond/miniconda3/envs/py310/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1509.8094999999996, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 1487.092, 'min': 800.0, 'max': 2101.0}, {'current': 1041.272, 'min': 800.0, 'max': 2101.0}, {'current': 800.01, 'min': 800.0, 'max': 2101.0}, {'current': 800.033, 'min': 800.0, 'max': 2101.0}, {'current': 2401.109, 'min': 800.0, 'max': 2101.0}, {'current': 855.637, 'min': 800.0, 'max': 2101.0}, {'current': 2399.94, 'min': 800.0, 'max': 2101.0}, {'current': 2551.688, 'min': 800.0, 'max': 2101.0}, {'current': 1397.638, 'min': 800.0, 'max': 2101.0}, {'current': 800.001, 'min': 800.0, 'max': 2101.0}, {'current': 876.287, 'min': 800.0, 'max': 2101.0}, {'current': 800.128, 'min': 800.0, 'max': 2101.0}, {'current': 800.176, 'min': 800.0, 'max': 2101.0}, {'current': 800.063, 'min': 800.0, 'max': 2101.0}, {'current': 2400.14, 'min': 800.0, 'max': 2101.0}, {'current': 2565.392, 'min': 800.0, 'max': 2101.0}, {'current': 1349.348, 'min': 800.0, 'max': 2101.0}, {'current': 1540.756, 'min': 800.0, 'max': 2101.0}, {'current': 798.934, 'min': 800.0, 'max': 2101.0}, {'current': 799.988, 'min': 800.0, 'max': 2101.0}, {'current': 2543.761, 'min': 800.0, 'max': 2101.0}, {'current': 884.678, 'min': 800.0, 'max': 2101.0}, {'current': 2543.76, 'min': 800.0, 'max': 2101.0}, {'current': 2554.539, 'min': 800.0, 'max': 2101.0}, {'current': 1400.0, 'min': 800.0, 'max': 2101.0}, {'current': 823.085, 'min': 800.0, 'max': 2101.0}, {'current': 870.638, 'min': 800.0, 'max': 2101.0}, {'current': 800.132, 'min': 800.0, 'max': 2101.0}, {'current': 800.614, 'min': 800.0, 'max': 2101.0}, {'current': 800.756, 'min': 800.0, 'max': 2101.0}, {'current': 2566.628, 'min': 800.0, 'max': 2101.0}, {'current': 2401.377, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 219.05793380737305, 'used': 66.0140151977539}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}, {'name': 'Tesla P40', 'memory_total': 24032378880}], 'memory': {'total': 125.58304977416992}}
+2023-07-17 17:43:19,991 INFO    HandlerThread:28844 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-17 17:43:19,991 INFO    HandlerThread:28844 [system_monitor.py:probe():214] Publishing system info
+2023-07-17 17:43:19,991 DEBUG   HandlerThread:28844 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-17 17:43:19,992 DEBUG   HandlerThread:28844 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-17 17:43:19,992 DEBUG   HandlerThread:28844 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-17 17:43:20,782 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/requirements.txt
+2023-07-17 17:43:20,782 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-summary.json
+2023-07-17 17:43:20,783 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/conda-environment.yaml
+2023-07-17 17:43:23,217 DEBUG   HandlerThread:28844 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-17 17:43:23,218 INFO    HandlerThread:28844 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-17 17:43:23,231 DEBUG   SenderThread:28844 [sender.py:send():369] send: files
+2023-07-17 17:43:23,231 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-17 17:43:23,243 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:43:23,244 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:43:23,451 DEBUG   SenderThread:28844 [sender.py:send():369] send: telemetry
+2023-07-17 17:43:23,451 DEBUG   SenderThread:28844 [sender.py:send():369] send: config
+2023-07-17 17:43:23,453 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 17:43:23,454 DEBUG   SenderThread:28844 [sender.py:send():369] send: telemetry
+2023-07-17 17:43:23,454 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 17:43:23,454 WARNING SenderThread:28844 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2023-07-17 17:43:23,659 INFO    wandb-upload_0:28844 [upload_job.py:push():133] Uploaded file /tmp/tmpod5mua_hwandb/5juzc2uu-wandb-metadata.json
+2023-07-17 17:43:23,780 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/conda-environment.yaml
+2023-07-17 17:43:23,781 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:43:23,781 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-metadata.json
+2023-07-17 17:43:25,456 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:43:25,781 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:43:30,458 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:43:35,788 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:43:35,965 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:43:38,244 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:43:38,246 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:43:41,384 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:43:46,385 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:43:51,798 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:43:52,296 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:43:52,799 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/config.yaml
+2023-07-17 17:43:53,244 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:43:53,245 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:43:58,305 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:03,307 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:05,807 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:44:08,244 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:44:08,245 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:44:08,314 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:13,315 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:18,317 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:19,939 DEBUG   SystemMonitor:28844 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-17 17:44:19,943 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:44:21,817 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:44:23,243 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:44:23,244 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:44:23,326 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:28,327 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:33,329 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:35,826 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:44:38,244 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:44:38,245 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:44:39,309 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:44,311 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:49,312 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:49,944 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:44:51,837 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:44:53,244 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:44:53,245 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:44:54,388 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:44:59,389 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:04,391 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:07,847 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:45:08,245 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:45:08,246 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:45:10,324 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:15,331 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:19,948 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:45:20,951 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:23,245 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:45:23,246 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:45:23,855 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:45:26,313 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:31,314 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:36,315 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:37,860 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:45:38,244 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:45:38,246 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:45:41,390 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:46,392 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:49,950 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:45:51,952 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:45:53,245 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:45:53,246 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:45:53,868 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:45:57,369 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:02,370 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:07,372 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:08,246 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:46:08,247 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:46:09,875 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:46:13,323 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:18,325 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:19,952 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:46:23,245 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:46:23,247 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:46:23,351 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:23,881 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:46:28,536 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:33,537 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:38,246 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:46:38,247 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:46:39,028 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:39,888 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:46:44,030 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:49,031 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:49,955 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:46:53,246 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:46:53,247 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:46:54,345 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:46:55,895 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:46:59,520 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:04,521 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:08,246 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:47:08,247 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:47:10,001 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:11,903 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:47:15,002 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:19,957 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:47:20,959 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:23,247 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:47:23,248 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:47:25,911 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:47:26,486 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:31,487 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:36,489 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:38,247 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:47:38,248 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:47:42,000 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:42,921 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:47:47,001 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:49,960 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:47:52,962 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:53,247 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:47:53,248 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:47:58,512 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:47:58,932 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:48:03,513 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:08,247 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:48:08,248 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:48:09,331 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:14,513 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:14,942 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:48:19,514 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:19,963 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:48:23,247 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:48:23,248 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:48:25,365 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:30,523 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:30,952 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:48:35,524 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:38,248 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:48:38,249 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:48:41,325 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:46,523 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:46,963 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:48:49,966 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:48:51,968 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:48:53,249 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:48:53,250 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:48:57,313 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:02,528 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:02,977 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:49:07,529 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:08,248 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:49:08,249 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:49:13,387 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:18,533 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:18,988 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:49:19,968 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:49:23,248 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:49:23,249 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:49:24,377 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:29,378 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:34,539 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:34,998 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:49:38,249 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:49:38,250 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:49:40,358 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:45,359 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:49,970 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:49:50,971 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:49:51,008 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:49:53,249 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:49:53,250 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:49:56,336 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:01,338 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:06,584 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:07,019 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:50:08,249 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:50:08,250 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:50:12,361 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:17,363 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:19,972 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:50:22,572 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:23,029 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:50:23,249 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:50:23,250 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:50:28,322 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:33,323 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:38,250 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:50:38,251 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:50:38,356 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:39,040 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:50:43,357 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:48,359 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:49,974 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:50:53,250 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:50:53,251 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:50:53,401 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:50:55,051 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:50:58,403 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:03,404 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:08,405 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:08,629 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:51:08,630 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:51:11,061 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:51:13,690 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:18,692 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:19,975 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:51:23,612 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:51:23,612 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:51:24,658 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:27,071 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:51:29,660 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:34,661 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:38,612 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:51:38,613 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:51:39,781 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:43,081 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:51:45,684 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:49,978 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:51:50,979 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:53,612 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:51:53,613 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:51:56,678 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:51:59,091 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:52:01,679 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:06,680 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:08,612 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:52:08,613 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:52:12,681 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:15,101 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:52:17,686 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:19,980 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:52:22,983 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:23,613 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:52:23,613 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:52:28,678 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:31,111 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:52:33,708 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:38,613 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:52:38,614 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:52:38,734 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:43,735 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:47,121 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:52:49,734 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:52:49,983 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:52:53,613 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:52:53,614 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:52:55,698 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:00,700 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:03,131 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:53:05,747 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:08,613 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:53:08,614 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:53:11,685 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:16,686 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:19,141 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:53:19,985 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:53:21,987 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:23,614 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:53:23,615 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:53:27,682 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:32,684 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:35,152 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:53:37,787 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:38,614 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:53:38,615 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:53:43,709 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:48,711 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:49,986 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:53:51,162 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:53:53,614 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:53:53,615 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:53:54,231 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:53:59,234 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:04,235 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:07,173 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:54:08,615 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:54:08,615 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:54:09,687 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:14,688 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:19,689 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:19,989 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:54:23,183 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:54:23,615 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:54:23,616 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:54:25,673 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:30,675 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:35,676 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:38,615 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:54:38,616 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:54:39,193 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:54:41,675 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:46,676 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:49,992 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:54:51,994 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:54:53,615 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:54:53,616 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:54:55,204 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:54:57,733 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:02,735 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:07,736 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:08,954 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:55:08,955 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:55:11,213 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:55:13,066 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:18,067 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:19,995 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:55:23,934 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:55:23,934 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:55:24,014 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:27,223 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:55:29,951 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:34,952 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:38,933 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:55:38,935 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:55:40,002 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:43,234 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:55:45,947 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:49,998 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:55:51,000 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:53,937 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:55:53,938 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:55:56,033 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:55:59,244 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:56:01,970 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:06,971 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:08,934 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:56:08,935 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:56:12,016 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:15,253 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:56:17,978 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:19,999 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:56:23,002 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:23,934 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:56:23,936 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:56:28,025 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:31,263 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:56:33,979 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:38,934 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:56:38,935 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:56:38,996 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:43,997 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:47,273 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:56:49,013 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:50,001 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:56:53,936 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:56:53,938 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:56:54,052 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:56:59,053 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:03,283 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:57:05,026 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:08,935 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:57:08,936 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:57:11,020 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:16,021 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:19,293 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:57:20,004 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:57:22,006 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:23,935 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:57:23,936 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:57:27,011 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:32,014 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:35,303 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:57:37,089 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:38,935 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:57:38,937 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:57:43,054 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:48,056 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:50,007 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:57:51,313 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:57:53,936 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:57:53,937 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:57:54,110 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:57:59,112 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:04,113 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:07,323 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:58:08,936 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:58:08,937 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:58:10,004 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:15,006 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:20,009 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:20,010 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:58:23,332 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:58:23,936 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:58:23,937 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:58:25,995 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:30,996 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:35,998 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:38,936 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:58:38,937 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:58:39,343 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:58:41,019 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:46,020 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:50,012 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:58:52,014 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:58:53,936 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:58:53,937 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:58:55,352 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:58:57,025 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:02,027 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:07,029 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:09,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:59:09,272 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:59:11,363 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:59:12,372 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:17,373 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:20,014 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:59:23,016 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:24,253 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:59:24,254 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:59:27,373 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:59:28,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:33,273 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:38,274 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:39,255 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:59:39,256 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:59:43,316 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:43,383 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 17:59:48,317 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:50,016 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 17:59:54,019 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:54,254 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 17:59:54,255 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 17:59:59,348 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 17:59:59,393 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:00:04,350 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:09,254 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:00:09,255 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:00:10,331 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:15,380 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:15,403 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:00:20,019 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:00:21,021 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:24,254 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:00:24,255 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:00:26,321 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:31,402 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:31,414 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:00:36,403 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:39,255 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:00:39,256 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:00:42,358 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:47,424 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:00:47,450 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:50,022 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:00:53,024 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:00:54,255 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:00:54,256 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:00:58,316 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:03,434 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:01:03,464 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:08,466 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:09,255 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:01:09,257 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:01:14,339 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:19,443 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:01:19,466 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:20,024 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:01:24,256 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:01:24,257 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:01:25,321 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:30,322 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:35,453 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:01:35,486 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:39,255 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:01:39,256 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:01:41,336 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:46,337 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:50,026 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:01:52,028 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:01:52,464 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:01:54,256 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:01:54,257 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:01:57,321 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:02,322 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:07,500 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:08,474 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:09,256 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:02:09,257 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:02:10,074 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-17 18:02:10,080 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:10,082 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:10,082 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:10,082 DEBUG   SenderThread:28844 [sender.py:send():369] send: history
+2023-07-17 18:02:10,083 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: summary_record
+2023-07-17 18:02:10,084 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-17 18:02:10,475 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-summary.json
+2023-07-17 18:02:12,477 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:13,166 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:14,478 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:16,480 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:18,402 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:18,481 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:20,029 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:02:20,482 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:22,484 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:23,634 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:24,256 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:02:24,257 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:02:24,485 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/config.yaml
+2023-07-17 18:02:24,486 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:26,487 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:28,458 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-17 18:02:28,465 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-17 18:02:28,472 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,473 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,473 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,474 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,474 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,474 DEBUG   SenderThread:28844 [sender.py:send():369] send: history
+2023-07-17 18:02:28,474 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: summary_record
+2023-07-17 18:02:28,476 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-17 18:02:28,477 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,478 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,478 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,478 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,478 DEBUG   SenderThread:28844 [sender.py:send():369] send: metric
+2023-07-17 18:02:28,478 DEBUG   SenderThread:28844 [sender.py:send():369] send: history
+2023-07-17 18:02:28,479 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: summary_record
+2023-07-17 18:02:28,480 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-17 18:02:28,488 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:28,489 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-summary.json
+2023-07-17 18:02:29,482 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:30,489 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:02:34,483 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:39,485 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:44,486 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:45,959 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:02:45,960 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:02:50,031 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:02:50,035 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:54,264 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:02:54,265 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:02:55,345 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:02:55,529 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/config.yaml
+2023-07-17 18:03:00,530 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:05,961 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:09,264 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:03:09,265 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:03:11,346 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:16,960 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:20,034 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:03:22,036 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:24,264 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:03:24,265 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:03:27,334 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:30,549 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:03:32,481 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:37,489 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:39,265 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:03:39,266 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:03:42,495 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:47,960 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:50,036 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:03:53,038 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:03:54,265 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:03:54,266 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:03:58,517 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:03,527 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:08,534 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:09,265 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:04:09,266 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:04:14,327 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:19,551 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:20,039 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:04:24,265 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:04:24,266 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:04:25,359 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:30,565 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:35,576 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:39,266 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:04:39,267 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:04:41,328 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:46,587 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:50,042 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:04:51,595 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:04:54,266 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:04:54,266 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:04:57,323 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:02,961 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:08,615 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:09,266 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:05:09,267 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:05:13,621 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:18,962 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:20,044 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:05:24,266 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:05:24,267 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:05:24,337 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:29,646 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:34,652 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:39,266 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:05:39,267 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:05:40,341 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:45,669 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:50,046 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:05:51,048 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:05:54,266 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:05:54,267 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:05:56,686 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:01,962 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:07,697 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:09,267 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:06:09,268 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:06:12,710 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:17,716 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:20,048 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:06:22,722 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:24,267 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:06:24,268 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:06:28,316 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:33,963 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:39,267 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:06:39,268 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:06:39,341 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:44,754 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:49,761 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:06:50,051 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:06:54,267 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:06:54,268 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:06:55,385 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:00,774 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:05,783 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:09,268 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:07:09,269 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:07:11,551 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:16,964 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:20,055 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:07:22,810 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:24,268 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:07:24,269 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:07:27,819 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:32,826 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:37,828 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:39,268 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:07:39,269 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:07:42,841 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:47,848 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:50,056 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:07:52,855 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:07:54,268 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:07:54,269 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:07:58,341 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:03,964 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:09,268 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:08:09,269 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:08:09,333 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:14,885 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:19,890 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:20,059 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:08:24,269 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:08:24,269 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:08:24,901 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:29,907 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:34,914 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:39,269 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:08:39,270 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:08:39,924 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:44,929 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:49,937 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:50,061 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:08:54,269 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:08:54,270 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:08:54,947 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:08:59,949 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:04,965 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:09,269 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:09:09,270 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:09:10,390 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:15,965 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:20,064 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:09:21,066 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:24,269 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:09:24,270 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:09:26,332 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:31,965 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:37,002 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:39,269 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:09:39,270 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:09:42,014 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:47,020 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:50,067 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:09:52,031 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:09:54,269 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:09:54,270 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:09:57,035 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:02,044 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:07,045 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:09,270 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:10:09,270 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:10:12,370 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:17,966 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:20,069 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:10:23,072 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:24,270 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:10:24,271 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:10:28,077 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:33,966 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:39,091 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:39,270 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:10:39,271 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:10:44,102 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:49,109 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:50,073 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:10:54,116 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:10:54,270 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:10:54,271 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:10:59,123 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:04,129 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:09,137 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:09,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:11:09,271 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:11:14,146 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:19,156 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:20,074 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:11:24,164 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:24,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:11:24,272 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:11:29,170 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:34,177 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:39,183 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:39,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:11:39,272 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:11:44,190 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:49,967 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:11:50,077 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:11:54,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:11:54,272 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:11:55,334 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:00,967 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:06,225 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:09,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:12:09,272 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:12:11,360 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:17,242 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:20,079 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:12:22,252 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:24,271 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:12:24,273 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:12:27,257 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:32,267 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:37,268 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:39,272 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:12:39,273 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:12:42,281 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:47,288 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:50,082 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:12:52,294 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:12:54,272 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:12:54,273 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:12:57,300 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:02,968 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:08,313 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:09,272 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:13:09,273 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:13:13,326 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:18,331 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:20,084 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:13:23,340 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:24,272 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:13:24,273 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:13:28,346 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:33,357 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:38,362 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:39,272 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:13:39,273 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:13:43,368 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:48,969 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:50,087 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:13:54,273 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:13:54,274 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:13:54,337 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:13:59,389 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:04,399 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:09,273 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:14:09,274 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:14:10,362 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:15,412 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:20,089 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:14:21,091 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:24,273 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:14:24,274 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:14:26,351 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:31,439 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:36,440 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:39,273 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:14:39,274 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:14:41,452 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:46,969 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:50,092 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:14:52,465 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:54,274 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:14:54,275 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:14:54,990 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:14:55,991 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:14:57,684 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:14:57,992 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:14:58,993 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:00,994 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:01,995 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:02,996 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:03,146 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:04,998 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:06,999 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:08,357 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:09,001 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:09,274 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:15:09,275 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:15:11,002 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:13,004 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:13,568 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:15,006 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:17,007 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:17,337 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-17 18:15:17,342 DEBUG   SenderThread:28844 [sender.py:send():369] send: history
+2023-07-17 18:15:17,343 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: summary_record
+2023-07-17 18:15:17,346 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-17 18:15:18,008 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-summary.json
+2023-07-17 18:15:19,008 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:19,349 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:20,009 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:15:20,112 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:15:25,115 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:28,358 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:15:28,359 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:15:30,426 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:35,971 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:40,972 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:43,356 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:15:43,357 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:15:46,970 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:50,096 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:15:52,099 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:57,100 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:15:58,357 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:15:58,357 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:16:02,970 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:16:07,971 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:16:11,043 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:16:12,044 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:16:13,332 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:16:13,357 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-17 18:16:13,358 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: stop_status
+2023-07-17 18:16:14,698 DEBUG   SenderThread:28844 [sender.py:send():369] send: exit
+2023-07-17 18:16:14,698 INFO    SenderThread:28844 [sender.py:send_exit():574] handling exit code: 0
+2023-07-17 18:16:14,699 INFO    SenderThread:28844 [sender.py:send_exit():576] handling runtime: 1974
+2023-07-17 18:16:14,699 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-17 18:16:14,700 INFO    SenderThread:28844 [sender.py:send_exit():582] send defer
+2023-07-17 18:16:14,700 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,700 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-17 18:16:14,701 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,701 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-17 18:16:14,701 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 1
+2023-07-17 18:16:14,701 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,701 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-17 18:16:14,701 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,702 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-17 18:16:14,702 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 2
+2023-07-17 18:16:14,702 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,702 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-17 18:16:14,702 INFO    HandlerThread:28844 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-17 18:16:14,703 INFO    HandlerThread:28844 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-17 18:16:14,703 DEBUG   SystemMonitor:28844 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-17 18:16:14,704 INFO    HandlerThread:28844 [interfaces.py:finish():202] Joined disk monitor
+2023-07-17 18:16:14,704 DEBUG   SystemMonitor:28844 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-17 18:16:14,831 INFO    HandlerThread:28844 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-17 18:16:14,832 INFO    HandlerThread:28844 [interfaces.py:finish():202] Joined memory monitor
+2023-07-17 18:16:14,832 INFO    HandlerThread:28844 [interfaces.py:finish():202] Joined network monitor
+2023-07-17 18:16:14,834 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,834 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-17 18:16:14,834 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 3
+2023-07-17 18:16:14,835 DEBUG   SenderThread:28844 [sender.py:send():369] send: stats
+2023-07-17 18:16:14,835 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,837 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-17 18:16:14,837 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,837 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-17 18:16:14,838 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 4
+2023-07-17 18:16:14,838 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,838 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-17 18:16:14,839 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,839 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-17 18:16:14,839 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 5
+2023-07-17 18:16:14,839 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,839 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-17 18:16:14,841 DEBUG   SenderThread:28844 [sender.py:send():369] send: summary
+2023-07-17 18:16:14,842 INFO    SenderThread:28844 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-17 18:16:14,843 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,843 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-17 18:16:14,843 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 6
+2023-07-17 18:16:14,843 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,844 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-17 18:16:14,844 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,845 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-17 18:16:14,845 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 7
+2023-07-17 18:16:14,845 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: status_report
+2023-07-17 18:16:14,845 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:14,846 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-17 18:16:14,846 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:14,846 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-07-17 18:16:15,046 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:16:15,047 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-summary.json
+2023-07-17 18:16:15,699 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-17 18:16:16,047 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:16:17,048 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:16:17,314 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 8
+2023-07-17 18:16:17,314 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: poll_exit
+2023-07-17 18:16:17,314 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:17,315 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-17 18:16:17,316 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:17,316 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-07-17 18:16:17,316 INFO    SenderThread:28844 [job_builder.py:build():240] Attempting to build job artifact
+2023-07-17 18:16:17,317 INFO    SenderThread:28844 [job_builder.py:build():264] is repo sourced job
+2023-07-17 18:16:17,324 INFO    SenderThread:28844 [job_builder.py:build():305] adding wandb-job metadata file
+2023-07-17 18:16:17,330 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 9
+2023-07-17 18:16:17,331 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:17,331 DEBUG   SenderThread:28844 [sender.py:send():369] send: artifact
+2023-07-17 18:16:17,332 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-17 18:16:18,048 INFO    Thread-12 :28844 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:16:18,589 INFO    SenderThread:28844 [sender.py:send_artifact():1450] sent artifact job-https___github.com_erichmond33_reu.git_train_gptj_toolformer.py - {'id': 'QXJ0aWZhY3Q6NTE0NzE3Mjgz', 'digest': 'bc5f4042d630ebfcd6412da5c5b52f50', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_erichmond33_reu.git_train_gptj_toolformer.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_erichmond33_reu.git_train_gptj_toolformer.py', 'alias': 'v3'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjgzMDY1MjQy', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTE0NzE3Mjgz', 'versionIndex': 3}}, 'version': 'v3'}
+2023-07-17 18:16:18,589 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:18,589 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-07-17 18:16:18,590 INFO    SenderThread:28844 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-17 18:16:19,050 INFO    SenderThread:28844 [dir_watcher.py:finish():389] scan: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files
+2023-07-17 18:16:19,051 INFO    SenderThread:28844 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/config.yaml config.yaml
+2023-07-17 18:16:19,052 INFO    SenderThread:28844 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-summary.json wandb-summary.json
+2023-07-17 18:16:19,058 INFO    SenderThread:28844 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-metadata.json wandb-metadata.json
+2023-07-17 18:16:19,060 INFO    SenderThread:28844 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/requirements.txt requirements.txt
+2023-07-17 18:16:19,066 INFO    SenderThread:28844 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/conda-environment.yaml conda-environment.yaml
+2023-07-17 18:16:19,067 INFO    SenderThread:28844 [dir_watcher.py:finish():403] scan save: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log output.log
+2023-07-17 18:16:19,073 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 10
+2023-07-17 18:16:19,082 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:19,082 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-17 18:16:19,089 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:19,089 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-07-17 18:16:19,090 INFO    SenderThread:28844 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-17 18:16:19,517 INFO    wandb-upload_1:28844 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/wandb-summary.json
+2023-07-17 18:16:19,519 INFO    wandb-upload_2:28844 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/requirements.txt
+2023-07-17 18:16:19,535 INFO    wandb-upload_0:28844 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/config.yaml
+2023-07-17 18:16:19,541 INFO    wandb-upload_4:28844 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/output.log
+2023-07-17 18:16:19,574 INFO    wandb-upload_3:28844 [upload_job.py:push():133] Uploaded file /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/files/conda-environment.yaml
+2023-07-17 18:16:19,775 INFO    Thread-11 (_thread_body):28844 [sender.py:transition_state():602] send defer: 11
+2023-07-17 18:16:19,776 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:19,776 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-17 18:16:19,777 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:19,777 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-07-17 18:16:19,777 INFO    SenderThread:28844 [file_pusher.py:join():164] waiting for file pusher
+2023-07-17 18:16:19,778 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 12
+2023-07-17 18:16:19,778 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:19,778 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-17 18:16:19,779 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:19,779 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-07-17 18:16:20,320 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 13
+2023-07-17 18:16:20,321 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:20,321 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-17 18:16:20,322 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:20,322 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-07-17 18:16:20,322 INFO    SenderThread:28844 [sender.py:transition_state():602] send defer: 14
+2023-07-17 18:16:20,323 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: defer
+2023-07-17 18:16:20,323 DEBUG   SenderThread:28844 [sender.py:send():369] send: final
+2023-07-17 18:16:20,323 INFO    HandlerThread:28844 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-17 18:16:20,323 DEBUG   SenderThread:28844 [sender.py:send():369] send: footer
+2023-07-17 18:16:20,324 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: defer
+2023-07-17 18:16:20,324 INFO    SenderThread:28844 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-07-17 18:16:20,325 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-17 18:16:20,326 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: poll_exit
+2023-07-17 18:16:20,327 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: server_info
+2023-07-17 18:16:20,327 DEBUG   SenderThread:28844 [sender.py:send_request():396] send_request: server_info
+2023-07-17 18:16:20,333 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-17 18:16:20,334 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-17 18:16:20,397 INFO    MainThread:28844 [wandb_run.py:_footer_history_summary_info():3464] rendering history
+2023-07-17 18:16:20,398 INFO    MainThread:28844 [wandb_run.py:_footer_history_summary_info():3496] rendering summary
+2023-07-17 18:16:20,398 INFO    MainThread:28844 [wandb_run.py:_footer_sync_info():3423] logging synced files
+2023-07-17 18:16:20,399 DEBUG   HandlerThread:28844 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-17 18:16:20,400 INFO    HandlerThread:28844 [handler.py:finish():854] shutting down handler
+2023-07-17 18:16:21,328 INFO    WriterThread:28844 [datastore.py:close():298] close: /home/eli.richmond/reu/wandb/run-20230717_174319-bx65716i/run-bx65716i.wandb
+2023-07-17 18:16:21,396 INFO    SenderThread:28844 [sender.py:finish():1526] shutting down sender
+2023-07-17 18:16:21,397 INFO    SenderThread:28844 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-17 18:16:21,397 INFO    SenderThread:28844 [file_pusher.py:join():164] waiting for file pusher

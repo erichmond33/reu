@@ -1,0 +1,243 @@
+{
+    "os": "Linux-4.15.0-39-generic-x86_64-with-glibc2.27",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-07-16T00:33:43.414079",
+    "startedAt": "2023-07-16T00:33:42.911832",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=0",
+        "--model_name_or_path=EleutherAI/gpt-neo-125m",
+        "--per_device_train_batch_size=4",
+        "--num_train_epochs",
+        "10",
+        "--save_strategy=epoch",
+        "--output_dir=finetune_toolformer_v0",
+        "--report_to",
+        "wandb",
+        "--dataset_name",
+        "dmayhem93/toolformer-v0-postprocessed",
+        "--tokenizer_name",
+        "EleutherAI/gpt-neo-125m",
+        "--block_size",
+        "2048",
+        "--gradient_accumulation_steps",
+        "1",
+        "--do_train",
+        "--do_eval",
+        "--evaluation_strategy=epoch",
+        "--logging_strategy=epoch",
+        "--fp16",
+        "--overwrite_output_dir",
+        "--adam_beta1=0.9",
+        "--adam_beta2=0.999",
+        "--weight_decay=2e-02",
+        "--learning_rate=1e-05",
+        "--warmup_steps=100",
+        "--per_device_eval_batch_size=1",
+        "--cache_dir=hf_cache",
+        "--gradient_checkpointing=True",
+        "--deepspeed",
+        "ds_config_gpt_j.json"
+    ],
+    "state": "running",
+    "program": "/home/eli.richmond/reu/train_gptj_toolformer.py",
+    "codePath": "train_gptj_toolformer.py",
+    "git": {
+        "remote": "https://github.com/erichmond33/reu.git",
+        "commit": "cf9cbab25f32ef44e20f20399cd072f220d5a731"
+    },
+    "email": "eerichmond33@gmail.com",
+    "root": "/home/eli.richmond/reu",
+    "host": "lostforty",
+    "username": "eli.richmond",
+    "executable": "/home/eli.richmond/miniconda3/envs/py310/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 1056.2637499999998,
+        "min": 800.0,
+        "max": 2101.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 803.204,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 2854.153,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.675,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.943,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1224.98,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.054,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.433,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.248,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.573,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1609.999,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.145,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 874.669,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.184,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.215,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.748,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.169,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.447,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 2614.502,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.77,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.604,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1389.143,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.724,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.707,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.84,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.427,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1289.726,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.103,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1100.0,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.538,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.707,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.471,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 800.929,
+            "min": 800.0,
+            "max": 2101.0
+        }
+    ],
+    "disk": {
+        "total": 219.05793380737305,
+        "used": 66.01021575927734
+    },
+    "gpu": "Tesla V100-PCIE-32GB",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-PCIE-32GB",
+            "memory_total": 34089730048
+        },
+        {
+            "name": "Tesla P40",
+            "memory_total": 24032378880
+        }
+    ],
+    "memory": {
+        "total": 125.58304977416992
+    }
+}

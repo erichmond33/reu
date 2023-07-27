@@ -1,0 +1,150 @@
+
+  0%|                                                                                                                                                                                     | 0/72 [00:00<?, ?it/s][WARNING|logging.py:295] 2023-07-17 16:38:33,670 >> `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 72/72 [01:44<00:00,  1.09s/it]
+  0%|                                                                                                                                                                                     | 0/33 [00:00<?, ?it/s]
+
+ 79%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                    | 26/33 [00:01<00:00, 16.23it/s]
+
+  warnings.warn(
+{'train_runtime': 121.9159, 'train_samples_per_second': 4.667, 'train_steps_per_second': 0.591, 'train_loss': 3.2818467881944446, 'epoch': 1.0}
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 72/72 [01:57<00:00,  1.63s/it]
+07/17/2023 16:40:40 - WARNING - huggingface_hub.repository - Several commits (2) will be pushed upstream.
+07/17/2023 16:40:40 - WARNING - huggingface_hub.repository - The progress bars may be unreliable.
+Several commits (2) will be pushed upstream.
+The progress bars may be unreliable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Upload file pytorch_model.bin: 290MB [02:16, 2.23MB/s]
+07/17/2023 16:43:00 - WARNING - huggingface_hub.repository - To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+Upload file pytorch_model.bin: 290MB [02:16, 2.23MB/s]                                                                                                                                                           To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+   8e0fee3..68ab577  main -> main
+Upload file pytorch_model.bin: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 287M/287M [02:18<00:00, 2.18MB/s]
+To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+   68ab577..415bfda  main -> main
+07/17/2023 16:43:05 - WARNING - huggingface_hub.repository - To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+   68ab577..415bfda  main -> main
+***** train metrics *****
+  epoch                    =        1.0
+  train_loss               =     3.2818
+  train_runtime            = 0:02:01.91
+  train_samples            =        569
+  train_samples_per_second =      4.667
+  train_steps_per_second   =      0.591
+ 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎               | 30/33 [00:01<00:00, 15.97it/s]
+***** eval metrics *****
+  epoch                   =        1.0
+  eval_accuracy           =     0.3884
+  eval_loss               =     3.3164
+  eval_runtime            = 0:00:02.39
+  eval_samples            =         33
+  eval_samples_per_second =     13.756
+  eval_steps_per_second   =     13.756
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 33/33 [00:02<00:00, 14.18it/s]
+07/17/2023 16:43:17 - WARNING - huggingface_hub.repository - To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+   415bfda..948f40f  main -> main
+To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+   415bfda..948f40f  main -> main
+07/17/2023 16:43:21 - WARNING - huggingface_hub.repository - remote: [31m-------------------------------------------------------------------------
+remote: [31mSorry, your push was rejected during YAML metadata verification: 
+remote: [31m- Error: "model-index[0].results[0].dataset.config" must be a string
+remote: [31m-------------------------------------------------------------------------
+remote: [32m-------------------------------------------------------------------------
+remote: [32mPlease find the documentation at:
+remote: [32mhttps://huggingface.co/docs/hub/model-cards#model-card-metadata
+remote:
+remote: [32m-------------------------------------------------------------------------
+To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://user: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@huggingface.co/eerichmond33/finetune_toolformer_v0'
+remote: [31m-------------------------------------------------------------------------
+remote: [31mSorry, your push was rejected during YAML metadata verification: 
+remote: [31m- Error: "model-index[0].results[0].dataset.config" must be a string
+remote: [31m-------------------------------------------------------------------------
+remote: [32m-------------------------------------------------------------------------
+remote: [32mPlease find the documentation at:
+remote: [32mhttps://huggingface.co/docs/hub/model-cards#model-card-metadata
+remote:
+remote: [32m-------------------------------------------------------------------------
+To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://user: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@huggingface.co/eerichmond33/finetune_toolformer_v0'
+[ERROR|trainer.py:3709] 2023-07-17 16:43:22,758 >> Error pushing update to the model card. Please read logs and retry.
+$remote: [31m-------------------------------------------------------------------------
+remote: [31mSorry, your push was rejected during YAML metadata verification: 
+remote: [31m- Error: "model-index[0].results[0].dataset.config" must be a string
+remote: [31m-------------------------------------------------------------------------
+remote: [32m-------------------------------------------------------------------------
+remote: [32mPlease find the documentation at:
+remote: [32mhttps://huggingface.co/docs/hub/model-cards#model-card-metadata
+remote:
+remote: [32m-------------------------------------------------------------------------
+To https://huggingface.co/eerichmond33/finetune_toolformer_v0
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://user: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@huggingface.co/eerichmond33/finetune_toolformer_v0'

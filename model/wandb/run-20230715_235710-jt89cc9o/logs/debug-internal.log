@@ -1,0 +1,65 @@
+2023-07-15 23:57:10,062 INFO    StreamThr :384 [internal.py:wandb_internal():86] W&B internal server running at pid: 384, started at: 2023-07-15 23:57:10.061833
+2023-07-15 23:57:10,066 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: status
+2023-07-15 23:57:10,071 INFO    WriterThread:384 [datastore.py:open_for_write():85] open: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/run-jt89cc9o.wandb
+2023-07-15 23:57:10,073 DEBUG   SenderThread:384 [sender.py:send():369] send: header
+2023-07-15 23:57:10,074 DEBUG   SenderThread:384 [sender.py:send():369] send: run
+2023-07-15 23:57:10,336 INFO    SenderThread:384 [dir_watcher.py:__init__():211] watching files in: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files
+2023-07-15 23:57:10,336 INFO    SenderThread:384 [sender.py:_start_run_threads():1100] run started: jt89cc9o with start time 1689465430.057149
+2023-07-15 23:57:10,337 DEBUG   SenderThread:384 [sender.py:send_request():396] send_request: summary_record
+2023-07-15 23:57:10,338 INFO    SenderThread:384 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-15 23:57:10,342 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: check_version
+2023-07-15 23:57:10,343 DEBUG   SenderThread:384 [sender.py:send_request():396] send_request: check_version
+2023-07-15 23:57:10,484 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: run_start
+2023-07-15 23:57:10,493 DEBUG   HandlerThread:384 [system_info.py:__init__():31] System info init
+2023-07-15 23:57:10,493 DEBUG   HandlerThread:384 [system_info.py:__init__():46] System info init done
+2023-07-15 23:57:10,493 INFO    HandlerThread:384 [system_monitor.py:start():181] Starting system monitor
+2023-07-15 23:57:10,494 INFO    SystemMonitor:384 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-15 23:57:10,494 INFO    HandlerThread:384 [system_monitor.py:probe():201] Collecting system info
+2023-07-15 23:57:10,495 INFO    SystemMonitor:384 [interfaces.py:start():190] Started cpu monitoring
+2023-07-15 23:57:10,496 INFO    SystemMonitor:384 [interfaces.py:start():190] Started disk monitoring
+2023-07-15 23:57:10,498 INFO    SystemMonitor:384 [interfaces.py:start():190] Started gpu monitoring
+2023-07-15 23:57:10,500 INFO    SystemMonitor:384 [interfaces.py:start():190] Started memory monitoring
+2023-07-15 23:57:10,502 INFO    SystemMonitor:384 [interfaces.py:start():190] Started network monitoring
+2023-07-15 23:57:10,555 DEBUG   HandlerThread:384 [system_info.py:probe():195] Probing system
+2023-07-15 23:57:10,556 DEBUG   HandlerThread:384 [system_info.py:_probe_git():180] Probing git
+2023-07-15 23:57:10,566 DEBUG   HandlerThread:384 [system_info.py:_probe_git():188] Probing git done
+2023-07-15 23:57:10,566 DEBUG   HandlerThread:384 [system_info.py:probe():240] Probing system done
+2023-07-15 23:57:10,566 DEBUG   HandlerThread:384 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-39-generic-x86_64-with-glibc2.27', 'python': '3.10.11', 'heartbeatAt': '2023-07-15T23:57:10.555243', 'startedAt': '2023-07-15T23:57:10.050654', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--model_name_or_path=EleutherAI/gpt-neo-1.3B', '--per_device_train_batch_size=4', '--num_train_epochs', '10', '--save_strategy=epoch', '--output_dir=finetune_toolformer_v0', '--report_to', 'wandb', '--dataset_name', 'dmayhem93/toolformer-v0-postprocessed', '--tokenizer_name', 'EleutherAI/gpt-neo-1.3B', '--block_size', '2048', '--gradient_accumulation_steps', '1', '--do_train', '--do_eval', '--evaluation_strategy=epoch', '--logging_strategy=epoch', '--fp16', '--overwrite_output_dir', '--adam_beta1=0.9', '--adam_beta2=0.999', '--weight_decay=2e-02', '--learning_rate=1e-05', '--warmup_steps=100', '--per_device_eval_batch_size=1', '--cache_dir=hf_cache', '--gradient_checkpointing=True', '--deepspeed', 'ds_config_gpt_j.json'), 'state': 'running', 'program': '/home/eli.richmond/reu/train_gptj_toolformer.py', 'codePath': 'train_gptj_toolformer.py', 'git': {'remote': 'https://github.com/erichmond33/reu.git', 'commit': 'cf9cbab25f32ef44e20f20399cd072f220d5a731'}, 'email': 'eerichmond33@gmail.com', 'root': '/home/eli.richmond/reu', 'host': 'lostforty', 'username': 'eli.richmond', 'executable': '/home/eli.richmond/miniconda3/envs/py310/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1094.9803124999999, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 1406.763, 'min': 800.0, 'max': 2101.0}, {'current': 800.305, 'min': 800.0, 'max': 2101.0}, {'current': 800.109, 'min': 800.0, 'max': 2101.0}, {'current': 2742.275, 'min': 800.0, 'max': 2101.0}, {'current': 1006.571, 'min': 800.0, 'max': 2101.0}, {'current': 856.742, 'min': 800.0, 'max': 2101.0}, {'current': 888.563, 'min': 800.0, 'max': 2101.0}, {'current': 884.164, 'min': 800.0, 'max': 2101.0}, {'current': 800.204, 'min': 800.0, 'max': 2101.0}, {'current': 800.227, 'min': 800.0, 'max': 2101.0}, {'current': 2794.731, 'min': 800.0, 'max': 2101.0}, {'current': 800.914, 'min': 800.0, 'max': 2101.0}, {'current': 800.061, 'min': 800.0, 'max': 2101.0}, {'current': 1265.223, 'min': 800.0, 'max': 2101.0}, {'current': 800.574, 'min': 800.0, 'max': 2101.0}, {'current': 800.251, 'min': 800.0, 'max': 2101.0}, {'current': 1487.908, 'min': 800.0, 'max': 2101.0}, {'current': 800.166, 'min': 800.0, 'max': 2101.0}, {'current': 800.138, 'min': 800.0, 'max': 2101.0}, {'current': 2568.854, 'min': 800.0, 'max': 2101.0}, {'current': 801.171, 'min': 800.0, 'max': 2101.0}, {'current': 889.56, 'min': 800.0, 'max': 2101.0}, {'current': 829.748, 'min': 800.0, 'max': 2101.0}, {'current': 814.942, 'min': 800.0, 'max': 2101.0}, {'current': 800.278, 'min': 800.0, 'max': 2101.0}, {'current': 800.326, 'min': 800.0, 'max': 2101.0}, {'current': 2807.734, 'min': 800.0, 'max': 2101.0}, {'current': 800.568, 'min': 800.0, 'max': 2101.0}, {'current': 801.019, 'min': 800.0, 'max': 2101.0}, {'current': 903.79, 'min': 800.0, 'max': 2101.0}, {'current': 800.878, 'min': 800.0, 'max': 2101.0}, {'current': 800.71, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 219.05793380737305, 'used': 66.0097427368164}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}, {'name': 'Tesla P40', 'memory_total': 24032378880}], 'memory': {'total': 125.58304977416992}}
+2023-07-15 23:57:10,566 INFO    HandlerThread:384 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-15 23:57:10,566 INFO    HandlerThread:384 [system_monitor.py:probe():214] Publishing system info
+2023-07-15 23:57:10,566 DEBUG   HandlerThread:384 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-15 23:57:10,567 DEBUG   HandlerThread:384 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-15 23:57:10,567 DEBUG   HandlerThread:384 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-15 23:57:11,341 INFO    Thread-12 :384 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/conda-environment.yaml
+2023-07-15 23:57:11,341 INFO    Thread-12 :384 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/requirements.txt
+2023-07-15 23:57:11,342 INFO    Thread-12 :384 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/wandb-summary.json
+2023-07-15 23:57:13,339 INFO    Thread-12 :384 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/conda-environment.yaml
+2023-07-15 23:57:13,399 DEBUG   HandlerThread:384 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-15 23:57:13,400 INFO    HandlerThread:384 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-15 23:57:13,411 DEBUG   SenderThread:384 [sender.py:send():369] send: files
+2023-07-15 23:57:13,412 INFO    SenderThread:384 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-15 23:57:13,420 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:57:13,422 DEBUG   SenderThread:384 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:57:13,532 DEBUG   SenderThread:384 [sender.py:send():369] send: telemetry
+2023-07-15 23:57:13,533 DEBUG   SenderThread:384 [sender.py:send():369] send: config
+2023-07-15 23:57:13,535 DEBUG   SenderThread:384 [sender.py:send():369] send: metric
+2023-07-15 23:57:13,536 DEBUG   SenderThread:384 [sender.py:send():369] send: telemetry
+2023-07-15 23:57:13,536 DEBUG   SenderThread:384 [sender.py:send():369] send: metric
+2023-07-15 23:57:13,536 WARNING SenderThread:384 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2023-07-15 23:57:13,796 INFO    wandb-upload_0:384 [upload_job.py:push():133] Uploaded file /tmp/tmpaxa_kfcgwandb/zxuansnk-wandb-metadata.json
+2023-07-15 23:57:14,339 INFO    Thread-12 :384 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/output.log
+2023-07-15 23:57:14,340 INFO    Thread-12 :384 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/wandb-metadata.json
+2023-07-15 23:57:15,539 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:57:16,341 INFO    Thread-12 :384 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/output.log
+2023-07-15 23:57:20,540 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:57:26,347 INFO    Thread-12 :384 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/output.log
+2023-07-15 23:57:26,512 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:57:28,419 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:57:28,420 DEBUG   SenderThread:384 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:57:32,478 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:57:37,479 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:57:42,357 INFO    Thread-12 :384 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/output.log
+2023-07-15 23:57:42,834 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:57:43,357 INFO    Thread-12 :384 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_235710-jt89cc9o/files/config.yaml
+2023-07-15 23:57:43,417 DEBUG   HandlerThread:384 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:57:43,419 DEBUG   SenderThread:384 [sender.py:send_request():396] send_request: stop_status

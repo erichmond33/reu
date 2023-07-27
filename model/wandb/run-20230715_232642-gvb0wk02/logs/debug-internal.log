@@ -1,0 +1,436 @@
+2023-07-15 23:26:42,772 INFO    StreamThr :26245 [internal.py:wandb_internal():86] W&B internal server running at pid: 26245, started at: 2023-07-15 23:26:42.771430
+2023-07-15 23:26:42,775 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status
+2023-07-15 23:26:42,779 INFO    WriterThread:26245 [datastore.py:open_for_write():85] open: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/run-gvb0wk02.wandb
+2023-07-15 23:26:42,782 DEBUG   SenderThread:26245 [sender.py:send():369] send: header
+2023-07-15 23:26:42,783 DEBUG   SenderThread:26245 [sender.py:send():369] send: run
+2023-07-15 23:26:43,077 INFO    SenderThread:26245 [dir_watcher.py:__init__():211] watching files in: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files
+2023-07-15 23:26:43,077 INFO    SenderThread:26245 [sender.py:_start_run_threads():1100] run started: gvb0wk02 with start time 1689463602.766294
+2023-07-15 23:26:43,078 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: summary_record
+2023-07-15 23:26:43,078 INFO    SenderThread:26245 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-15 23:26:43,082 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: check_version
+2023-07-15 23:26:43,083 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: check_version
+2023-07-15 23:26:43,228 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: run_start
+2023-07-15 23:26:43,237 DEBUG   HandlerThread:26245 [system_info.py:__init__():31] System info init
+2023-07-15 23:26:43,237 DEBUG   HandlerThread:26245 [system_info.py:__init__():46] System info init done
+2023-07-15 23:26:43,238 INFO    HandlerThread:26245 [system_monitor.py:start():181] Starting system monitor
+2023-07-15 23:26:43,238 INFO    SystemMonitor:26245 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-15 23:26:43,238 INFO    HandlerThread:26245 [system_monitor.py:probe():201] Collecting system info
+2023-07-15 23:26:43,239 INFO    SystemMonitor:26245 [interfaces.py:start():190] Started cpu monitoring
+2023-07-15 23:26:43,240 INFO    SystemMonitor:26245 [interfaces.py:start():190] Started disk monitoring
+2023-07-15 23:26:43,242 INFO    SystemMonitor:26245 [interfaces.py:start():190] Started gpu monitoring
+2023-07-15 23:26:43,243 INFO    SystemMonitor:26245 [interfaces.py:start():190] Started memory monitoring
+2023-07-15 23:26:43,245 INFO    SystemMonitor:26245 [interfaces.py:start():190] Started network monitoring
+2023-07-15 23:26:43,289 DEBUG   HandlerThread:26245 [system_info.py:probe():195] Probing system
+2023-07-15 23:26:43,290 DEBUG   HandlerThread:26245 [system_info.py:_probe_git():180] Probing git
+2023-07-15 23:26:43,299 DEBUG   HandlerThread:26245 [system_info.py:_probe_git():188] Probing git done
+2023-07-15 23:26:43,300 DEBUG   HandlerThread:26245 [system_info.py:probe():240] Probing system done
+2023-07-15 23:26:43,300 DEBUG   HandlerThread:26245 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-39-generic-x86_64-with-glibc2.27', 'python': '3.10.11', 'heartbeatAt': '2023-07-15T23:26:43.289303', 'startedAt': '2023-07-15T23:26:42.755626', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--model_name_or_path=EleutherAI/gpt-neo-1.3B', '--per_device_train_batch_size=4', '--num_train_epochs', '10', '--save_strategy=epoch', '--output_dir=finetune_toolformer_v0', '--report_to', 'wandb', '--dataset_name', 'dmayhem93/toolformer-v0-postprocessed', '--tokenizer_name', 'EleutherAI/gpt-neo-1.3B', '--block_size', '2048', '--gradient_accumulation_steps', '1', '--do_train', '--do_eval', '--evaluation_strategy=epoch', '--logging_strategy=epoch', '--fp16', '--overwrite_output_dir', '--adam_beta1=0.9', '--adam_beta2=0.999', '--weight_decay=2e-02', '--learning_rate=1e-05', '--warmup_steps=100', '--per_device_eval_batch_size=1', '--cache_dir=hf_cache', '--gradient_checkpointing=True', '--deepspeed', 'ds_config_gpt_j.json'), 'state': 'running', 'program': '/home/eli.richmond/reu/train_gptj_toolformer.py', 'codePath': 'train_gptj_toolformer.py', 'git': {'remote': 'https://github.com/erichmond33/reu.git', 'commit': 'cf9cbab25f32ef44e20f20399cd072f220d5a731'}, 'email': 'eerichmond33@gmail.com', 'root': '/home/eli.richmond/reu', 'host': 'lostforty', 'username': 'eli.richmond', 'executable': '/home/eli.richmond/miniconda3/envs/py310/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1176.344875, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 800.068, 'min': 800.0, 'max': 2101.0}, {'current': 800.095, 'min': 800.0, 'max': 2101.0}, {'current': 800.57, 'min': 800.0, 'max': 2101.0}, {'current': 2823.068, 'min': 800.0, 'max': 2101.0}, {'current': 818.334, 'min': 800.0, 'max': 2101.0}, {'current': 800.668, 'min': 800.0, 'max': 2101.0}, {'current': 800.601, 'min': 800.0, 'max': 2101.0}, {'current': 800.807, 'min': 800.0, 'max': 2101.0}, {'current': 800.786, 'min': 800.0, 'max': 2101.0}, {'current': 2809.815, 'min': 800.0, 'max': 2101.0}, {'current': 800.077, 'min': 800.0, 'max': 2101.0}, {'current': 800.678, 'min': 800.0, 'max': 2101.0}, {'current': 1871.203, 'min': 800.0, 'max': 2101.0}, {'current': 800.767, 'min': 800.0, 'max': 2101.0}, {'current': 1088.168, 'min': 800.0, 'max': 2101.0}, {'current': 824.125, 'min': 800.0, 'max': 2101.0}, {'current': 800.185, 'min': 800.0, 'max': 2101.0}, {'current': 800.332, 'min': 800.0, 'max': 2101.0}, {'current': 800.372, 'min': 800.0, 'max': 2101.0}, {'current': 2617.444, 'min': 800.0, 'max': 2101.0}, {'current': 999.622, 'min': 800.0, 'max': 2101.0}, {'current': 800.227, 'min': 800.0, 'max': 2101.0}, {'current': 800.124, 'min': 800.0, 'max': 2101.0}, {'current': 800.63, 'min': 800.0, 'max': 2101.0}, {'current': 800.432, 'min': 800.0, 'max': 2101.0}, {'current': 2800.654, 'min': 800.0, 'max': 2101.0}, {'current': 800.406, 'min': 800.0, 'max': 2101.0}, {'current': 800.53, 'min': 800.0, 'max': 2101.0}, {'current': 1831.174, 'min': 800.0, 'max': 2101.0}, {'current': 800.072, 'min': 800.0, 'max': 2101.0}, {'current': 1177.571, 'min': 800.0, 'max': 2101.0}, {'current': 1358.966, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 219.05793380737305, 'used': 66.00961685180664}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 2, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}, {'name': 'Tesla P40', 'memory_total': 24032378880}], 'memory': {'total': 125.58304977416992}}
+2023-07-15 23:26:43,300 INFO    HandlerThread:26245 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-15 23:26:43,300 INFO    HandlerThread:26245 [system_monitor.py:probe():214] Publishing system info
+2023-07-15 23:26:43,300 DEBUG   HandlerThread:26245 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-15 23:26:43,301 DEBUG   HandlerThread:26245 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-15 23:26:43,301 DEBUG   HandlerThread:26245 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-15 23:26:44,081 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/requirements.txt
+2023-07-15 23:26:44,082 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/conda-environment.yaml
+2023-07-15 23:26:44,082 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/wandb-summary.json
+2023-07-15 23:26:46,079 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/conda-environment.yaml
+2023-07-15 23:26:46,136 DEBUG   HandlerThread:26245 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-15 23:26:46,138 INFO    HandlerThread:26245 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-15 23:26:46,150 DEBUG   SenderThread:26245 [sender.py:send():369] send: files
+2023-07-15 23:26:46,151 INFO    SenderThread:26245 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-15 23:26:46,164 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:26:46,164 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:26:46,279 DEBUG   SenderThread:26245 [sender.py:send():369] send: telemetry
+2023-07-15 23:26:46,279 DEBUG   SenderThread:26245 [sender.py:send():369] send: config
+2023-07-15 23:26:46,281 DEBUG   SenderThread:26245 [sender.py:send():369] send: metric
+2023-07-15 23:26:46,282 DEBUG   SenderThread:26245 [sender.py:send():369] send: telemetry
+2023-07-15 23:26:46,282 DEBUG   SenderThread:26245 [sender.py:send():369] send: metric
+2023-07-15 23:26:46,282 WARNING SenderThread:26245 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2023-07-15 23:26:46,504 INFO    wandb-upload_0:26245 [upload_job.py:push():133] Uploaded file /tmp/tmpgug047x1wandb/qkyr8ib8-wandb-metadata.json
+2023-07-15 23:26:47,080 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:26:47,080 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_created():272] file/dir created: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/wandb-metadata.json
+2023-07-15 23:26:48,284 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:26:49,081 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:26:53,285 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:26:58,311 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:26:59,087 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:27:01,164 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:27:01,165 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:27:04,212 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:09,214 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:14,702 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:15,096 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/config.yaml
+2023-07-15 23:27:15,097 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:27:16,164 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:27:16,166 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:27:20,226 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:25,227 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:29,105 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:27:31,095 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:31,164 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:27:31,165 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:27:36,222 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:41,223 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:43,246 DEBUG   SystemMonitor:26245 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-15 23:27:43,250 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:27:45,114 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:27:46,164 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:27:46,165 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:27:47,223 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:52,224 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:27:57,225 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:01,123 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:28:01,165 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:28:01,166 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:28:03,222 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:08,223 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:13,225 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:13,252 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:28:16,165 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:28:16,166 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:28:17,134 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:28:19,223 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:24,224 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:29,226 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:31,142 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:28:31,165 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:28:31,166 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:28:35,214 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:40,216 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:43,255 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:28:45,259 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:46,165 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:28:46,166 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:28:47,153 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:28:51,242 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:28:56,244 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:01,165 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:29:01,166 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:29:02,222 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:03,163 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:29:07,223 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:12,224 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:13,258 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:29:16,166 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:29:16,168 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:29:17,174 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:29:17,417 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:22,419 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:27,420 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:31,165 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:29:31,166 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:29:32,925 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:33,183 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:29:37,926 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:42,927 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:43,260 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:29:46,166 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:29:46,167 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:29:48,432 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:49,193 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:29:53,433 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:29:58,434 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:01,166 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:30:01,167 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:30:03,941 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:05,203 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:30:08,942 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:13,263 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:30:14,264 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:16,166 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:30:16,167 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:30:19,212 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:30:19,467 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:24,469 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:29,470 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:31,168 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:30:31,169 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:30:34,979 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:35,222 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:30:39,980 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:43,265 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:30:45,267 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:46,167 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:30:46,168 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:30:50,480 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:30:51,231 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:30:55,482 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:00,483 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:01,167 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:31:01,168 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:31:05,985 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:07,240 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:31:10,986 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:13,268 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:31:16,167 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:31:16,168 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:31:16,218 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:21,248 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:31:21,496 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:26,497 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:31,167 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:31:31,168 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:31:32,245 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:37,257 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:31:37,477 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:42,478 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:43,270 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:31:46,167 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:31:46,168 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:31:48,225 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:53,266 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:31:53,453 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:31:58,454 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:01,168 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:32:01,170 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:32:04,229 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:09,275 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:32:09,453 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:13,272 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:32:15,274 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:16,168 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:32:16,169 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:32:21,229 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:25,283 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:32:26,464 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:31,169 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:32:31,171 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:32:32,224 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:37,225 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:41,292 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:32:42,465 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:43,274 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:32:46,168 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:32:46,169 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:32:48,218 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:53,219 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:32:57,302 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:32:58,474 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:01,168 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:33:01,169 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:33:04,228 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:09,230 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:13,277 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:33:13,311 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:33:14,279 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:16,169 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:33:16,170 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:33:20,234 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:25,235 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:29,321 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:33:30,526 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:31,169 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:33:31,171 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:33:36,237 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:41,239 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:43,278 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:33:45,330 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:33:46,169 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:33:46,170 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:33:47,222 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:52,223 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:33:57,225 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:01,169 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:34:01,170 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:34:01,340 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:34:02,228 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:07,230 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:12,231 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:13,281 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:34:16,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:34:16,177 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:34:17,350 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:34:17,551 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:22,552 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:27,553 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:31,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:34:31,176 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:34:32,554 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:33,359 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:34:37,556 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:42,557 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:43,283 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:34:46,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:34:46,177 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:34:48,247 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:49,369 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:34:53,571 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:34:58,573 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:01,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:35:01,177 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:35:04,239 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:05,378 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:35:09,579 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:13,286 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:35:15,288 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:16,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:35:16,177 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:35:20,592 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:21,387 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:35:25,593 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:30,594 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:31,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:35:31,177 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:35:36,249 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:37,396 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:35:41,618 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:43,288 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:35:46,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:35:46,177 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:35:47,237 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:52,238 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:35:53,405 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:35:57,641 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:01,176 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:36:01,177 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:36:03,243 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:08,244 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:09,415 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:36:13,290 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:36:13,295 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:16,177 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:36:16,178 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:36:19,236 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:24,237 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:25,425 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:36:29,695 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:31,177 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:36:31,178 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:36:35,237 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:40,238 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:41,434 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:36:43,293 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:36:45,295 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:46,177 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:36:46,178 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:36:51,240 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:56,241 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:36:57,444 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:37:01,177 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:37:01,178 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:37:02,241 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:07,242 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:12,244 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:13,295 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:37:13,454 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:37:16,178 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:37:16,179 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:37:17,253 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:22,254 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:27,255 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:29,464 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:37:31,178 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:37:31,179 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:37:33,245 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:38,246 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:43,247 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:43,297 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:37:45,474 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:37:46,178 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:37:46,179 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:37:49,237 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:54,239 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:37:59,240 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:01,178 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:38:01,178 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:38:01,484 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:38:04,247 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:09,248 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:13,300 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:38:14,301 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:16,179 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:38:16,179 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:38:17,494 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:38:19,837 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:24,838 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:29,840 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:31,179 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:38:31,180 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:38:35,505 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:38:35,515 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:40,516 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:43,302 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:38:46,179 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:46,179 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:38:46,180 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:38:49,513 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:38:51,862 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:38:56,863 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:01,179 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:39:01,180 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:39:02,237 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:05,523 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:39:07,871 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:12,872 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:13,304 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:39:16,179 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:39:16,180 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:39:18,245 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:21,534 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:39:23,904 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:28,906 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:31,179 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:39:31,180 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:39:34,237 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:37,544 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:39:39,902 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:43,307 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:39:45,309 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:46,180 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:39:46,180 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:39:51,242 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:39:53,553 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:39:56,901 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:01,180 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:40:01,181 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:40:02,244 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:07,245 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:09,563 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:40:12,923 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:13,309 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:40:16,180 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:40:16,181 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:40:18,242 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:23,245 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:25,574 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:40:28,952 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:31,180 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:40:31,181 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:40:34,258 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:39,259 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:41,583 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:40:43,311 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:40:44,313 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:46,180 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:40:46,181 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:40:50,233 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:55,234 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:40:58,594 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:41:01,000 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:01,180 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:41:01,181 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:41:06,239 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:11,240 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:13,314 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:41:14,603 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:41:16,181 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:41:16,181 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:41:17,231 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:22,233 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:27,234 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:30,613 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:41:31,181 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:41:31,182 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:41:32,239 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:37,240 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:42,242 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:43,316 DEBUG   SenderThread:26245 [sender.py:send():369] send: stats
+2023-07-15 23:41:46,181 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:41:46,182 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:41:46,623 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
+2023-07-15 23:41:48,240 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:53,241 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:41:58,242 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: status_report
+2023-07-15 23:42:01,181 DEBUG   HandlerThread:26245 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-15 23:42:01,182 DEBUG   SenderThread:26245 [sender.py:send_request():396] send_request: stop_status
+2023-07-15 23:42:02,633 INFO    Thread-12 :26245 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/eli.richmond/reu/wandb/run-20230715_232642-gvb0wk02/files/output.log
