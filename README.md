@@ -19,7 +19,7 @@ My models and dataset are avalibale through huggingface.
 
 ## Running the code
 
-The codebase for the Sourceformer model is based on two open source repositories.
+The codebase for the Sourceformer model is based on two open source repositories. My requirements.txt are the packages for both repos and Deepspeed.
 
 ### /model
 
