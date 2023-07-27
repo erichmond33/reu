@@ -12,7 +12,11 @@ LLMs have been shown to use tools well. By allowing specific tools to increase t
 
 ## Models and Dataset
 
-My models are avalibale through huggingface here.
+My models are avalibale through huggingface.
+- [sourceformer-epoch1] (https://huggingface.co/eerichmond33/sourceformer-epoch1)
+- [sourceformer-epoch2] (https://huggingface.co/eerichmond33/sourceformer-epoch2)
+- [sourceformer-epoch10] (https://huggingface.co/eerichmond33/sourceformer-epoch10)
+- [sourceformer-epoch30] (https://huggingface.co/eerichmond33/sourceformer-epoch30)
 
 ### Inference
 Models are available on huggingface! [toolformer_v0](https://huggingface.co/dmayhem93/toolformer_v0_epoch2)
