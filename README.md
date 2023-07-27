@@ -4,7 +4,7 @@ This is the codebase for the Sourceformer model. It is based on two open source 
 
 #1 Open-source implementation of [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) by Meta AI.
 
-#2 The SVAMP, ASDiv, and MAWPS math benchmarks. All three are cleaned up and compiled in the SVAMP paper's repository.
+#2 The [SVAMP](https://arxiv.org/abs/2103.07191), [ASDiv](https://arxiv.org/abs/2106.15772), and [MAWPS](https://aclanthology.org/N16-1136.pdf) math benchmarks. All three are cleaned up and compiled in the SVAMP paper's repository.
 
 ## Abstract
 
